@@ -25,6 +25,10 @@ limitations under the License.
 
 #define _TF_STR_HELPER(x) #x
 #define _TF_STR(x) _TF_STR_HELPER(x)
+// Kiểm tra xem TF_VERSION_SUFFIX đã được định nghĩa chưa
+#ifndef TF_VERSION_SUFFIX
+#define TF_VERSION_SUFFIX ""  // Nếu chưa có, đặt giá trị mặc định là chuỗi rỗng
+#endif
 
 // e.g. "0.5.0" or "0.6.0-alpha".
 #define TF_VERSION_STRING                                            \
