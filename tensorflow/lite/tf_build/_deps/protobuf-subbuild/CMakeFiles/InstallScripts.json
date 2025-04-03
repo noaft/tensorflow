@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"D:/tensorflow/tensorflow/lite/tf_build/_deps/protobuf-subbuild/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

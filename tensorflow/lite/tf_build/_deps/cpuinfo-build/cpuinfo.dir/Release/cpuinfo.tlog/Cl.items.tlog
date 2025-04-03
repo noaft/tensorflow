@@ -1,0 +1,15 @@
+D:\tensorflow\tensorflow\lite\tf_build\cpuinfo\src\api.c;D:\tensorflow\tensorflow\lite\tf_build\_deps\cpuinfo-build\cpuinfo.dir\Release\api.obj
+D:\tensorflow\tensorflow\lite\tf_build\cpuinfo\src\cache.c;D:\tensorflow\tensorflow\lite\tf_build\_deps\cpuinfo-build\cpuinfo.dir\Release\cache.obj
+D:\tensorflow\tensorflow\lite\tf_build\cpuinfo\src\init.c;D:\tensorflow\tensorflow\lite\tf_build\_deps\cpuinfo-build\cpuinfo.dir\Release\src\init.c.obj
+D:\tensorflow\tensorflow\lite\tf_build\cpuinfo\src\log.c;D:\tensorflow\tensorflow\lite\tf_build\_deps\cpuinfo-build\cpuinfo.dir\Release\log.obj
+D:\tensorflow\tensorflow\lite\tf_build\cpuinfo\src\x86\init.c;D:\tensorflow\tensorflow\lite\tf_build\_deps\cpuinfo-build\cpuinfo.dir\Release\src\x86\init.c.obj
+D:\tensorflow\tensorflow\lite\tf_build\cpuinfo\src\x86\info.c;D:\tensorflow\tensorflow\lite\tf_build\_deps\cpuinfo-build\cpuinfo.dir\Release\info.obj
+D:\tensorflow\tensorflow\lite\tf_build\cpuinfo\src\x86\vendor.c;D:\tensorflow\tensorflow\lite\tf_build\_deps\cpuinfo-build\cpuinfo.dir\Release\vendor.obj
+D:\tensorflow\tensorflow\lite\tf_build\cpuinfo\src\x86\uarch.c;D:\tensorflow\tensorflow\lite\tf_build\_deps\cpuinfo-build\cpuinfo.dir\Release\uarch.obj
+D:\tensorflow\tensorflow\lite\tf_build\cpuinfo\src\x86\name.c;D:\tensorflow\tensorflow\lite\tf_build\_deps\cpuinfo-build\cpuinfo.dir\Release\name.obj
+D:\tensorflow\tensorflow\lite\tf_build\cpuinfo\src\x86\topology.c;D:\tensorflow\tensorflow\lite\tf_build\_deps\cpuinfo-build\cpuinfo.dir\Release\topology.obj
+D:\tensorflow\tensorflow\lite\tf_build\cpuinfo\src\x86\isa.c;D:\tensorflow\tensorflow\lite\tf_build\_deps\cpuinfo-build\cpuinfo.dir\Release\isa.obj
+D:\tensorflow\tensorflow\lite\tf_build\cpuinfo\src\x86\cache\init.c;D:\tensorflow\tensorflow\lite\tf_build\_deps\cpuinfo-build\cpuinfo.dir\Release\src\x86\cache\init.c.obj
+D:\tensorflow\tensorflow\lite\tf_build\cpuinfo\src\x86\cache\descriptor.c;D:\tensorflow\tensorflow\lite\tf_build\_deps\cpuinfo-build\cpuinfo.dir\Release\descriptor.obj
+D:\tensorflow\tensorflow\lite\tf_build\cpuinfo\src\x86\cache\deterministic.c;D:\tensorflow\tensorflow\lite\tf_build\_deps\cpuinfo-build\cpuinfo.dir\Release\deterministic.obj
+D:\tensorflow\tensorflow\lite\tf_build\cpuinfo\src\x86\windows\init.c;D:\tensorflow\tensorflow\lite\tf_build\_deps\cpuinfo-build\cpuinfo.dir\Release\src\x86\windows\init.c.obj

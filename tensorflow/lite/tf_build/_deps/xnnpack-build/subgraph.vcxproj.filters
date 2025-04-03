@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\memory-planner.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\runtime.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\subgraph.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\subgraph\argmax-pooling-2d.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\subgraph\average-pooling-2d.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\subgraph\batch-matrix-multiply.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\subgraph\binary.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\subgraph\concatenate.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\subgraph\convolution-2d.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\subgraph\copy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\subgraph\deconvolution-2d.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\subgraph\deprecated.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\subgraph\depth-to-space-2d.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\subgraph\depthwise-convolution-2d.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\subgraph\even-split.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\subgraph\fully-connected-sparse.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\subgraph\fully-connected.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\subgraph\max-pooling-2d.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\subgraph\pack-lh.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\subgraph\reshape-helpers.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\subgraph\rope.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\subgraph\scaled-dot-product-attention.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\subgraph\softmax.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\subgraph\space-to-depth-2d.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\subgraph\static-constant-pad.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\subgraph\static-reduce.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\subgraph\static-resize-bilinear-2d.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\subgraph\static-slice.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\subgraph\static-transpose.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\subgraph\unpooling-2d.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\subgraph\unary.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\subgraph\validation.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\tensor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{7D2501A5-4020-35C9-B7A9-6E54321601C7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

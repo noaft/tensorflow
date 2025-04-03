@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\FP16-download\CMakeFiles\93d62a60034cf4292ae1a1348540db36\fp16-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\FP16-download\CMakeFiles\93d62a60034cf4292ae1a1348540db36\fp16-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\FP16-download\CMakeFiles\93d62a60034cf4292ae1a1348540db36\fp16-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\FP16-download\CMakeFiles\93d62a60034cf4292ae1a1348540db36\fp16-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\FP16-download\CMakeFiles\93d62a60034cf4292ae1a1348540db36\fp16-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\FP16-download\CMakeFiles\93d62a60034cf4292ae1a1348540db36\fp16-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\FP16-download\CMakeFiles\93d62a60034cf4292ae1a1348540db36\fp16-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\FP16-download\CMakeFiles\93d62a60034cf4292ae1a1348540db36\fp16-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\FP16-download\CMakeFiles\8a9c95f85e666c2e09ea8371f5693a83\fp16-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\FP16-download\CMakeFiles\18c0e07b47c57410ca15a5955601a5b2\fp16.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\FP16-download\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\tensorflow\tensorflow\lite\tf_build\FP16-download\CMakeFiles\fp16" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{45C6704C-AFB2-3AF0-BF9E-30D934922BA3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,9 @@
+# CMake generation dependency list for this directory.
+D:/cmake-4.0.0-windows-x86_64/share/cmake-4.0/Modules/CheckCXXSymbolExists.cmake
+D:/cmake-4.0.0-windows-x86_64/share/cmake-4.0/Modules/CheckSymbolExists.cmake
+D:/cmake-4.0.0-windows-x86_64/share/cmake-4.0/Modules/GNUInstallDirs.cmake
+D:/tensorflow/tensorflow/lite/tf_build/flatbuffers/CMake/BuildFlatBuffers.cmake
+D:/tensorflow/tensorflow/lite/tf_build/flatbuffers/CMake/Version.cmake
+D:/tensorflow/tensorflow/lite/tf_build/flatbuffers/CMake/flatbuffers-config-version.cmake.in
+D:/tensorflow/tensorflow/lite/tf_build/flatbuffers/CMake/flatbuffers.pc.in
+D:/tensorflow/tensorflow/lite/tf_build/flatbuffers/CMakeLists.txt

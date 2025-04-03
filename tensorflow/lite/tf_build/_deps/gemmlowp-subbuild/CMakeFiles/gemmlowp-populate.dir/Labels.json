@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/gemmlowp-subbuild/CMakeFiles/gemmlowp-populate"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/gemmlowp-subbuild/CMakeFiles/b421c6f6dbd45b4356ea79ccee316248/gemmlowp-populate.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/gemmlowp-subbuild/CMakeFiles/66de109c36bcb91a766534e81d5c471f/gemmlowp-populate-complete.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/gemmlowp-subbuild/CMakeFiles/716a0d90271911c5478f08bd81716c53/gemmlowp-populate-build.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/gemmlowp-subbuild/CMakeFiles/716a0d90271911c5478f08bd81716c53/gemmlowp-populate-configure.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/gemmlowp-subbuild/CMakeFiles/716a0d90271911c5478f08bd81716c53/gemmlowp-populate-download.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/gemmlowp-subbuild/CMakeFiles/716a0d90271911c5478f08bd81716c53/gemmlowp-populate-install.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/gemmlowp-subbuild/CMakeFiles/716a0d90271911c5478f08bd81716c53/gemmlowp-populate-mkdir.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/gemmlowp-subbuild/CMakeFiles/716a0d90271911c5478f08bd81716c53/gemmlowp-populate-patch.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/gemmlowp-subbuild/CMakeFiles/716a0d90271911c5478f08bd81716c53/gemmlowp-populate-test.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/gemmlowp-subbuild/CMakeFiles/716a0d90271911c5478f08bd81716c53/gemmlowp-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"gemmlowp-populate"
+		],
+		"name" : "gemmlowp-populate"
+	}
+}

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\example_proto_generated\tensorflow\core\example\example.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\example_proto_generated\tensorflow\core\example\example.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\CMakeFiles\00fc8b2ec42ad902a4d15678ae38cc53\example.pb.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\tensorflow\tensorflow\core\example\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{389E9829-AB5F-3430-8F5A-7526D0AFA7AC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{9F7E01E7-6670-3D57-93E1-0F3DB5818672}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{7D2501A5-4020-35C9-B7A9-6E54321601C7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

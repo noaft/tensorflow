@@ -1,0 +1,21 @@
+# CMake generation dependency list for this directory.
+D:/cmake-4.0.0-windows-x86_64/share/cmake-4.0/Modules/ExternalProject/PatchInfo.txt.in
+D:/cmake-4.0.0-windows-x86_64/share/cmake-4.0/Modules/ExternalProject/RepositoryInfo.txt.in
+D:/cmake-4.0.0-windows-x86_64/share/cmake-4.0/Modules/ExternalProject/UpdateInfo.txt.in
+D:/cmake-4.0.0-windows-x86_64/share/cmake-4.0/Modules/ExternalProject/gitclone.cmake.in
+D:/cmake-4.0.0-windows-x86_64/share/cmake-4.0/Modules/ExternalProject/gitupdate.cmake.in
+D:/cmake-4.0.0-windows-x86_64/share/cmake-4.0/Modules/ExternalProject/shared_internal_commands.cmake
+D:/cmake-4.0.0-windows-x86_64/share/cmake-4.0/Modules/ExternalProject/stepscript.cmake.in
+D:/cmake-4.0.0-windows-x86_64/share/cmake-4.0/Modules/FetchContent.cmake
+D:/cmake-4.0.0-windows-x86_64/share/cmake-4.0/Modules/FindGit.cmake
+D:/cmake-4.0.0-windows-x86_64/share/cmake-4.0/Modules/FindPackageHandleStandardArgs.cmake
+D:/cmake-4.0.0-windows-x86_64/share/cmake-4.0/Modules/FindPackageMessage.cmake
+D:/tensorflow/tensorflow/lite/profiling/proto/CMakeLists.txt
+D:/tensorflow/tensorflow/lite/tf_build/CMakeFiles/fc-tmp/protobuf/download.cmake
+D:/tensorflow/tensorflow/lite/tf_build/CMakeFiles/fc-tmp/protobuf/patch.cmake
+D:/tensorflow/tensorflow/lite/tf_build/CMakeFiles/fc-tmp/protobuf/protobuf-gitclone.cmake
+D:/tensorflow/tensorflow/lite/tf_build/CMakeFiles/fc-tmp/protobuf/protobuf-gitupdate.cmake
+D:/tensorflow/tensorflow/lite/tf_build/CMakeFiles/fc-tmp/protobuf/update.cmake
+D:/tensorflow/tensorflow/lite/tools/cmake/modules/FindProtobuf.cmake
+D:/tensorflow/tensorflow/lite/tools/cmake/modules/OverridableFetchContent.cmake
+D:/tensorflow/tensorflow/lite/tools/cmake/modules/protobuf.cmake

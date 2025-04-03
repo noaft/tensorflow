@@ -1,0 +1,3 @@
+D:/tensorflow/tensorflow/lite/tf_build/_deps/ruy-subbuild/CMakeFiles/ruy-populate.dir
+D:/tensorflow/tensorflow/lite/tf_build/_deps/ruy-subbuild/CMakeFiles/ALL_BUILD.dir
+D:/tensorflow/tensorflow/lite/tf_build/_deps/ruy-subbuild/CMakeFiles/ZERO_CHECK.dir

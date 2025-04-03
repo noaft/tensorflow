@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\FP16-download\CMakeFiles\18c0e07b47c57410ca15a5955601a5b2\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{45C6704C-AFB2-3AF0-BF9E-30D934922BA3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

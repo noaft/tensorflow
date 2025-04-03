@@ -1,0 +1,9 @@
+# CMake generation dependency list for this directory.
+D:/cmake-4.0.0-windows-x86_64/share/cmake-4.0/Modules/CheckCSourceCompiles.cmake
+D:/cmake-4.0.0-windows-x86_64/share/cmake-4.0/Modules/CheckIncludeFile.cmake
+D:/cmake-4.0.0-windows-x86_64/share/cmake-4.0/Modules/CheckLibraryExists.cmake
+D:/cmake-4.0.0-windows-x86_64/share/cmake-4.0/Modules/FindPackageHandleStandardArgs.cmake
+D:/cmake-4.0.0-windows-x86_64/share/cmake-4.0/Modules/FindPackageMessage.cmake
+D:/cmake-4.0.0-windows-x86_64/share/cmake-4.0/Modules/FindThreads.cmake
+D:/cmake-4.0.0-windows-x86_64/share/cmake-4.0/Modules/GNUInstallDirs.cmake
+D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-source/CMakeLists.txt

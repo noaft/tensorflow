@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\str_format\arg.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\str_format\bind.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\str_format\extension.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\str_format\float_conversion.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\str_format\output.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\str_format\parser.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\str_format\arg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\str_format\bind.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\str_format\checker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\str_format\constexpr_parser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\str_format\extension.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\str_format\float_conversion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\str_format\output.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\str_format\parser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{9F7E01E7-6670-3D57-93E1-0F3DB5818672}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{7D2501A5-4020-35C9-B7A9-6E54321601C7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,12 @@
+prefix=C:/Program Files (x86)/tensorflow-lite
+exec_prefix=C:/Program Files (x86)/tensorflow-lite
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libcpuinfo
+Description: Library to detect essential performance optimization information about host CPU.
+Version: 
+URL: 
+Libs: -L${libdir} -lcpuinfo
+Cflags: -I${includedir}
+

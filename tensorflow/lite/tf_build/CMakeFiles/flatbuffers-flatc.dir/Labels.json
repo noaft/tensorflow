@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/CMakeFiles/flatbuffers-flatc"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/CMakeFiles/c5397c3f93d2052dca86ca3bb246b829/flatbuffers-flatc.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/CMakeFiles/b1d136866d20f6edd3ee2a6035c52106/flatbuffers-flatc-complete.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/CMakeFiles/99fa8680197f651d46e486ead1adbc36/flatbuffers-flatc-build.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/CMakeFiles/99fa8680197f651d46e486ead1adbc36/flatbuffers-flatc-configure.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/CMakeFiles/99fa8680197f651d46e486ead1adbc36/flatbuffers-flatc-download.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/CMakeFiles/99fa8680197f651d46e486ead1adbc36/flatbuffers-flatc-install.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/CMakeFiles/99fa8680197f651d46e486ead1adbc36/flatbuffers-flatc-mkdir.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/CMakeFiles/99fa8680197f651d46e486ead1adbc36/flatbuffers-flatc-patch.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/CMakeFiles/99fa8680197f651d46e486ead1adbc36/flatbuffers-flatc-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"flatbuffers-flatc"
+		],
+		"name" : "flatbuffers-flatc"
+	}
+}

@@ -1,0 +1,9 @@
+# CMake generation dependency list for this directory.
+D:/cmake-4.0.0-windows-x86_64/share/cmake-4.0/Modules/CMakeParseArguments.cmake
+D:/cmake-4.0.0-windows-x86_64/share/cmake-4.0/Modules/GNUInstallDirs.cmake
+D:/tensorflow/tensorflow/lite/tf_build/ruy/CMakeLists.txt
+D:/tensorflow/tensorflow/lite/tf_build/ruy/cmake/ruy_add_all_subdirs.cmake
+D:/tensorflow/tensorflow/lite/tf_build/ruy/cmake/ruy_cc_binary.cmake
+D:/tensorflow/tensorflow/lite/tf_build/ruy/cmake/ruy_cc_library.cmake
+D:/tensorflow/tensorflow/lite/tf_build/ruy/cmake/ruy_cc_test.cmake
+D:/tensorflow/tensorflow/lite/tf_build/ruy/cmake/ruy_include_directories.cmake

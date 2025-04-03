@@ -1,0 +1,1 @@
+D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\operators.dir\Release\operators.lib

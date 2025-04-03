@@ -1,0 +1,869 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8FA8B480-C1D7-3014-8521-5C66AC4F5268}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>abseil_dll</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\tensorflow\tensorflow\lite\tf_build\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">abseil_dll.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">abseil_dll</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\tensorflow\tensorflow\lite\tf_build\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">abseil_dll.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">abseil_dll</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\tensorflow\tensorflow\lite\tf_build\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">abseil_dll.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">abseil_dll</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\tensorflow\tensorflow\lite\tf_build\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">abseil_dll.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">abseil_dll</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4005;4068;4180;4244;4267;4503;4800</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NOMINMAX;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_ENABLE_EXTENDED_ALIGNED_STORAGE;ABSL_BUILD_DLL;CMAKE_INTDIR="Debug";abseil_dll_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;NOMINMAX;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_ENABLE_EXTENDED_ALIGNED_STORAGE;ABSL_BUILD_DLL;CMAKE_INTDIR=\"Debug\";abseil_dll_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreLinkEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Auto build dll exports</Message>
+      <Command>setlocal
+cd D:\tensorflow\tensorflow\lite\tf_build\_deps\abseil-cpp-build\absl
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E __create_def D:/tensorflow/tensorflow/lite/tf_build/_deps/abseil-cpp-build/absl/abseil_dll.dir/Debug/exports.def D:/tensorflow/tensorflow/lite/tf_build/_deps/abseil-cpp-build/absl/abseil_dll.dir/Debug//objects.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreLinkEvent>
+    <Link>
+      <AdditionalDependencies>-ignore:4221;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/tensorflow/tensorflow/lite/tf_build/_deps/abseil-cpp-build/absl/Debug/abseil_dll.lib</ImportLibrary>
+      <ModuleDefinitionFile>D:/tensorflow/tensorflow/lite/tf_build/_deps/abseil-cpp-build/absl/abseil_dll.dir/Debug/exports.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>D:/tensorflow/tensorflow/lite/tf_build/bin/Debug/abseil_dll.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DisableSpecificWarnings>4005;4068;4180;4244;4267;4503;4800</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;NOMINMAX;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_ENABLE_EXTENDED_ALIGNED_STORAGE;ABSL_BUILD_DLL;CMAKE_INTDIR="Release";abseil_dll_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;NOMINMAX;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_ENABLE_EXTENDED_ALIGNED_STORAGE;ABSL_BUILD_DLL;CMAKE_INTDIR=\"Release\";abseil_dll_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreLinkEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Auto build dll exports</Message>
+      <Command>setlocal
+cd D:\tensorflow\tensorflow\lite\tf_build\_deps\abseil-cpp-build\absl
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E __create_def D:/tensorflow/tensorflow/lite/tf_build/_deps/abseil-cpp-build/absl/abseil_dll.dir/Release/exports.def D:/tensorflow/tensorflow/lite/tf_build/_deps/abseil-cpp-build/absl/abseil_dll.dir/Release//objects.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreLinkEvent>
+    <Link>
+      <AdditionalDependencies>-ignore:4221;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/tensorflow/tensorflow/lite/tf_build/_deps/abseil-cpp-build/absl/Release/abseil_dll.lib</ImportLibrary>
+      <ModuleDefinitionFile>D:/tensorflow/tensorflow/lite/tf_build/_deps/abseil-cpp-build/absl/abseil_dll.dir/Release/exports.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>D:/tensorflow/tensorflow/lite/tf_build/bin/Release/abseil_dll.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DisableSpecificWarnings>4005;4068;4180;4244;4267;4503;4800</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;NOMINMAX;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_ENABLE_EXTENDED_ALIGNED_STORAGE;ABSL_BUILD_DLL;CMAKE_INTDIR="MinSizeRel";abseil_dll_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;NOMINMAX;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_ENABLE_EXTENDED_ALIGNED_STORAGE;ABSL_BUILD_DLL;CMAKE_INTDIR=\"MinSizeRel\";abseil_dll_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreLinkEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Auto build dll exports</Message>
+      <Command>setlocal
+cd D:\tensorflow\tensorflow\lite\tf_build\_deps\abseil-cpp-build\absl
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E __create_def D:/tensorflow/tensorflow/lite/tf_build/_deps/abseil-cpp-build/absl/abseil_dll.dir/MinSizeRel/exports.def D:/tensorflow/tensorflow/lite/tf_build/_deps/abseil-cpp-build/absl/abseil_dll.dir/MinSizeRel//objects.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreLinkEvent>
+    <Link>
+      <AdditionalDependencies>-ignore:4221;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/tensorflow/tensorflow/lite/tf_build/_deps/abseil-cpp-build/absl/MinSizeRel/abseil_dll.lib</ImportLibrary>
+      <ModuleDefinitionFile>D:/tensorflow/tensorflow/lite/tf_build/_deps/abseil-cpp-build/absl/abseil_dll.dir/MinSizeRel/exports.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>D:/tensorflow/tensorflow/lite/tf_build/bin/MinSizeRel/abseil_dll.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4005;4068;4180;4244;4267;4503;4800</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;NOMINMAX;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_ENABLE_EXTENDED_ALIGNED_STORAGE;ABSL_BUILD_DLL;CMAKE_INTDIR="RelWithDebInfo";abseil_dll_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;NOMINMAX;WIN32_LEAN_AND_MEAN;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_ENABLE_EXTENDED_ALIGNED_STORAGE;ABSL_BUILD_DLL;CMAKE_INTDIR=\"RelWithDebInfo\";abseil_dll_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreLinkEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Auto build dll exports</Message>
+      <Command>setlocal
+cd D:\tensorflow\tensorflow\lite\tf_build\_deps\abseil-cpp-build\absl
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E __create_def D:/tensorflow/tensorflow/lite/tf_build/_deps/abseil-cpp-build/absl/abseil_dll.dir/RelWithDebInfo/exports.def D:/tensorflow/tensorflow/lite/tf_build/_deps/abseil-cpp-build/absl/abseil_dll.dir/RelWithDebInfo//objects.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreLinkEvent>
+    <Link>
+      <AdditionalDependencies>-ignore:4221;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/tensorflow/tensorflow/lite/tf_build/_deps/abseil-cpp-build/absl/RelWithDebInfo/abseil_dll.lib</ImportLibrary>
+      <ModuleDefinitionFile>D:/tensorflow/tensorflow/lite/tf_build/_deps/abseil-cpp-build/absl/abseil_dll.dir/RelWithDebInfo/exports.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>D:/tensorflow/tensorflow/lite/tf_build/bin/RelWithDebInfo/abseil_dll.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/tensorflow/tensorflow/lite/tf_build/abseil-cpp/absl/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -SD:/tensorflow/tensorflow/lite -BD:/tensorflow/tensorflow/lite/tf_build --check-stamp-file D:/tensorflow/tensorflow/lite/tf_build/_deps/abseil-cpp-build/absl/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\tensorflow\tensorflow\lite\tf_build\_deps\abseil-cpp-build\absl\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/tensorflow/tensorflow/lite/tf_build/abseil-cpp/absl/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -SD:/tensorflow/tensorflow/lite -BD:/tensorflow/tensorflow/lite/tf_build --check-stamp-file D:/tensorflow/tensorflow/lite/tf_build/_deps/abseil-cpp-build/absl/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\tensorflow\tensorflow\lite\tf_build\_deps\abseil-cpp-build\absl\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/tensorflow/tensorflow/lite/tf_build/abseil-cpp/absl/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -SD:/tensorflow/tensorflow/lite -BD:/tensorflow/tensorflow/lite/tf_build --check-stamp-file D:/tensorflow/tensorflow/lite/tf_build/_deps/abseil-cpp-build/absl/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\tensorflow\tensorflow\lite\tf_build\_deps\abseil-cpp-build\absl\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/tensorflow/tensorflow/lite/tf_build/abseil-cpp/absl/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -SD:/tensorflow/tensorflow/lite -BD:/tensorflow/tensorflow/lite/tf_build --check-stamp-file D:/tensorflow/tensorflow/lite/tf_build/_deps/abseil-cpp-build/absl/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\tensorflow\tensorflow\lite\tf_build\_deps\abseil-cpp-build\absl\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\algorithm\algorithm.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\algorithm\container.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\attributes.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\call_once.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\casts.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\config.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\const_init.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\dynamic_annotations.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\atomic_hook.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\cycleclock.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\cycleclock.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\cycleclock_config.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\direct_mmap.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\dynamic_annotations.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\endian.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\errno_saver.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\fast_type_id.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\hide_ptr.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\identity.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\invoke.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\inline_variable.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\low_level_alloc.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\low_level_alloc.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\low_level_scheduling.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\nullability_impl.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\per_thread_tls.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\prefetch.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\prefetch.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\pretty_function.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\raw_logging.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\raw_logging.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\scheduling_mode.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\scoped_set_env.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\scoped_set_env.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\strerror.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\strerror.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\spinlock.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\spinlock.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\spinlock_wait.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\spinlock_wait.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\sysinfo.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\sysinfo.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\thread_annotations.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\thread_identity.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\thread_identity.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\throw_delegate.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\throw_delegate.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\tsan_mutex_interface.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\unaligned_access.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\unscaledcycleclock.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\unscaledcycleclock.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\unscaledcycleclock_config.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\log_severity.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\log_severity.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\macros.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\nullability.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\optimization.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\options.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\policy_checks.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\port.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\thread_annotations.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\cleanup\cleanup.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\cleanup\internal\cleanup.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\container\btree_map.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\container\btree_set.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\container\fixed_array.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\container\flat_hash_map.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\container\flat_hash_set.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\container\inlined_vector.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\container\internal\btree.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\container\internal\btree_container.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\container\internal\common.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\container\internal\common_policy_traits.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\container\internal\compressed_tuple.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\container\internal\container_memory.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\container\internal\counting_allocator.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\container\internal\hash_function_defaults.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\container\internal\hash_policy_traits.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\container\internal\hashtable_debug.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\container\internal\hashtable_debug_hooks.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\container\internal\hashtablez_sampler.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\container\internal\hashtablez_sampler.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\container\internal\hashtablez_sampler_force_weak_definition.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\container\internal\inlined_vector.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\container\internal\layout.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\container\internal\node_slot_policy.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\container\internal\raw_hash_map.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\container\internal\raw_hash_set.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\container\internal\raw_hash_set.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\container\internal\tracked.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\container\node_hash_map.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\container\node_hash_set.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\crc\crc32c.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\crc\crc32c.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\crc\internal\cpu_detect.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\crc\internal\cpu_detect.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\crc\internal\crc32c.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\crc\internal\crc32c_inline.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\crc\internal\crc32_x86_arm_combined_simd.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\crc\internal\crc.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\crc\internal\crc.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\crc\internal\crc_cord_state.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\crc\internal\crc_cord_state.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\crc\internal\crc_internal.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\crc\internal\crc_x86_arm_combined.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\crc\internal\crc_memcpy_fallback.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\crc\internal\crc_memcpy.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\crc\internal\crc_memcpy_x86_64.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\crc\internal\crc_non_temporal_memcpy.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\crc\internal\non_temporal_arm_intrinsics.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\crc\internal\non_temporal_memcpy.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\debugging\failure_signal_handler.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\debugging\failure_signal_handler.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\debugging\leak_check.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\debugging\stacktrace.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\debugging\stacktrace.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\debugging\symbolize.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\debugging\symbolize.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\debugging\internal\address_is_readable.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\debugging\internal\address_is_readable.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\debugging\internal\demangle.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\debugging\internal\demangle.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\debugging\internal\elf_mem_image.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\debugging\internal\elf_mem_image.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\debugging\internal\examine_stack.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\debugging\internal\examine_stack.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\debugging\internal\stack_consumption.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\debugging\internal\stack_consumption.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\debugging\internal\stacktrace_config.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\debugging\internal\symbolize.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\debugging\internal\vdso_support.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\debugging\internal\vdso_support.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\functional\any_invocable.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\functional\internal\front_binder.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\functional\bind_front.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\functional\function_ref.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\functional\internal\any_invocable.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\functional\internal\function_ref.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\hash\hash.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\hash\internal\city.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\hash\internal\city.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\hash\internal\hash.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\hash\internal\hash.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\hash\internal\spy_hash_state.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\hash\internal\low_level_hash.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\hash\internal\low_level_hash.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\absl_check.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\absl_log.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\check.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\die_if_null.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\die_if_null.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\globals.cc">
+      <ObjectFileName>$(IntDir)/log/globals.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\globals.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\internal\append_truncated.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\internal\check_impl.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\internal\check_op.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\internal\check_op.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\internal\conditions.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\internal\conditions.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\internal\config.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\internal\globals.cc">
+      <ObjectFileName>$(IntDir)/log/internal/globals.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\internal\globals.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\internal\log_format.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\internal\log_format.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\internal\log_impl.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\internal\log_message.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\internal\log_message.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\internal\log_sink_set.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\internal\log_sink_set.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\internal\nullguard.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\internal\nullguard.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\internal\nullstream.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\internal\proto.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\internal\proto.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\internal\strip.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\internal\structured.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\internal\voidify.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\initialize.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\initialize.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\log.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\log_entry.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\log_entry.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\log_sink.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\log_sink.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\log_sink_registry.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\log_streamer.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\structured.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\memory\memory.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\meta\type_traits.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\numeric\bits.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\numeric\int128.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\numeric\int128.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\numeric\internal\bits.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\numeric\internal\representation.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\profiling\internal\exponential_biased.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\profiling\internal\exponential_biased.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\profiling\internal\periodic_sampler.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\profiling\internal\periodic_sampler.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\profiling\internal\sample_recorder.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\bernoulli_distribution.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\beta_distribution.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\bit_gen_ref.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\discrete_distribution.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\discrete_distribution.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\distributions.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\exponential_distribution.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\gaussian_distribution.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\gaussian_distribution.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\internal\distribution_caller.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\internal\fastmath.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\internal\fast_uniform_bits.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\internal\generate_real.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\internal\iostream_state_saver.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\internal\nonsecure_base.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\internal\pcg_engine.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\internal\platform.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\internal\pool_urbg.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\internal\pool_urbg.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\internal\randen.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\internal\randen.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\internal\randen_detect.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\internal\randen_detect.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\internal\randen_engine.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\internal\randen_hwaes.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\internal\randen_hwaes.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\internal\randen_round_keys.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\internal\randen_slow.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\internal\randen_slow.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\internal\randen_traits.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\internal\salted_seed_seq.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\internal\seed_material.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\internal\seed_material.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\internal\sequence_urbg.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\internal\traits.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\internal\uniform_helper.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\internal\wide_multiply.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\log_uniform_int_distribution.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\poisson_distribution.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\random.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\seed_gen_exception.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\seed_gen_exception.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\seed_sequences.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\seed_sequences.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\uniform_int_distribution.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\uniform_real_distribution.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\zipf_distribution.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\status\internal\status_internal.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\status\internal\statusor_internal.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\status\status.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\status\status.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\status\statusor.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\status\statusor.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\status\status_payload_printer.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\status\status_payload_printer.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\ascii.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\ascii.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\charconv.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\charconv.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\cord.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\cord.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\cord_analysis.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\cord_analysis.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\cord_buffer.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\cord_buffer.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\escaping.cc">
+      <ObjectFileName>$(IntDir)/strings/escaping.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\escaping.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\charconv_bigint.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\charconv_bigint.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\charconv_parse.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\charconv_parse.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\cord_data_edge.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\cord_internal.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\cord_internal.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\cord_rep_btree.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\cord_rep_btree.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\cord_rep_btree_navigator.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\cord_rep_btree_navigator.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\cord_rep_btree_reader.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\cord_rep_btree_reader.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\cord_rep_crc.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\cord_rep_crc.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\cord_rep_consume.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\cord_rep_consume.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\cord_rep_flat.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\cord_rep_ring.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\cord_rep_ring.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\cord_rep_ring_reader.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\cordz_functions.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\cordz_functions.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\cordz_handle.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\cordz_handle.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\cordz_info.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\cordz_info.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\cordz_sample_token.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\cordz_sample_token.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\cordz_statistics.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\cordz_update_scope.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\cordz_update_tracker.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\damerau_levenshtein_distance.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\damerau_levenshtein_distance.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\stl_type_traits.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\string_constant.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\stringify_sink.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\stringify_sink.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\has_absl_stringify.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\match.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\match.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\numbers.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\numbers.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\str_format.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\str_cat.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\str_cat.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\str_join.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\str_replace.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\str_replace.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\str_split.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\str_split.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\string_view.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\string_view.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\strip.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\substitute.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\substitute.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\char_map.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\escaping.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\escaping.cc">
+      <ObjectFileName>$(IntDir)/strings/internal/escaping.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\memutil.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\memutil.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\ostringstream.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\ostringstream.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\pow10_helper.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\pow10_helper.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\resize_uninitialized.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\str_format\arg.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\str_format\arg.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\str_format\bind.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\str_format\bind.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\str_format\checker.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\str_format\constexpr_parser.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\str_format\extension.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\str_format\extension.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\str_format\float_conversion.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\str_format\float_conversion.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\str_format\output.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\str_format\output.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\str_format\parser.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\str_format\parser.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\str_join_internal.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\str_split_internal.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\utf8.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\utf8.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\synchronization\barrier.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\synchronization\barrier.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\synchronization\blocking_counter.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\synchronization\blocking_counter.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\synchronization\mutex.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\synchronization\mutex.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\synchronization\notification.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\synchronization\notification.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\synchronization\internal\create_thread_identity.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\synchronization\internal\create_thread_identity.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\synchronization\internal\futex.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\synchronization\internal\futex_waiter.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\synchronization\internal\futex_waiter.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\synchronization\internal\graphcycles.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\synchronization\internal\graphcycles.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\synchronization\internal\kernel_timeout.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\synchronization\internal\kernel_timeout.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\synchronization\internal\per_thread_sem.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\synchronization\internal\per_thread_sem.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\synchronization\internal\pthread_waiter.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\synchronization\internal\pthread_waiter.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\synchronization\internal\sem_waiter.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\synchronization\internal\sem_waiter.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\synchronization\internal\stdcpp_waiter.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\synchronization\internal\stdcpp_waiter.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\synchronization\internal\thread_pool.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\synchronization\internal\waiter.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\synchronization\internal\waiter_base.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\synchronization\internal\waiter_base.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\synchronization\internal\win32_waiter.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\synchronization\internal\win32_waiter.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\time\civil_time.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\time\civil_time.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\time\clock.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\time\clock.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\time\duration.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\time\format.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\time\time.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\time\time.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\time\internal\cctz\include\cctz\civil_time.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\time\internal\cctz\include\cctz\civil_time_detail.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\time\internal\cctz\include\cctz\time_zone.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\time\internal\cctz\include\cctz\zone_info_source.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\time\internal\cctz\src\civil_time_detail.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\time\internal\cctz\src\time_zone_fixed.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\time\internal\cctz\src\time_zone_fixed.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\time\internal\cctz\src\time_zone_format.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\time\internal\cctz\src\time_zone_if.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\time\internal\cctz\src\time_zone_if.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\time\internal\cctz\src\time_zone_impl.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\time\internal\cctz\src\time_zone_impl.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\time\internal\cctz\src\time_zone_info.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\time\internal\cctz\src\time_zone_info.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\time\internal\cctz\src\time_zone_libc.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\time\internal\cctz\src\time_zone_libc.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\time\internal\cctz\src\time_zone_lookup.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\time\internal\cctz\src\time_zone_posix.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\time\internal\cctz\src\time_zone_posix.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\time\internal\cctz\src\tzfile.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\time\internal\cctz\src\zone_info_source.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\types\any.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\types\bad_any_cast.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\types\bad_any_cast.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\types\bad_optional_access.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\types\bad_optional_access.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\types\bad_variant_access.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\types\bad_variant_access.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\types\compare.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\types\internal\conformance_aliases.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\types\internal\conformance_archetype.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\types\internal\conformance_profile.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\types\internal\parentheses.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\types\internal\transform_args.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\types\internal\variant.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\types\optional.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\types\internal\optional.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\types\span.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\types\internal\span.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\types\variant.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\utility\internal\if_constexpr.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\utility\utility.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\debugging\leak_check.cc" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\ZERO_CHECK.vcxproj">
+      <Project>{DA82E51A-3B0E-352E-B019-949E32B6801B}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,14 @@
+# Target labels
+ abseil-cpp-populate
+# Source files and their labels
+D:/tensorflow/tensorflow/lite/tf_build/_deps/abseil-cpp-subbuild/CMakeFiles/abseil-cpp-populate
+D:/tensorflow/tensorflow/lite/tf_build/_deps/abseil-cpp-subbuild/CMakeFiles/04d052a3f1039000ed0753bf6f151433/abseil-cpp-populate.rule
+D:/tensorflow/tensorflow/lite/tf_build/_deps/abseil-cpp-subbuild/CMakeFiles/cb9243793c878487da98df0ccbb71b65/abseil-cpp-populate-complete.rule
+D:/tensorflow/tensorflow/lite/tf_build/_deps/abseil-cpp-subbuild/CMakeFiles/bbab1f65c80987e1de86aacf1aeb2d72/abseil-cpp-populate-build.rule
+D:/tensorflow/tensorflow/lite/tf_build/_deps/abseil-cpp-subbuild/CMakeFiles/bbab1f65c80987e1de86aacf1aeb2d72/abseil-cpp-populate-configure.rule
+D:/tensorflow/tensorflow/lite/tf_build/_deps/abseil-cpp-subbuild/CMakeFiles/bbab1f65c80987e1de86aacf1aeb2d72/abseil-cpp-populate-download.rule
+D:/tensorflow/tensorflow/lite/tf_build/_deps/abseil-cpp-subbuild/CMakeFiles/bbab1f65c80987e1de86aacf1aeb2d72/abseil-cpp-populate-install.rule
+D:/tensorflow/tensorflow/lite/tf_build/_deps/abseil-cpp-subbuild/CMakeFiles/bbab1f65c80987e1de86aacf1aeb2d72/abseil-cpp-populate-mkdir.rule
+D:/tensorflow/tensorflow/lite/tf_build/_deps/abseil-cpp-subbuild/CMakeFiles/bbab1f65c80987e1de86aacf1aeb2d72/abseil-cpp-populate-patch.rule
+D:/tensorflow/tensorflow/lite/tf_build/_deps/abseil-cpp-subbuild/CMakeFiles/bbab1f65c80987e1de86aacf1aeb2d72/abseil-cpp-populate-test.rule
+D:/tensorflow/tensorflow/lite/tf_build/_deps/abseil-cpp-subbuild/CMakeFiles/bbab1f65c80987e1de86aacf1aeb2d72/abseil-cpp-populate-update.rule

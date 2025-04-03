@@ -1,0 +1,150 @@
+^D:\TENSORFLOW\TENSORFLOW\LITE\TF_BUILD\_DEPS\GEMMLOWP-SUBBUILD\CMAKEFILES\716A0D90271911C5478F08BD81716C53\GEMMLOWP-POPULATE-MKDIR.RULE
+setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -Dcfgdir=/Debug -P D:/tensorflow/tensorflow/lite/tf_build/_deps/gemmlowp-subbuild/gemmlowp-populate-prefix/tmp/gemmlowp-populate-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/_deps/gemmlowp-subbuild/gemmlowp-populate-prefix/src/gemmlowp-populate-stamp/Debug/gemmlowp-populate-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\TENSORFLOW\TENSORFLOW\LITE\TF_BUILD\_DEPS\GEMMLOWP-SUBBUILD\CMAKEFILES\716A0D90271911C5478F08BD81716C53\GEMMLOWP-POPULATE-DOWNLOAD.RULE
+setlocal
+cd D:\tensorflow\tensorflow\lite\tf_build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P D:/tensorflow/tensorflow/lite/tf_build/_deps/gemmlowp-subbuild/gemmlowp-populate-prefix/tmp/gemmlowp-populate-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/_deps/gemmlowp-subbuild/gemmlowp-populate-prefix/src/gemmlowp-populate-stamp/Debug/gemmlowp-populate-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\TENSORFLOW\TENSORFLOW\LITE\TF_BUILD\_DEPS\GEMMLOWP-SUBBUILD\CMAKEFILES\716A0D90271911C5478F08BD81716C53\GEMMLOWP-POPULATE-UPDATE.RULE
+setlocal
+cd D:\tensorflow\tensorflow\lite\tf_build\gemmlowp
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -Dcan_fetch=YES -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P D:/tensorflow/tensorflow/lite/tf_build/_deps/gemmlowp-subbuild/gemmlowp-populate-prefix/tmp/gemmlowp-populate-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\TENSORFLOW\TENSORFLOW\LITE\TF_BUILD\_DEPS\GEMMLOWP-SUBBUILD\CMAKEFILES\716A0D90271911C5478F08BD81716C53\GEMMLOWP-POPULATE-PATCH.RULE
+setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/_deps/gemmlowp-subbuild/gemmlowp-populate-prefix/src/gemmlowp-populate-stamp/Debug/gemmlowp-populate-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\TENSORFLOW\TENSORFLOW\LITE\TF_BUILD\_DEPS\GEMMLOWP-SUBBUILD\CMAKEFILES\716A0D90271911C5478F08BD81716C53\GEMMLOWP-POPULATE-CONFIGURE.RULE
+setlocal
+cd D:\tensorflow\tensorflow\lite\tf_build\_deps\gemmlowp-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/_deps/gemmlowp-subbuild/gemmlowp-populate-prefix/src/gemmlowp-populate-stamp/Debug/gemmlowp-populate-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\TENSORFLOW\TENSORFLOW\LITE\TF_BUILD\_DEPS\GEMMLOWP-SUBBUILD\CMAKEFILES\716A0D90271911C5478F08BD81716C53\GEMMLOWP-POPULATE-BUILD.RULE
+setlocal
+cd D:\tensorflow\tensorflow\lite\tf_build\_deps\gemmlowp-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/_deps/gemmlowp-subbuild/gemmlowp-populate-prefix/src/gemmlowp-populate-stamp/Debug/gemmlowp-populate-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\TENSORFLOW\TENSORFLOW\LITE\TF_BUILD\_DEPS\GEMMLOWP-SUBBUILD\CMAKEFILES\716A0D90271911C5478F08BD81716C53\GEMMLOWP-POPULATE-INSTALL.RULE
+setlocal
+cd D:\tensorflow\tensorflow\lite\tf_build\_deps\gemmlowp-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/_deps/gemmlowp-subbuild/gemmlowp-populate-prefix/src/gemmlowp-populate-stamp/Debug/gemmlowp-populate-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\TENSORFLOW\TENSORFLOW\LITE\TF_BUILD\_DEPS\GEMMLOWP-SUBBUILD\CMAKEFILES\716A0D90271911C5478F08BD81716C53\GEMMLOWP-POPULATE-TEST.RULE
+setlocal
+cd D:\tensorflow\tensorflow\lite\tf_build\_deps\gemmlowp-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/_deps/gemmlowp-subbuild/gemmlowp-populate-prefix/src/gemmlowp-populate-stamp/Debug/gemmlowp-populate-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\TENSORFLOW\TENSORFLOW\LITE\TF_BUILD\_DEPS\GEMMLOWP-SUBBUILD\CMAKEFILES\66DE109C36BCB91A766534E81D5C471F\GEMMLOWP-POPULATE-COMPLETE.RULE
+setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E make_directory D:/tensorflow/tensorflow/lite/tf_build/_deps/gemmlowp-subbuild/CMakeFiles/Debug
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/_deps/gemmlowp-subbuild/CMakeFiles/Debug/gemmlowp-populate-complete
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/_deps/gemmlowp-subbuild/gemmlowp-populate-prefix/src/gemmlowp-populate-stamp/Debug/gemmlowp-populate-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\TENSORFLOW\TENSORFLOW\LITE\TF_BUILD\_DEPS\GEMMLOWP-SUBBUILD\CMAKEFILES\B421C6F6DBD45B4356EA79CCEE316248\GEMMLOWP-POPULATE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\TENSORFLOW\TENSORFLOW\LITE\TF_BUILD\_DEPS\GEMMLOWP-SUBBUILD\CMAKELISTS.TXT
+setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -SD:/tensorflow/tensorflow/lite/tf_build/_deps/gemmlowp-subbuild -BD:/tensorflow/tensorflow/lite/tf_build/_deps/gemmlowp-subbuild --check-stamp-file D:/tensorflow/tensorflow/lite/tf_build/_deps/gemmlowp-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

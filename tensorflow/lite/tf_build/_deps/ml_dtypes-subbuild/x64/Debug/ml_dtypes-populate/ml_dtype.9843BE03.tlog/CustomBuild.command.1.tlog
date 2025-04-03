@@ -1,0 +1,150 @@
+^D:\TENSORFLOW\TENSORFLOW\LITE\TF_BUILD\_DEPS\ML_DTYPES-SUBBUILD\CMAKEFILES\9E28E1F005D94A3525A672EFA1106ED1\ML_DTYPES-POPULATE-MKDIR.RULE
+setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -Dcfgdir=/Debug -P D:/tensorflow/tensorflow/lite/tf_build/_deps/ml_dtypes-subbuild/ml_dtypes-populate-prefix/tmp/ml_dtypes-populate-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/_deps/ml_dtypes-subbuild/ml_dtypes-populate-prefix/src/ml_dtypes-populate-stamp/Debug/ml_dtypes-populate-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\TENSORFLOW\TENSORFLOW\LITE\TF_BUILD\_DEPS\ML_DTYPES-SUBBUILD\CMAKEFILES\9E28E1F005D94A3525A672EFA1106ED1\ML_DTYPES-POPULATE-DOWNLOAD.RULE
+setlocal
+cd D:\tensorflow\tensorflow\lite\tf_build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P D:/tensorflow/tensorflow/lite/tf_build/_deps/ml_dtypes-subbuild/ml_dtypes-populate-prefix/tmp/ml_dtypes-populate-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/_deps/ml_dtypes-subbuild/ml_dtypes-populate-prefix/src/ml_dtypes-populate-stamp/Debug/ml_dtypes-populate-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\TENSORFLOW\TENSORFLOW\LITE\TF_BUILD\_DEPS\ML_DTYPES-SUBBUILD\CMAKEFILES\9E28E1F005D94A3525A672EFA1106ED1\ML_DTYPES-POPULATE-UPDATE.RULE
+setlocal
+cd D:\tensorflow\tensorflow\lite\tf_build\ml_dtypes
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -Dcan_fetch=YES -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P D:/tensorflow/tensorflow/lite/tf_build/_deps/ml_dtypes-subbuild/ml_dtypes-populate-prefix/tmp/ml_dtypes-populate-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\TENSORFLOW\TENSORFLOW\LITE\TF_BUILD\_DEPS\ML_DTYPES-SUBBUILD\CMAKEFILES\9E28E1F005D94A3525A672EFA1106ED1\ML_DTYPES-POPULATE-PATCH.RULE
+setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/_deps/ml_dtypes-subbuild/ml_dtypes-populate-prefix/src/ml_dtypes-populate-stamp/Debug/ml_dtypes-populate-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\TENSORFLOW\TENSORFLOW\LITE\TF_BUILD\_DEPS\ML_DTYPES-SUBBUILD\CMAKEFILES\9E28E1F005D94A3525A672EFA1106ED1\ML_DTYPES-POPULATE-CONFIGURE.RULE
+setlocal
+cd D:\tensorflow\tensorflow\lite\tf_build\_deps\ml_dtypes-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/_deps/ml_dtypes-subbuild/ml_dtypes-populate-prefix/src/ml_dtypes-populate-stamp/Debug/ml_dtypes-populate-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\TENSORFLOW\TENSORFLOW\LITE\TF_BUILD\_DEPS\ML_DTYPES-SUBBUILD\CMAKEFILES\9E28E1F005D94A3525A672EFA1106ED1\ML_DTYPES-POPULATE-BUILD.RULE
+setlocal
+cd D:\tensorflow\tensorflow\lite\tf_build\_deps\ml_dtypes-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/_deps/ml_dtypes-subbuild/ml_dtypes-populate-prefix/src/ml_dtypes-populate-stamp/Debug/ml_dtypes-populate-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\TENSORFLOW\TENSORFLOW\LITE\TF_BUILD\_DEPS\ML_DTYPES-SUBBUILD\CMAKEFILES\9E28E1F005D94A3525A672EFA1106ED1\ML_DTYPES-POPULATE-INSTALL.RULE
+setlocal
+cd D:\tensorflow\tensorflow\lite\tf_build\_deps\ml_dtypes-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/_deps/ml_dtypes-subbuild/ml_dtypes-populate-prefix/src/ml_dtypes-populate-stamp/Debug/ml_dtypes-populate-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\TENSORFLOW\TENSORFLOW\LITE\TF_BUILD\_DEPS\ML_DTYPES-SUBBUILD\CMAKEFILES\9E28E1F005D94A3525A672EFA1106ED1\ML_DTYPES-POPULATE-TEST.RULE
+setlocal
+cd D:\tensorflow\tensorflow\lite\tf_build\_deps\ml_dtypes-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/_deps/ml_dtypes-subbuild/ml_dtypes-populate-prefix/src/ml_dtypes-populate-stamp/Debug/ml_dtypes-populate-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\TENSORFLOW\TENSORFLOW\LITE\TF_BUILD\_DEPS\ML_DTYPES-SUBBUILD\CMAKEFILES\AE013474F204252B0045BB6A481F462E\ML_DTYPES-POPULATE-COMPLETE.RULE
+setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E make_directory D:/tensorflow/tensorflow/lite/tf_build/_deps/ml_dtypes-subbuild/CMakeFiles/Debug
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/_deps/ml_dtypes-subbuild/CMakeFiles/Debug/ml_dtypes-populate-complete
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/_deps/ml_dtypes-subbuild/ml_dtypes-populate-prefix/src/ml_dtypes-populate-stamp/Debug/ml_dtypes-populate-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\TENSORFLOW\TENSORFLOW\LITE\TF_BUILD\_DEPS\ML_DTYPES-SUBBUILD\CMAKEFILES\CA39C5B01EB54D1983DF6596F1818B67\ML_DTYPES-POPULATE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\TENSORFLOW\TENSORFLOW\LITE\TF_BUILD\_DEPS\ML_DTYPES-SUBBUILD\CMAKELISTS.TXT
+setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -SD:/tensorflow/tensorflow/lite/tf_build/_deps/ml_dtypes-subbuild -BD:/tensorflow/tensorflow/lite/tf_build/_deps/ml_dtypes-subbuild --check-stamp-file D:/tensorflow/tensorflow/lite/tf_build/_deps/ml_dtypes-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

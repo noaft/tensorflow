@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\operator-delete.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\operators\argmax-pooling-nhwc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\operators\average-pooling-nhwc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\operators\batch-matrix-multiply-nc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\operators\binary-elementwise-nd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\operators\constant-pad-nd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\operators\convolution-nchw.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\operators\convolution-nhwc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\operators\deconvolution-nhwc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\operators\dynamic-fully-connected-nc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\operators\fully-connected-nc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\operators\max-pooling-nhwc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\operators\pack-lh.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\operators\reduce-nd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\operators\resize-bilinear-nchw.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\operators\resize-bilinear-nhwc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\operators\rope-nthc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\operators\scaled-dot-product-attention-nhtc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\operators\slice-nd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\operators\softmax-nc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\operators\transpose-nd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\operators\unary-elementwise-nc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\operators\unpooling-nhwc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{7D2501A5-4020-35C9-B7A9-6E54321601C7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

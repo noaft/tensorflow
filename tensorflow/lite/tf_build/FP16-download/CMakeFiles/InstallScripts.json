@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"D:/tensorflow/tensorflow/lite/tf_build/FP16-download/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\configs\argmaxpool-config.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\configs\avgpool-config.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\configs\binary-elementwise-config.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\configs\cmul-config.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\configs\conv-hwc2chw-config.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\configs\dwconv-config.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\configs\dwconv2d-chw-config.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\configs\gemm-config.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\configs\ibilinear-chw-config.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\configs\ibilinear-config.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\configs\lut32norm-config.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\configs\maxpool-config.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\configs\pack-lh-config.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\configs\raddstoreexpminusmax-config.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\configs\reduce-config.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\configs\spmm-config.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\configs\transpose-config.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\configs\unary-elementwise-config.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\configs\unpool-config.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\configs\vmulcaddc-config.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\configs\xx-fill-config.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\configs\xx-pad-config.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\configs\x8-lut-config.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\init.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\params.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\build_identifier.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\CMakeFiles\7270af6f97f3aa1228a331a2ab375854\build_identifier.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\allocator.dir\$(Configuration)\allocator.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\cache.dir\$(Configuration)\cache.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\hardware-config.dir\$(Configuration)\hardware-config.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\indirection.dir\$(Configuration)\indirection.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\memory.dir\$(Configuration)\memory.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\microkernel-utils.dir\$(Configuration)\microkernel-utils.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\microparams-init.dir\$(Configuration)\microparams-init.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\mutex.dir\$(Configuration)\mutex.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\normalization.dir\$(Configuration)\normalization.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\operators.dir\$(Configuration)\operator-delete.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\operators.dir\$(Configuration)\argmax-pooling-nhwc.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\operators.dir\$(Configuration)\average-pooling-nhwc.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\operators.dir\$(Configuration)\batch-matrix-multiply-nc.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\operators.dir\$(Configuration)\binary-elementwise-nd.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\operators.dir\$(Configuration)\constant-pad-nd.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\operators.dir\$(Configuration)\convolution-nchw.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\operators.dir\$(Configuration)\convolution-nhwc.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\operators.dir\$(Configuration)\deconvolution-nhwc.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\operators.dir\$(Configuration)\dynamic-fully-connected-nc.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\operators.dir\$(Configuration)\fully-connected-nc.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\operators.dir\$(Configuration)\max-pooling-nhwc.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\operators.dir\$(Configuration)\pack-lh.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\operators.dir\$(Configuration)\reduce-nd.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\operators.dir\$(Configuration)\resize-bilinear-nchw.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\operators.dir\$(Configuration)\resize-bilinear-nhwc.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\operators.dir\$(Configuration)\rope-nthc.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\operators.dir\$(Configuration)\scaled-dot-product-attention-nhtc.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\operators.dir\$(Configuration)\slice-nd.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\operators.dir\$(Configuration)\softmax-nc.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\operators.dir\$(Configuration)\transpose-nd.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\operators.dir\$(Configuration)\unary-elementwise-nc.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\operators.dir\$(Configuration)\unpooling-nhwc.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\operator-run.dir\$(Configuration)\operator-run.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\operator-utils.dir\$(Configuration)\operator-utils.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\packing.dir\$(Configuration)\packing.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\subgraph.dir\$(Configuration)\memory-planner.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\subgraph.dir\$(Configuration)\runtime.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\subgraph.dir\$(Configuration)\subgraph.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\subgraph.dir\$(Configuration)\argmax-pooling-2d.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\subgraph.dir\$(Configuration)\average-pooling-2d.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\subgraph.dir\$(Configuration)\batch-matrix-multiply.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\subgraph.dir\$(Configuration)\binary.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\subgraph.dir\$(Configuration)\concatenate.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\subgraph.dir\$(Configuration)\convolution-2d.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\subgraph.dir\$(Configuration)\copy.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\subgraph.dir\$(Configuration)\deconvolution-2d.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\subgraph.dir\$(Configuration)\deprecated.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\subgraph.dir\$(Configuration)\depth-to-space-2d.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\subgraph.dir\$(Configuration)\depthwise-convolution-2d.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\subgraph.dir\$(Configuration)\even-split.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\subgraph.dir\$(Configuration)\fully-connected-sparse.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\subgraph.dir\$(Configuration)\fully-connected.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\subgraph.dir\$(Configuration)\max-pooling-2d.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\subgraph.dir\$(Configuration)\pack-lh.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\subgraph.dir\$(Configuration)\reshape-helpers.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\subgraph.dir\$(Configuration)\rope.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\subgraph.dir\$(Configuration)\scaled-dot-product-attention.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\subgraph.dir\$(Configuration)\softmax.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\subgraph.dir\$(Configuration)\space-to-depth-2d.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\subgraph.dir\$(Configuration)\static-constant-pad.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\subgraph.dir\$(Configuration)\static-reduce.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\subgraph.dir\$(Configuration)\static-resize-bilinear-2d.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\subgraph.dir\$(Configuration)\static-slice.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\subgraph.dir\$(Configuration)\static-transpose.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\subgraph.dir\$(Configuration)\unpooling-2d.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\subgraph.dir\$(Configuration)\unary.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\subgraph.dir\$(Configuration)\validation.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\subgraph.dir\$(Configuration)\tensor.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\datatype.dir\$(Configuration)\datatype.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\reference-ukernels.dir\$(Configuration)\unary-elementwise.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\reference-ukernels.dir\$(Configuration)\binary-elementwise.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\logging.dir\$(Configuration)\allocation-type.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\logging.dir\$(Configuration)\datatype-strings.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\logging.dir\$(Configuration)\microkernel-type.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\logging.dir\$(Configuration)\node-type.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\logging.dir\$(Configuration)\operator-type.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\logging.dir\$(Configuration)\log.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{389E9829-AB5F-3430-8F5A-7526D0AFA7AC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object Libraries">
+      <UniqueIdentifier>{41EA22D4-E3D6-39EB-8953-AE6E4B43C6BB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{7D2501A5-4020-35C9-B7A9-6E54321601C7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

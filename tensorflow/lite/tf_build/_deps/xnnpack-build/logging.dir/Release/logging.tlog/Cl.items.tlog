@@ -1,0 +1,6 @@
+D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\enums\allocation-type.c;D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\logging.dir\Release\allocation-type.obj
+D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\enums\datatype-strings.c;D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\logging.dir\Release\datatype-strings.obj
+D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\enums\microkernel-type.c;D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\logging.dir\Release\microkernel-type.obj
+D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\enums\node-type.c;D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\logging.dir\Release\node-type.obj
+D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\enums\operator-type.c;D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\logging.dir\Release\operator-type.obj
+D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\log.c;D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\logging.dir\Release\log.obj

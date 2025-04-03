@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/ruy-subbuild/CMakeFiles/ruy-populate"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/ruy-subbuild/CMakeFiles/465ac2791415ab570c8548761418e286/ruy-populate.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/ruy-subbuild/CMakeFiles/03cb99bfc11e6dff38cc89a00da7e971/ruy-populate-complete.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/ruy-subbuild/CMakeFiles/015562d796e766b81198b527719312e0/ruy-populate-build.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/ruy-subbuild/CMakeFiles/015562d796e766b81198b527719312e0/ruy-populate-configure.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/ruy-subbuild/CMakeFiles/015562d796e766b81198b527719312e0/ruy-populate-download.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/ruy-subbuild/CMakeFiles/015562d796e766b81198b527719312e0/ruy-populate-install.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/ruy-subbuild/CMakeFiles/015562d796e766b81198b527719312e0/ruy-populate-mkdir.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/ruy-subbuild/CMakeFiles/015562d796e766b81198b527719312e0/ruy-populate-patch.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/ruy-subbuild/CMakeFiles/015562d796e766b81198b527719312e0/ruy-populate-test.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/ruy-subbuild/CMakeFiles/015562d796e766b81198b527719312e0/ruy-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"ruy-populate"
+		],
+		"name" : "ruy-populate"
+	}
+}

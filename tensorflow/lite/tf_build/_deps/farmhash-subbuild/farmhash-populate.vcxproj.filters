@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\farmhash-subbuild\CMakeFiles\92291d96466017e15650baa902cee308\farmhash-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\farmhash-subbuild\CMakeFiles\92291d96466017e15650baa902cee308\farmhash-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\farmhash-subbuild\CMakeFiles\92291d96466017e15650baa902cee308\farmhash-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\farmhash-subbuild\CMakeFiles\92291d96466017e15650baa902cee308\farmhash-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\farmhash-subbuild\CMakeFiles\92291d96466017e15650baa902cee308\farmhash-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\farmhash-subbuild\CMakeFiles\92291d96466017e15650baa902cee308\farmhash-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\farmhash-subbuild\CMakeFiles\92291d96466017e15650baa902cee308\farmhash-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\farmhash-subbuild\CMakeFiles\92291d96466017e15650baa902cee308\farmhash-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\farmhash-subbuild\CMakeFiles\d59fdf626d0eb7a981405a99a5c778ee\farmhash-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\farmhash-subbuild\CMakeFiles\7ffc2d7c985e5313f96650f7484c346d\farmhash-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\farmhash-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\farmhash-subbuild\CMakeFiles\farmhash-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{DFD35CBF-7895-37E2-A9E7-7AD62C2D1B39}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

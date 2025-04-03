@@ -1,0 +1,14 @@
+# Target labels
+ protobuf-populate
+# Source files and their labels
+D:/tensorflow/tensorflow/lite/tf_build/_deps/protobuf-subbuild/CMakeFiles/protobuf-populate
+D:/tensorflow/tensorflow/lite/tf_build/_deps/protobuf-subbuild/CMakeFiles/99961fd97b93c2bb690926076c2f0fdb/protobuf-populate.rule
+D:/tensorflow/tensorflow/lite/tf_build/_deps/protobuf-subbuild/CMakeFiles/64759e84b0733d09b016e711ea708f7d/protobuf-populate-complete.rule
+D:/tensorflow/tensorflow/lite/tf_build/_deps/protobuf-subbuild/CMakeFiles/6be878fd0184b335dd2443354583919c/protobuf-populate-build.rule
+D:/tensorflow/tensorflow/lite/tf_build/_deps/protobuf-subbuild/CMakeFiles/6be878fd0184b335dd2443354583919c/protobuf-populate-configure.rule
+D:/tensorflow/tensorflow/lite/tf_build/_deps/protobuf-subbuild/CMakeFiles/6be878fd0184b335dd2443354583919c/protobuf-populate-download.rule
+D:/tensorflow/tensorflow/lite/tf_build/_deps/protobuf-subbuild/CMakeFiles/6be878fd0184b335dd2443354583919c/protobuf-populate-install.rule
+D:/tensorflow/tensorflow/lite/tf_build/_deps/protobuf-subbuild/CMakeFiles/6be878fd0184b335dd2443354583919c/protobuf-populate-mkdir.rule
+D:/tensorflow/tensorflow/lite/tf_build/_deps/protobuf-subbuild/CMakeFiles/6be878fd0184b335dd2443354583919c/protobuf-populate-patch.rule
+D:/tensorflow/tensorflow/lite/tf_build/_deps/protobuf-subbuild/CMakeFiles/6be878fd0184b335dd2443354583919c/protobuf-populate-test.rule
+D:/tensorflow/tensorflow/lite/tf_build/_deps/protobuf-subbuild/CMakeFiles/6be878fd0184b335dd2443354583919c/protobuf-populate-update.rule

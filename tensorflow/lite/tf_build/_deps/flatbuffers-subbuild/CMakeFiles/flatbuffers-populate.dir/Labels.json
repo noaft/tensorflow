@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/flatbuffers-subbuild/CMakeFiles/flatbuffers-populate"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/flatbuffers-subbuild/CMakeFiles/e543747b6f176be98b3e4bd72f50c956/flatbuffers-populate.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/flatbuffers-subbuild/CMakeFiles/6458be11b8ca16d0d6bf733cc9d2c419/flatbuffers-populate-complete.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/flatbuffers-subbuild/CMakeFiles/c94565544f1a6788bda6fd5cdeb802ee/flatbuffers-populate-build.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/flatbuffers-subbuild/CMakeFiles/c94565544f1a6788bda6fd5cdeb802ee/flatbuffers-populate-configure.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/flatbuffers-subbuild/CMakeFiles/c94565544f1a6788bda6fd5cdeb802ee/flatbuffers-populate-download.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/flatbuffers-subbuild/CMakeFiles/c94565544f1a6788bda6fd5cdeb802ee/flatbuffers-populate-install.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/flatbuffers-subbuild/CMakeFiles/c94565544f1a6788bda6fd5cdeb802ee/flatbuffers-populate-mkdir.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/flatbuffers-subbuild/CMakeFiles/c94565544f1a6788bda6fd5cdeb802ee/flatbuffers-populate-patch.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/flatbuffers-subbuild/CMakeFiles/c94565544f1a6788bda6fd5cdeb802ee/flatbuffers-populate-test.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/flatbuffers-subbuild/CMakeFiles/c94565544f1a6788bda6fd5cdeb802ee/flatbuffers-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"flatbuffers-populate"
+		],
+		"name" : "flatbuffers-populate"
+	}
+}

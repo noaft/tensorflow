@@ -1,0 +1,471 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B8F936FB-CF5B-3FCB-B3E1-7E7051B30C8A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>libprotoc</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\tensorflow\tensorflow\lite\tf_build\_deps\protobuf-build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">libprotoc.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">libprotocd</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\tensorflow\tensorflow\lite\tf_build\_deps\protobuf-build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">libprotoc.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">libprotoc</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\tensorflow\tensorflow\lite\tf_build\_deps\protobuf-build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">libprotoc.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">libprotoc</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\tensorflow\tensorflow\lite\tf_build\_deps\protobuf-build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">libprotoc.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">libprotoc</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\tensorflow\third_party\xla\third_party\tsl;D:\tensorflow\third_party\xla;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-source\include;D:\tensorflow\tensorflow\lite\tf_build\FP16-source\include;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\include;D:\tensorflow\tensorflow\lite\tf_build\cpuinfo;D:\tensorflow\tensorflow\lite\tf_build\_deps\protobuf-build;D:\tensorflow\tensorflow\lite\tf_build\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8 /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4065;4244;4251;4267;4305;4307;4309;4334;4355;4506;4800;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;LIBPROTOC_EXPORTS;EIGEN_MPL2_ONLY;NOMINMAX=1;GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;LIBPROTOC_EXPORTS;EIGEN_MPL2_ONLY;NOMINMAX=1;GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\tensorflow\third_party\xla\third_party\tsl;D:\tensorflow\third_party\xla;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-source\include;D:\tensorflow\tensorflow\lite\tf_build\FP16-source\include;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\include;D:\tensorflow\tensorflow\lite\tf_build\cpuinfo;D:\tensorflow\tensorflow\lite\tf_build\_deps\protobuf-build;D:\tensorflow\tensorflow\lite\tf_build\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\tensorflow\third_party\xla\third_party\tsl;D:\tensorflow\third_party\xla;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-source\include;D:\tensorflow\tensorflow\lite\tf_build\FP16-source\include;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\include;D:\tensorflow\tensorflow\lite\tf_build\cpuinfo;D:\tensorflow\tensorflow\lite\tf_build\_deps\protobuf-build;D:\tensorflow\tensorflow\lite\tf_build\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /ignore:4221</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\tensorflow\third_party\xla\third_party\tsl;D:\tensorflow\third_party\xla;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-source\include;D:\tensorflow\tensorflow\lite\tf_build\FP16-source\include;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\include;D:\tensorflow\tensorflow\lite\tf_build\cpuinfo;D:\tensorflow\tensorflow\lite\tf_build\_deps\protobuf-build;D:\tensorflow\tensorflow\lite\tf_build\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8 /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DisableSpecificWarnings>4065;4244;4251;4267;4305;4307;4309;4334;4355;4506;4800;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;LIBPROTOC_EXPORTS;EIGEN_MPL2_ONLY;NOMINMAX=1;GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;LIBPROTOC_EXPORTS;EIGEN_MPL2_ONLY;NOMINMAX=1;GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\tensorflow\third_party\xla\third_party\tsl;D:\tensorflow\third_party\xla;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-source\include;D:\tensorflow\tensorflow\lite\tf_build\FP16-source\include;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\include;D:\tensorflow\tensorflow\lite\tf_build\cpuinfo;D:\tensorflow\tensorflow\lite\tf_build\_deps\protobuf-build;D:\tensorflow\tensorflow\lite\tf_build\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\tensorflow\third_party\xla\third_party\tsl;D:\tensorflow\third_party\xla;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-source\include;D:\tensorflow\tensorflow\lite\tf_build\FP16-source\include;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\include;D:\tensorflow\tensorflow\lite\tf_build\cpuinfo;D:\tensorflow\tensorflow\lite\tf_build\_deps\protobuf-build;D:\tensorflow\tensorflow\lite\tf_build\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /ignore:4221</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\tensorflow\third_party\xla\third_party\tsl;D:\tensorflow\third_party\xla;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-source\include;D:\tensorflow\tensorflow\lite\tf_build\FP16-source\include;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\include;D:\tensorflow\tensorflow\lite\tf_build\cpuinfo;D:\tensorflow\tensorflow\lite\tf_build\_deps\protobuf-build;D:\tensorflow\tensorflow\lite\tf_build\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8 /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DisableSpecificWarnings>4065;4244;4251;4267;4305;4307;4309;4334;4355;4506;4800;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;LIBPROTOC_EXPORTS;EIGEN_MPL2_ONLY;NOMINMAX=1;GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;LIBPROTOC_EXPORTS;EIGEN_MPL2_ONLY;NOMINMAX=1;GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\tensorflow\third_party\xla\third_party\tsl;D:\tensorflow\third_party\xla;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-source\include;D:\tensorflow\tensorflow\lite\tf_build\FP16-source\include;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\include;D:\tensorflow\tensorflow\lite\tf_build\cpuinfo;D:\tensorflow\tensorflow\lite\tf_build\_deps\protobuf-build;D:\tensorflow\tensorflow\lite\tf_build\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\tensorflow\third_party\xla\third_party\tsl;D:\tensorflow\third_party\xla;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-source\include;D:\tensorflow\tensorflow\lite\tf_build\FP16-source\include;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\include;D:\tensorflow\tensorflow\lite\tf_build\cpuinfo;D:\tensorflow\tensorflow\lite\tf_build\_deps\protobuf-build;D:\tensorflow\tensorflow\lite\tf_build\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /ignore:4221</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\tensorflow\third_party\xla\third_party\tsl;D:\tensorflow\third_party\xla;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-source\include;D:\tensorflow\tensorflow\lite\tf_build\FP16-source\include;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\include;D:\tensorflow\tensorflow\lite\tf_build\cpuinfo;D:\tensorflow\tensorflow\lite\tf_build\_deps\protobuf-build;D:\tensorflow\tensorflow\lite\tf_build\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8 /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4065;4244;4251;4267;4305;4307;4309;4334;4355;4506;4800;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;LIBPROTOC_EXPORTS;EIGEN_MPL2_ONLY;NOMINMAX=1;GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;LIBPROTOC_EXPORTS;EIGEN_MPL2_ONLY;NOMINMAX=1;GOOGLE_PROTOBUF_CMAKE_BUILD;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\tensorflow\third_party\xla\third_party\tsl;D:\tensorflow\third_party\xla;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-source\include;D:\tensorflow\tensorflow\lite\tf_build\FP16-source\include;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\include;D:\tensorflow\tensorflow\lite\tf_build\cpuinfo;D:\tensorflow\tensorflow\lite\tf_build\_deps\protobuf-build;D:\tensorflow\tensorflow\lite\tf_build\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\tensorflow\third_party\xla\third_party\tsl;D:\tensorflow\third_party\xla;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-source\include;D:\tensorflow\tensorflow\lite\tf_build\FP16-source\include;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\include;D:\tensorflow\tensorflow\lite\tf_build\cpuinfo;D:\tensorflow\tensorflow\lite\tf_build\_deps\protobuf-build;D:\tensorflow\tensorflow\lite\tf_build\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /ignore:4221</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/tensorflow/tensorflow/lite/tf_build/protobuf/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -SD:/tensorflow/tensorflow/lite -BD:/tensorflow/tensorflow/lite/tf_build --check-stamp-file D:/tensorflow/tensorflow/lite/tf_build/_deps/protobuf-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\CMakeDependentOption.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\CheckCSourceCompiles.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\CheckIncludeFile.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\CheckLibraryExists.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\CheckLinkerFlag.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\FindPackageHandleStandardArgs.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\FindPackageMessage.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\FindThreads.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\Internal\CheckFlagCommonConfig.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\Internal\CheckLinkerFlag.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\Internal\CheckSourceCompiles.cmake;D:\tensorflow\tensorflow\lite\tf_build\protobuf\cmake\extract_includes.bat.in;D:\tensorflow\tensorflow\lite\tf_build\protobuf\cmake\libprotobuf-lite.cmake;D:\tensorflow\tensorflow\lite\tf_build\protobuf\cmake\libprotobuf.cmake;D:\tensorflow\tensorflow\lite\tf_build\protobuf\cmake\libprotoc.cmake;D:\tensorflow\tensorflow\lite\tf_build\protobuf\cmake\protobuf-options.cmake;D:\tensorflow\tensorflow\lite\tf_build\protobuf\cmake\protoc.cmake;D:\tensorflow\tensorflow\lite\tf_build\protobuf\cmake\version.rc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\tensorflow\tensorflow\lite\tf_build\_deps\protobuf-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/tensorflow/tensorflow/lite/tf_build/protobuf/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -SD:/tensorflow/tensorflow/lite -BD:/tensorflow/tensorflow/lite/tf_build --check-stamp-file D:/tensorflow/tensorflow/lite/tf_build/_deps/protobuf-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\CMakeDependentOption.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\CheckCSourceCompiles.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\CheckIncludeFile.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\CheckLibraryExists.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\CheckLinkerFlag.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\FindPackageHandleStandardArgs.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\FindPackageMessage.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\FindThreads.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\Internal\CheckFlagCommonConfig.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\Internal\CheckLinkerFlag.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\Internal\CheckSourceCompiles.cmake;D:\tensorflow\tensorflow\lite\tf_build\protobuf\cmake\extract_includes.bat.in;D:\tensorflow\tensorflow\lite\tf_build\protobuf\cmake\libprotobuf-lite.cmake;D:\tensorflow\tensorflow\lite\tf_build\protobuf\cmake\libprotobuf.cmake;D:\tensorflow\tensorflow\lite\tf_build\protobuf\cmake\libprotoc.cmake;D:\tensorflow\tensorflow\lite\tf_build\protobuf\cmake\protobuf-options.cmake;D:\tensorflow\tensorflow\lite\tf_build\protobuf\cmake\protoc.cmake;D:\tensorflow\tensorflow\lite\tf_build\protobuf\cmake\version.rc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\tensorflow\tensorflow\lite\tf_build\_deps\protobuf-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/tensorflow/tensorflow/lite/tf_build/protobuf/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -SD:/tensorflow/tensorflow/lite -BD:/tensorflow/tensorflow/lite/tf_build --check-stamp-file D:/tensorflow/tensorflow/lite/tf_build/_deps/protobuf-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\CMakeDependentOption.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\CheckCSourceCompiles.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\CheckIncludeFile.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\CheckLibraryExists.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\CheckLinkerFlag.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\FindPackageHandleStandardArgs.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\FindPackageMessage.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\FindThreads.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\Internal\CheckFlagCommonConfig.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\Internal\CheckLinkerFlag.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\Internal\CheckSourceCompiles.cmake;D:\tensorflow\tensorflow\lite\tf_build\protobuf\cmake\extract_includes.bat.in;D:\tensorflow\tensorflow\lite\tf_build\protobuf\cmake\libprotobuf-lite.cmake;D:\tensorflow\tensorflow\lite\tf_build\protobuf\cmake\libprotobuf.cmake;D:\tensorflow\tensorflow\lite\tf_build\protobuf\cmake\libprotoc.cmake;D:\tensorflow\tensorflow\lite\tf_build\protobuf\cmake\protobuf-options.cmake;D:\tensorflow\tensorflow\lite\tf_build\protobuf\cmake\protoc.cmake;D:\tensorflow\tensorflow\lite\tf_build\protobuf\cmake\version.rc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\tensorflow\tensorflow\lite\tf_build\_deps\protobuf-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/tensorflow/tensorflow/lite/tf_build/protobuf/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -SD:/tensorflow/tensorflow/lite -BD:/tensorflow/tensorflow/lite/tf_build --check-stamp-file D:/tensorflow/tensorflow/lite/tf_build/_deps/protobuf-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\CMakeDependentOption.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\CheckCSourceCompiles.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\CheckIncludeFile.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\CheckLibraryExists.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\CheckLinkerFlag.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\FindPackageHandleStandardArgs.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\FindPackageMessage.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\FindThreads.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\Internal\CheckFlagCommonConfig.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\Internal\CheckLinkerFlag.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\Internal\CheckSourceCompiles.cmake;D:\tensorflow\tensorflow\lite\tf_build\protobuf\cmake\extract_includes.bat.in;D:\tensorflow\tensorflow\lite\tf_build\protobuf\cmake\libprotobuf-lite.cmake;D:\tensorflow\tensorflow\lite\tf_build\protobuf\cmake\libprotobuf.cmake;D:\tensorflow\tensorflow\lite\tf_build\protobuf\cmake\libprotoc.cmake;D:\tensorflow\tensorflow\lite\tf_build\protobuf\cmake\protobuf-options.cmake;D:\tensorflow\tensorflow\lite\tf_build\protobuf\cmake\protoc.cmake;D:\tensorflow\tensorflow\lite\tf_build\protobuf\cmake\version.rc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\tensorflow\tensorflow\lite\tf_build\_deps\protobuf-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\code_generator.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\command_line_interface.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\cpp\enum.cc">
+      <ObjectFileName>$(IntDir)/src/google/protobuf/compiler/cpp/enum.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\cpp\enum_field.cc">
+      <ObjectFileName>$(IntDir)/src/google/protobuf/compiler/cpp/enum_field.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\cpp\extension.cc">
+      <ObjectFileName>$(IntDir)/src/google/protobuf/compiler/cpp/extension.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\cpp\field.cc">
+      <ObjectFileName>$(IntDir)/src/google/protobuf/compiler/cpp/field.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\cpp\file.cc">
+      <ObjectFileName>$(IntDir)/src/google/protobuf/compiler/cpp/file.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\cpp\generator.cc">
+      <ObjectFileName>$(IntDir)/src/google/protobuf/compiler/cpp/generator.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\cpp\helpers.cc">
+      <ObjectFileName>$(IntDir)/src/google/protobuf/compiler/cpp/helpers.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\cpp\map_field.cc">
+      <ObjectFileName>$(IntDir)/src/google/protobuf/compiler/cpp/map_field.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\cpp\message.cc">
+      <ObjectFileName>$(IntDir)/src/google/protobuf/compiler/cpp/message.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\cpp\message_field.cc">
+      <ObjectFileName>$(IntDir)/src/google/protobuf/compiler/cpp/message_field.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\cpp\padding_optimizer.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\cpp\parse_function_generator.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\cpp\primitive_field.cc">
+      <ObjectFileName>$(IntDir)/src/google/protobuf/compiler/cpp/primitive_field.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\cpp\service.cc">
+      <ObjectFileName>$(IntDir)/src/google/protobuf/compiler/cpp/service.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\cpp\string_field.cc">
+      <ObjectFileName>$(IntDir)/src/google/protobuf/compiler/cpp/string_field.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\csharp\csharp_doc_comment.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\csharp\csharp_enum.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\csharp\csharp_enum_field.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\csharp\csharp_field_base.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\csharp\csharp_generator.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\csharp\csharp_helpers.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\csharp\csharp_map_field.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\csharp\csharp_message.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\csharp\csharp_message_field.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\csharp\csharp_primitive_field.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\csharp\csharp_reflection_class.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\csharp\csharp_repeated_enum_field.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\csharp\csharp_repeated_message_field.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\csharp\csharp_repeated_primitive_field.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\csharp\csharp_source_generator_base.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\csharp\csharp_wrapper_field.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\java\context.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\java\doc_comment.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\java\enum.cc">
+      <ObjectFileName>$(IntDir)/src/google/protobuf/compiler/java/enum.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\java\enum_field.cc">
+      <ObjectFileName>$(IntDir)/src/google/protobuf/compiler/java/enum_field.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\java\enum_field_lite.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\java\enum_lite.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\java\extension.cc">
+      <ObjectFileName>$(IntDir)/src/google/protobuf/compiler/java/extension.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\java\extension_lite.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\java\field.cc">
+      <ObjectFileName>$(IntDir)/src/google/protobuf/compiler/java/field.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\java\file.cc">
+      <ObjectFileName>$(IntDir)/src/google/protobuf/compiler/java/file.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\java\generator.cc">
+      <ObjectFileName>$(IntDir)/src/google/protobuf/compiler/java/generator.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\java\generator_factory.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\java\helpers.cc">
+      <ObjectFileName>$(IntDir)/src/google/protobuf/compiler/java/helpers.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\java\kotlin_generator.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\java\map_field.cc">
+      <ObjectFileName>$(IntDir)/src/google/protobuf/compiler/java/map_field.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\java\map_field_lite.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\java\message.cc">
+      <ObjectFileName>$(IntDir)/src/google/protobuf/compiler/java/message.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\java\message_builder.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\java\message_builder_lite.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\java\message_field.cc">
+      <ObjectFileName>$(IntDir)/src/google/protobuf/compiler/java/message_field.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\java\message_field_lite.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\java\message_lite.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\java\name_resolver.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\java\primitive_field.cc">
+      <ObjectFileName>$(IntDir)/src/google/protobuf/compiler/java/primitive_field.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\java\primitive_field_lite.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\java\service.cc">
+      <ObjectFileName>$(IntDir)/src/google/protobuf/compiler/java/service.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\java\shared_code_generator.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\java\string_field.cc">
+      <ObjectFileName>$(IntDir)/src/google/protobuf/compiler/java/string_field.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\java\string_field_lite.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\objectivec\objectivec_enum.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\objectivec\objectivec_enum_field.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\objectivec\objectivec_extension.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\objectivec\objectivec_field.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\objectivec\objectivec_file.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\objectivec\objectivec_generator.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\objectivec\objectivec_helpers.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\objectivec\objectivec_map_field.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\objectivec\objectivec_message.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\objectivec\objectivec_message_field.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\objectivec\objectivec_oneof.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\objectivec\objectivec_primitive_field.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\php\php_generator.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\plugin.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\plugin.pb.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\python\generator.cc">
+      <ObjectFileName>$(IntDir)/src/google/protobuf/compiler/python/generator.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\python\helpers.cc">
+      <ObjectFileName>$(IntDir)/src/google/protobuf/compiler/python/helpers.cc.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\python\pyi_generator.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\ruby\ruby_generator.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\subprocess.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\zip_writer.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\code_generator.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\command_line_interface.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\cpp\cpp_generator.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\cpp\file.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\cpp\generator.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\cpp\helpers.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\cpp\names.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\csharp\csharp_doc_comment.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\csharp\csharp_generator.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\csharp\csharp_names.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\csharp\csharp_options.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\java\generator.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\java\java_generator.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\java\kotlin_generator.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\java\names.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\objectivec\objectivec_generator.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\objectivec\objectivec_helpers.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\php\php_generator.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\plugin.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\python\generator.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\python\pyi_generator.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\python\python_generator.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\protobuf\src\google\protobuf\compiler\ruby\ruby_generator.h" />
+    <ResourceCompile Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\protobuf-build\version.rc" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\ZERO_CHECK.vcxproj">
+      <Project>{DA82E51A-3B0E-352E-B019-949E32B6801B}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\protobuf-build\libprotobuf.vcxproj">
+      <Project>{52C45C89-7C6F-3DCC-BC2F-9BD69736C695}</Project>
+      <Name>libprotobuf</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

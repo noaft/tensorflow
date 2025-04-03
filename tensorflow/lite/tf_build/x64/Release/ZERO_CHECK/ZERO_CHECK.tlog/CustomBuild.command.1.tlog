@@ -1,0 +1,10 @@
+^D:\TENSORFLOW\TENSORFLOW\LITE\TF_BUILD\CMAKEFILES\C5397C3F93D2052DCA86CA3BB246B829\GENERATE.STAMP.RULE
+setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -SD:/tensorflow/tensorflow/lite -BD:/tensorflow/tensorflow/lite/tf_build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/tensorflow/tensorflow/lite/tf_build/tensorflow-lite.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

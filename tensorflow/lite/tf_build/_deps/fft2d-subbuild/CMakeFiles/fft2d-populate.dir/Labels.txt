@@ -1,0 +1,14 @@
+# Target labels
+ fft2d-populate
+# Source files and their labels
+D:/tensorflow/tensorflow/lite/tf_build/_deps/fft2d-subbuild/CMakeFiles/fft2d-populate
+D:/tensorflow/tensorflow/lite/tf_build/_deps/fft2d-subbuild/CMakeFiles/bd8cd75215878723c6f42b3e7351f160/fft2d-populate.rule
+D:/tensorflow/tensorflow/lite/tf_build/_deps/fft2d-subbuild/CMakeFiles/9d60b705ab2bb5171cd1e53e0f4ddda3/fft2d-populate-complete.rule
+D:/tensorflow/tensorflow/lite/tf_build/_deps/fft2d-subbuild/CMakeFiles/84880c6d1634b3c9aa0ac74bae457f6a/fft2d-populate-build.rule
+D:/tensorflow/tensorflow/lite/tf_build/_deps/fft2d-subbuild/CMakeFiles/84880c6d1634b3c9aa0ac74bae457f6a/fft2d-populate-configure.rule
+D:/tensorflow/tensorflow/lite/tf_build/_deps/fft2d-subbuild/CMakeFiles/84880c6d1634b3c9aa0ac74bae457f6a/fft2d-populate-download.rule
+D:/tensorflow/tensorflow/lite/tf_build/_deps/fft2d-subbuild/CMakeFiles/84880c6d1634b3c9aa0ac74bae457f6a/fft2d-populate-install.rule
+D:/tensorflow/tensorflow/lite/tf_build/_deps/fft2d-subbuild/CMakeFiles/84880c6d1634b3c9aa0ac74bae457f6a/fft2d-populate-mkdir.rule
+D:/tensorflow/tensorflow/lite/tf_build/_deps/fft2d-subbuild/CMakeFiles/84880c6d1634b3c9aa0ac74bae457f6a/fft2d-populate-patch.rule
+D:/tensorflow/tensorflow/lite/tf_build/_deps/fft2d-subbuild/CMakeFiles/84880c6d1634b3c9aa0ac74bae457f6a/fft2d-populate-test.rule
+D:/tensorflow/tensorflow/lite/tf_build/_deps/fft2d-subbuild/CMakeFiles/84880c6d1634b3c9aa0ac74bae457f6a/fft2d-populate-update.rule

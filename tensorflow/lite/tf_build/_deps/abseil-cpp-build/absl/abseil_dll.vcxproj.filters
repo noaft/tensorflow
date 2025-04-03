@@ -1,0 +1,1314 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\cycleclock.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\low_level_alloc.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\raw_logging.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\scoped_set_env.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\strerror.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\spinlock.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\spinlock_wait.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\sysinfo.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\thread_identity.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\throw_delegate.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\unscaledcycleclock.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\log_severity.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\container\internal\hashtablez_sampler.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\container\internal\hashtablez_sampler_force_weak_definition.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\container\internal\raw_hash_set.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\crc\crc32c.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\crc\internal\cpu_detect.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\crc\internal\crc.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\crc\internal\crc_cord_state.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\crc\internal\crc_x86_arm_combined.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\crc\internal\crc_memcpy_fallback.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\crc\internal\crc_memcpy_x86_64.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\crc\internal\crc_non_temporal_memcpy.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\debugging\failure_signal_handler.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\debugging\stacktrace.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\debugging\symbolize.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\debugging\internal\address_is_readable.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\debugging\internal\demangle.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\debugging\internal\elf_mem_image.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\debugging\internal\examine_stack.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\debugging\internal\stack_consumption.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\debugging\internal\vdso_support.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\hash\internal\city.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\hash\internal\hash.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\hash\internal\low_level_hash.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\die_if_null.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\globals.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\internal\check_op.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\internal\conditions.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\internal\globals.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\internal\log_format.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\internal\log_message.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\internal\log_sink_set.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\internal\nullguard.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\internal\proto.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\initialize.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\log_entry.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\log_sink.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\numeric\int128.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\profiling\internal\exponential_biased.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\profiling\internal\periodic_sampler.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\discrete_distribution.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\gaussian_distribution.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\internal\pool_urbg.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\internal\randen.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\internal\randen_detect.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\internal\randen_hwaes.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\internal\randen_round_keys.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\internal\randen_slow.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\internal\seed_material.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\seed_gen_exception.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\seed_sequences.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\status\status.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\status\statusor.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\status\status_payload_printer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\ascii.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\charconv.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\cord.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\cord_analysis.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\cord_buffer.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\escaping.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\charconv_bigint.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\charconv_parse.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\cord_internal.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\cord_rep_btree.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\cord_rep_btree_navigator.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\cord_rep_btree_reader.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\cord_rep_crc.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\cord_rep_consume.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\cord_rep_ring.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\cordz_functions.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\cordz_handle.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\cordz_info.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\cordz_sample_token.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\damerau_levenshtein_distance.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\stringify_sink.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\match.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\numbers.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\str_cat.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\str_replace.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\str_split.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\string_view.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\substitute.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\escaping.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\memutil.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\ostringstream.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\pow10_helper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\str_format\arg.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\str_format\bind.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\str_format\extension.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\str_format\float_conversion.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\str_format\output.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\str_format\parser.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\utf8.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\synchronization\barrier.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\synchronization\blocking_counter.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\synchronization\mutex.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\synchronization\notification.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\synchronization\internal\create_thread_identity.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\synchronization\internal\futex_waiter.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\synchronization\internal\graphcycles.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\synchronization\internal\kernel_timeout.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\synchronization\internal\per_thread_sem.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\synchronization\internal\pthread_waiter.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\synchronization\internal\sem_waiter.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\synchronization\internal\stdcpp_waiter.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\synchronization\internal\waiter_base.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\synchronization\internal\win32_waiter.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\time\civil_time.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\time\clock.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\time\duration.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\time\format.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\time\time.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\time\internal\cctz\src\civil_time_detail.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\time\internal\cctz\src\time_zone_fixed.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\time\internal\cctz\src\time_zone_format.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\time\internal\cctz\src\time_zone_if.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\time\internal\cctz\src\time_zone_impl.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\time\internal\cctz\src\time_zone_info.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\time\internal\cctz\src\time_zone_libc.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\time\internal\cctz\src\time_zone_lookup.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\time\internal\cctz\src\time_zone_posix.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\time\internal\cctz\src\zone_info_source.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\types\bad_any_cast.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\types\bad_optional_access.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\types\bad_variant_access.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\debugging\leak_check.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\algorithm\algorithm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\algorithm\container.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\attributes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\call_once.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\casts.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\const_init.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\dynamic_annotations.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\atomic_hook.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\cycleclock.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\cycleclock_config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\direct_mmap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\dynamic_annotations.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\endian.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\errno_saver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\fast_type_id.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\hide_ptr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\identity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\invoke.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\inline_variable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\low_level_alloc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\low_level_scheduling.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\nullability_impl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\per_thread_tls.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\prefetch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\prefetch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\pretty_function.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\raw_logging.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\scheduling_mode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\scoped_set_env.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\strerror.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\spinlock.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\spinlock_wait.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\sysinfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\thread_annotations.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\thread_identity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\throw_delegate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\tsan_mutex_interface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\unaligned_access.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\unscaledcycleclock.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\internal\unscaledcycleclock_config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\log_severity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\macros.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\nullability.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\optimization.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\options.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\policy_checks.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\port.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\base\thread_annotations.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\cleanup\cleanup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\cleanup\internal\cleanup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\container\btree_map.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\container\btree_set.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\container\fixed_array.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\container\flat_hash_map.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\container\flat_hash_set.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\container\inlined_vector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\container\internal\btree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\container\internal\btree_container.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\container\internal\common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\container\internal\common_policy_traits.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\container\internal\compressed_tuple.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\container\internal\container_memory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\container\internal\counting_allocator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\container\internal\hash_function_defaults.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\container\internal\hash_policy_traits.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\container\internal\hashtable_debug.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\container\internal\hashtable_debug_hooks.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\container\internal\hashtablez_sampler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\container\internal\inlined_vector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\container\internal\layout.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\container\internal\node_slot_policy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\container\internal\raw_hash_map.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\container\internal\raw_hash_set.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\container\internal\tracked.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\container\node_hash_map.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\container\node_hash_set.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\crc\crc32c.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\crc\internal\cpu_detect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\crc\internal\crc32c.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\crc\internal\crc32c_inline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\crc\internal\crc32_x86_arm_combined_simd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\crc\internal\crc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\crc\internal\crc_cord_state.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\crc\internal\crc_internal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\crc\internal\crc_memcpy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\crc\internal\non_temporal_arm_intrinsics.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\crc\internal\non_temporal_memcpy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\debugging\failure_signal_handler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\debugging\leak_check.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\debugging\stacktrace.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\debugging\symbolize.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\debugging\internal\address_is_readable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\debugging\internal\demangle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\debugging\internal\elf_mem_image.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\debugging\internal\examine_stack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\debugging\internal\stack_consumption.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\debugging\internal\stacktrace_config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\debugging\internal\symbolize.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\debugging\internal\vdso_support.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\functional\any_invocable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\functional\internal\front_binder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\functional\bind_front.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\functional\function_ref.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\functional\internal\any_invocable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\functional\internal\function_ref.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\hash\hash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\hash\internal\city.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\hash\internal\hash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\hash\internal\spy_hash_state.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\hash\internal\low_level_hash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\absl_check.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\absl_log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\check.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\die_if_null.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\globals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\internal\append_truncated.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\internal\check_impl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\internal\check_op.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\internal\conditions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\internal\config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\internal\globals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\internal\log_format.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\internal\log_impl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\internal\log_message.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\internal\log_sink_set.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\internal\nullguard.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\internal\nullstream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\internal\proto.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\internal\strip.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\internal\structured.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\internal\voidify.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\initialize.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\log_entry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\log_sink.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\log_sink_registry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\log_streamer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\log\structured.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\memory\memory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\meta\type_traits.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\numeric\bits.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\numeric\int128.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\numeric\internal\bits.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\numeric\internal\representation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\profiling\internal\exponential_biased.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\profiling\internal\periodic_sampler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\profiling\internal\sample_recorder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\bernoulli_distribution.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\beta_distribution.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\bit_gen_ref.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\discrete_distribution.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\distributions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\exponential_distribution.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\gaussian_distribution.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\internal\distribution_caller.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\internal\fastmath.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\internal\fast_uniform_bits.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\internal\generate_real.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\internal\iostream_state_saver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\internal\nonsecure_base.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\internal\pcg_engine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\internal\platform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\internal\pool_urbg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\internal\randen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\internal\randen_detect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\internal\randen_engine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\internal\randen_hwaes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\internal\randen_slow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\internal\randen_traits.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\internal\salted_seed_seq.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\internal\seed_material.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\internal\sequence_urbg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\internal\traits.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\internal\uniform_helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\internal\wide_multiply.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\log_uniform_int_distribution.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\poisson_distribution.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\random.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\seed_gen_exception.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\seed_sequences.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\uniform_int_distribution.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\uniform_real_distribution.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\random\zipf_distribution.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\status\internal\status_internal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\status\internal\statusor_internal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\status\status.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\status\statusor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\status\status_payload_printer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\ascii.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\charconv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\cord.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\cord_analysis.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\cord_buffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\escaping.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\charconv_bigint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\charconv_parse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\cord_data_edge.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\cord_internal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\cord_rep_btree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\cord_rep_btree_navigator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\cord_rep_btree_reader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\cord_rep_crc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\cord_rep_consume.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\cord_rep_flat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\cord_rep_ring.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\cord_rep_ring_reader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\cordz_functions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\cordz_handle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\cordz_info.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\cordz_sample_token.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\cordz_statistics.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\cordz_update_scope.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\cordz_update_tracker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\damerau_levenshtein_distance.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\stl_type_traits.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\string_constant.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\stringify_sink.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\has_absl_stringify.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\match.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\numbers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\str_format.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\str_cat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\str_join.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\str_replace.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\str_split.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\string_view.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\strip.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\substitute.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\char_map.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\escaping.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\memutil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\ostringstream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\pow10_helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\resize_uninitialized.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\str_format\arg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\str_format\bind.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\str_format\checker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\str_format\constexpr_parser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\str_format\extension.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\str_format\float_conversion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\str_format\output.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\str_format\parser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\str_join_internal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\str_split_internal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\strings\internal\utf8.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\synchronization\barrier.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\synchronization\blocking_counter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\synchronization\mutex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\synchronization\notification.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\synchronization\internal\create_thread_identity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\synchronization\internal\futex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\synchronization\internal\futex_waiter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\synchronization\internal\graphcycles.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\synchronization\internal\kernel_timeout.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\synchronization\internal\per_thread_sem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\synchronization\internal\pthread_waiter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\synchronization\internal\sem_waiter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\synchronization\internal\stdcpp_waiter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\synchronization\internal\thread_pool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\synchronization\internal\waiter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\synchronization\internal\waiter_base.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\synchronization\internal\win32_waiter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\time\civil_time.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\time\clock.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\time\time.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\time\internal\cctz\include\cctz\civil_time.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\time\internal\cctz\include\cctz\civil_time_detail.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\time\internal\cctz\include\cctz\time_zone.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\time\internal\cctz\include\cctz\zone_info_source.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\time\internal\cctz\src\time_zone_fixed.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\time\internal\cctz\src\time_zone_if.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\time\internal\cctz\src\time_zone_impl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\time\internal\cctz\src\time_zone_info.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\time\internal\cctz\src\time_zone_libc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\time\internal\cctz\src\time_zone_posix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\time\internal\cctz\src\tzfile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\types\any.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\types\bad_any_cast.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\types\bad_optional_access.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\types\bad_variant_access.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\types\compare.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\types\internal\conformance_aliases.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\types\internal\conformance_archetype.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\types\internal\conformance_profile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\types\internal\parentheses.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\types\internal\transform_args.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\types\internal\variant.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\types\optional.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\types\internal\optional.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\types\span.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\types\internal\span.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\types\variant.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\utility\internal\if_constexpr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\utility\utility.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp\absl\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{9F7E01E7-6670-3D57-93E1-0F3DB5818672}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{7D2501A5-4020-35C9-B7A9-6E54321601C7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

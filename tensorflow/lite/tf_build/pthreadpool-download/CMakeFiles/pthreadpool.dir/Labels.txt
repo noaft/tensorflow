@@ -1,0 +1,14 @@
+# Target labels
+ pthreadpool
+# Source files and their labels
+D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/CMakeFiles/pthreadpool
+D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/CMakeFiles/98e552d239338d60c1037b142316f445/pthreadpool.rule
+D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/CMakeFiles/b9b28f02ec9e894ee6910a1ec20453b5/pthreadpool-complete.rule
+D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/CMakeFiles/2b2a9ce0f78b2013068af60ce94dd0cd/pthreadpool-build.rule
+D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/CMakeFiles/2b2a9ce0f78b2013068af60ce94dd0cd/pthreadpool-configure.rule
+D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/CMakeFiles/2b2a9ce0f78b2013068af60ce94dd0cd/pthreadpool-download.rule
+D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/CMakeFiles/2b2a9ce0f78b2013068af60ce94dd0cd/pthreadpool-install.rule
+D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/CMakeFiles/2b2a9ce0f78b2013068af60ce94dd0cd/pthreadpool-mkdir.rule
+D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/CMakeFiles/2b2a9ce0f78b2013068af60ce94dd0cd/pthreadpool-patch.rule
+D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/CMakeFiles/2b2a9ce0f78b2013068af60ce94dd0cd/pthreadpool-test.rule
+D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/CMakeFiles/2b2a9ce0f78b2013068af60ce94dd0cd/pthreadpool-update.rule

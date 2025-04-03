@@ -1,0 +1,7 @@
+# CMake generation dependency list for this directory.
+D:/cmake-4.0.0-windows-x86_64/share/cmake-4.0/Modules/CMakePackageConfigHelpers.cmake
+D:/cmake-4.0.0-windows-x86_64/share/cmake-4.0/Modules/GNUInstallDirs.cmake
+D:/cmake-4.0.0-windows-x86_64/share/cmake-4.0/Modules/WriteBasicConfigVersionFile.cmake
+D:/tensorflow/tensorflow/lite/tf_build/cpuinfo/CMakeLists.txt
+D:/tensorflow/tensorflow/lite/tf_build/cpuinfo/cmake/cpuinfo-config.cmake.in
+D:/tensorflow/tensorflow/lite/tf_build/cpuinfo/libcpuinfo.pc.in

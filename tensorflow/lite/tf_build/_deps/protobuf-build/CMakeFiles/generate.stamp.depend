@@ -1,0 +1,21 @@
+# CMake generation dependency list for this directory.
+D:/cmake-4.0.0-windows-x86_64/share/cmake-4.0/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake
+D:/cmake-4.0.0-windows-x86_64/share/cmake-4.0/Modules/CMakeDependentOption.cmake
+D:/cmake-4.0.0-windows-x86_64/share/cmake-4.0/Modules/CheckCSourceCompiles.cmake
+D:/cmake-4.0.0-windows-x86_64/share/cmake-4.0/Modules/CheckIncludeFile.cmake
+D:/cmake-4.0.0-windows-x86_64/share/cmake-4.0/Modules/CheckLibraryExists.cmake
+D:/cmake-4.0.0-windows-x86_64/share/cmake-4.0/Modules/CheckLinkerFlag.cmake
+D:/cmake-4.0.0-windows-x86_64/share/cmake-4.0/Modules/FindPackageHandleStandardArgs.cmake
+D:/cmake-4.0.0-windows-x86_64/share/cmake-4.0/Modules/FindPackageMessage.cmake
+D:/cmake-4.0.0-windows-x86_64/share/cmake-4.0/Modules/FindThreads.cmake
+D:/cmake-4.0.0-windows-x86_64/share/cmake-4.0/Modules/Internal/CheckFlagCommonConfig.cmake
+D:/cmake-4.0.0-windows-x86_64/share/cmake-4.0/Modules/Internal/CheckLinkerFlag.cmake
+D:/cmake-4.0.0-windows-x86_64/share/cmake-4.0/Modules/Internal/CheckSourceCompiles.cmake
+D:/tensorflow/tensorflow/lite/tf_build/protobuf/CMakeLists.txt
+D:/tensorflow/tensorflow/lite/tf_build/protobuf/cmake/extract_includes.bat.in
+D:/tensorflow/tensorflow/lite/tf_build/protobuf/cmake/libprotobuf-lite.cmake
+D:/tensorflow/tensorflow/lite/tf_build/protobuf/cmake/libprotobuf.cmake
+D:/tensorflow/tensorflow/lite/tf_build/protobuf/cmake/libprotoc.cmake
+D:/tensorflow/tensorflow/lite/tf_build/protobuf/cmake/protobuf-options.cmake
+D:/tensorflow/tensorflow/lite/tf_build/protobuf/cmake/protoc.cmake
+D:/tensorflow/tensorflow/lite/tf_build/protobuf/cmake/version.rc.in

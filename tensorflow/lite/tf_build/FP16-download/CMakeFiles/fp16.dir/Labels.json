@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/FP16-download/CMakeFiles/fp16"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/FP16-download/CMakeFiles/18c0e07b47c57410ca15a5955601a5b2/fp16.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/FP16-download/CMakeFiles/8a9c95f85e666c2e09ea8371f5693a83/fp16-complete.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/FP16-download/CMakeFiles/93d62a60034cf4292ae1a1348540db36/fp16-build.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/FP16-download/CMakeFiles/93d62a60034cf4292ae1a1348540db36/fp16-configure.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/FP16-download/CMakeFiles/93d62a60034cf4292ae1a1348540db36/fp16-download.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/FP16-download/CMakeFiles/93d62a60034cf4292ae1a1348540db36/fp16-install.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/FP16-download/CMakeFiles/93d62a60034cf4292ae1a1348540db36/fp16-mkdir.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/FP16-download/CMakeFiles/93d62a60034cf4292ae1a1348540db36/fp16-patch.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/FP16-download/CMakeFiles/93d62a60034cf4292ae1a1348540db36/fp16-test.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/FP16-download/CMakeFiles/93d62a60034cf4292ae1a1348540db36/fp16-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"fp16"
+		],
+		"name" : "fp16"
+	}
+}

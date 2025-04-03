@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/FXdiv-download/CMakeFiles/fxdiv"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/FXdiv-download/CMakeFiles/0b09dfafccff4ebeb8c1ab19ed952d51/fxdiv.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/FXdiv-download/CMakeFiles/a4e105fd2efdd366d96b361b1cf55439/fxdiv-complete.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/FXdiv-download/CMakeFiles/62990e24b14f3b980d1a93d39d4c24fe/fxdiv-build.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/FXdiv-download/CMakeFiles/62990e24b14f3b980d1a93d39d4c24fe/fxdiv-configure.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/FXdiv-download/CMakeFiles/62990e24b14f3b980d1a93d39d4c24fe/fxdiv-download.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/FXdiv-download/CMakeFiles/62990e24b14f3b980d1a93d39d4c24fe/fxdiv-install.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/FXdiv-download/CMakeFiles/62990e24b14f3b980d1a93d39d4c24fe/fxdiv-mkdir.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/FXdiv-download/CMakeFiles/62990e24b14f3b980d1a93d39d4c24fe/fxdiv-patch.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/FXdiv-download/CMakeFiles/62990e24b14f3b980d1a93d39d4c24fe/fxdiv-test.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/FXdiv-download/CMakeFiles/62990e24b14f3b980d1a93d39d4c24fe/fxdiv-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"fxdiv"
+		],
+		"name" : "fxdiv"
+	}
+}

@@ -1,0 +1,481 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{13AB7D1C-12E5-37F6-A2F1-14576BAAAA17}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>model_runtime_info_proto</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\tensorflow\tensorflow\lite\tf_build\profiling\proto\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">model_runtime_info_proto.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">model_runtime_info_proto</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\tensorflow\tensorflow\lite\tf_build\profiling\proto\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">model_runtime_info_proto.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">model_runtime_info_proto</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\tensorflow\tensorflow\lite\tf_build\profiling\proto\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">model_runtime_info_proto.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">model_runtime_info_proto</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\tensorflow\tensorflow\lite\tf_build\profiling\proto\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">model_runtime_info_proto.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">model_runtime_info_proto</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\tensorflow\third_party\xla\third_party\tsl;D:\tensorflow\third_party\xla;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-source\include;D:\tensorflow\tensorflow\lite\tf_build\FP16-source\include;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\include;D:\tensorflow\tensorflow\lite\tf_build\cpuinfo;D:\tensorflow\tensorflow\lite\tf_build;D:\tensorflow\tensorflow\lite\tf_build\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;EIGEN_MPL2_ONLY;NOMINMAX=1;CMAKE_INTDIR="Debug";model_runtime_info_proto_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>true</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;EIGEN_MPL2_ONLY;NOMINMAX=1;CMAKE_INTDIR=\"Debug\";model_runtime_info_proto_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\tensorflow\third_party\xla\third_party\tsl;D:\tensorflow\third_party\xla;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-source\include;D:\tensorflow\tensorflow\lite\tf_build\FP16-source\include;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\include;D:\tensorflow\tensorflow\lite\tf_build\cpuinfo;D:\tensorflow\tensorflow\lite\tf_build;D:\tensorflow\tensorflow\lite\tf_build\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\tensorflow\third_party\xla\third_party\tsl;D:\tensorflow\third_party\xla;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-source\include;D:\tensorflow\tensorflow\lite\tf_build\FP16-source\include;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\include;D:\tensorflow\tensorflow\lite\tf_build\cpuinfo;D:\tensorflow\tensorflow\lite\tf_build;D:\tensorflow\tensorflow\lite\tf_build\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\_deps\protobuf-build\Debug\libprotobufd.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/tensorflow/tensorflow/lite/tf_build/profiling/proto/Debug/model_runtime_info_proto.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/tensorflow/tensorflow/lite/tf_build/profiling/proto/Debug/model_runtime_info_proto.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\tensorflow\third_party\xla\third_party\tsl;D:\tensorflow\third_party\xla;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-source\include;D:\tensorflow\tensorflow\lite\tf_build\FP16-source\include;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\include;D:\tensorflow\tensorflow\lite\tf_build\cpuinfo;D:\tensorflow\tensorflow\lite\tf_build;D:\tensorflow\tensorflow\lite\tf_build\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;EIGEN_MPL2_ONLY;NOMINMAX=1;CMAKE_INTDIR="Release";model_runtime_info_proto_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>true</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;EIGEN_MPL2_ONLY;NOMINMAX=1;CMAKE_INTDIR=\"Release\";model_runtime_info_proto_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\tensorflow\third_party\xla\third_party\tsl;D:\tensorflow\third_party\xla;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-source\include;D:\tensorflow\tensorflow\lite\tf_build\FP16-source\include;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\include;D:\tensorflow\tensorflow\lite\tf_build\cpuinfo;D:\tensorflow\tensorflow\lite\tf_build;D:\tensorflow\tensorflow\lite\tf_build\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\tensorflow\third_party\xla\third_party\tsl;D:\tensorflow\third_party\xla;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-source\include;D:\tensorflow\tensorflow\lite\tf_build\FP16-source\include;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\include;D:\tensorflow\tensorflow\lite\tf_build\cpuinfo;D:\tensorflow\tensorflow\lite\tf_build;D:\tensorflow\tensorflow\lite\tf_build\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\_deps\protobuf-build\Release\libprotobuf.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/tensorflow/tensorflow/lite/tf_build/profiling/proto/Release/model_runtime_info_proto.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/tensorflow/tensorflow/lite/tf_build/profiling/proto/Release/model_runtime_info_proto.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\tensorflow\third_party\xla\third_party\tsl;D:\tensorflow\third_party\xla;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-source\include;D:\tensorflow\tensorflow\lite\tf_build\FP16-source\include;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\include;D:\tensorflow\tensorflow\lite\tf_build\cpuinfo;D:\tensorflow\tensorflow\lite\tf_build;D:\tensorflow\tensorflow\lite\tf_build\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;EIGEN_MPL2_ONLY;NOMINMAX=1;CMAKE_INTDIR="MinSizeRel";model_runtime_info_proto_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>true</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;EIGEN_MPL2_ONLY;NOMINMAX=1;CMAKE_INTDIR=\"MinSizeRel\";model_runtime_info_proto_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\tensorflow\third_party\xla\third_party\tsl;D:\tensorflow\third_party\xla;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-source\include;D:\tensorflow\tensorflow\lite\tf_build\FP16-source\include;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\include;D:\tensorflow\tensorflow\lite\tf_build\cpuinfo;D:\tensorflow\tensorflow\lite\tf_build;D:\tensorflow\tensorflow\lite\tf_build\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\tensorflow\third_party\xla\third_party\tsl;D:\tensorflow\third_party\xla;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-source\include;D:\tensorflow\tensorflow\lite\tf_build\FP16-source\include;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\include;D:\tensorflow\tensorflow\lite\tf_build\cpuinfo;D:\tensorflow\tensorflow\lite\tf_build;D:\tensorflow\tensorflow\lite\tf_build\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\_deps\protobuf-build\MinSizeRel\libprotobuf.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/tensorflow/tensorflow/lite/tf_build/profiling/proto/MinSizeRel/model_runtime_info_proto.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/tensorflow/tensorflow/lite/tf_build/profiling/proto/MinSizeRel/model_runtime_info_proto.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\tensorflow\third_party\xla\third_party\tsl;D:\tensorflow\third_party\xla;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-source\include;D:\tensorflow\tensorflow\lite\tf_build\FP16-source\include;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\include;D:\tensorflow\tensorflow\lite\tf_build\cpuinfo;D:\tensorflow\tensorflow\lite\tf_build;D:\tensorflow\tensorflow\lite\tf_build\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;EIGEN_MPL2_ONLY;NOMINMAX=1;CMAKE_INTDIR="RelWithDebInfo";model_runtime_info_proto_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>true</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;EIGEN_MPL2_ONLY;NOMINMAX=1;CMAKE_INTDIR=\"RelWithDebInfo\";model_runtime_info_proto_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\tensorflow\third_party\xla\third_party\tsl;D:\tensorflow\third_party\xla;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-source\include;D:\tensorflow\tensorflow\lite\tf_build\FP16-source\include;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\include;D:\tensorflow\tensorflow\lite\tf_build\cpuinfo;D:\tensorflow\tensorflow\lite\tf_build;D:\tensorflow\tensorflow\lite\tf_build\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\tensorflow\third_party\xla\third_party\tsl;D:\tensorflow\third_party\xla;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-source\include;D:\tensorflow\tensorflow\lite\tf_build\FP16-source\include;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\include;D:\tensorflow\tensorflow\lite\tf_build\cpuinfo;D:\tensorflow\tensorflow\lite\tf_build;D:\tensorflow\tensorflow\lite\tf_build\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\_deps\protobuf-build\RelWithDebInfo\libprotobuf.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/tensorflow/tensorflow/lite/tf_build/profiling/proto/RelWithDebInfo/model_runtime_info_proto.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/tensorflow/tensorflow/lite/tf_build/profiling/proto/RelWithDebInfo/model_runtime_info_proto.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\CMakeFiles\492d75534c3d8af61b2a29304a9600d2\profiling_info.pb.cc.rule">
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ../../tensorflow/lite/profiling/proto/profiling_info.pb.cc, ../../tensorflow/lite/profiling/proto/profiling_info.pb.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\..\_deps\protobuf-build\Debug\protoc.exe --cpp_out=D:/tensorflow/tensorflow/lite/tf_build --proto_path=D:/tensorflow D:/tensorflow/tensorflow/lite/profiling/proto/profiling_info.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\tensorflow\tensorflow\lite\tf_build\_deps\protobuf-build\Debug\protoc.exe;D:\tensorflow\tensorflow\lite\profiling\proto\profiling_info.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\tensorflow\tensorflow\lite\tf_build\tensorflow\lite\profiling\proto\profiling_info.pb.cc;D:\tensorflow\tensorflow\lite\tf_build\tensorflow\lite\profiling\proto\profiling_info.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ../../tensorflow/lite/profiling/proto/profiling_info.pb.cc, ../../tensorflow/lite/profiling/proto/profiling_info.pb.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\..\_deps\protobuf-build\Release\protoc.exe --cpp_out=D:/tensorflow/tensorflow/lite/tf_build --proto_path=D:/tensorflow D:/tensorflow/tensorflow/lite/profiling/proto/profiling_info.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\tensorflow\tensorflow\lite\tf_build\_deps\protobuf-build\Release\protoc.exe;D:\tensorflow\tensorflow\lite\profiling\proto\profiling_info.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\tensorflow\tensorflow\lite\tf_build\tensorflow\lite\profiling\proto\profiling_info.pb.cc;D:\tensorflow\tensorflow\lite\tf_build\tensorflow\lite\profiling\proto\profiling_info.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating ../../tensorflow/lite/profiling/proto/profiling_info.pb.cc, ../../tensorflow/lite/profiling/proto/profiling_info.pb.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+..\..\_deps\protobuf-build\MinSizeRel\protoc.exe --cpp_out=D:/tensorflow/tensorflow/lite/tf_build --proto_path=D:/tensorflow D:/tensorflow/tensorflow/lite/profiling/proto/profiling_info.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\tensorflow\tensorflow\lite\tf_build\_deps\protobuf-build\MinSizeRel\protoc.exe;D:\tensorflow\tensorflow\lite\profiling\proto\profiling_info.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\tensorflow\tensorflow\lite\tf_build\tensorflow\lite\profiling\proto\profiling_info.pb.cc;D:\tensorflow\tensorflow\lite\tf_build\tensorflow\lite\profiling\proto\profiling_info.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ../../tensorflow/lite/profiling/proto/profiling_info.pb.cc, ../../tensorflow/lite/profiling/proto/profiling_info.pb.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+..\..\_deps\protobuf-build\RelWithDebInfo\protoc.exe --cpp_out=D:/tensorflow/tensorflow/lite/tf_build --proto_path=D:/tensorflow D:/tensorflow/tensorflow/lite/profiling/proto/profiling_info.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\tensorflow\tensorflow\lite\tf_build\_deps\protobuf-build\RelWithDebInfo\protoc.exe;D:\tensorflow\tensorflow\lite\profiling\proto\profiling_info.proto;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\tensorflow\tensorflow\lite\tf_build\tensorflow\lite\profiling\proto\profiling_info.pb.cc;D:\tensorflow\tensorflow\lite\tf_build\tensorflow\lite\profiling\proto\profiling_info.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\CMakeFiles\492d75534c3d8af61b2a29304a9600d2\model_runtime_info.pb.cc.rule">
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating ../../tensorflow/lite/profiling/proto/model_runtime_info.pb.cc, ../../tensorflow/lite/profiling/proto/model_runtime_info.pb.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\..\_deps\protobuf-build\Debug\protoc.exe --cpp_out=D:/tensorflow/tensorflow/lite/tf_build --proto_path=D:/tensorflow D:/tensorflow/tensorflow/lite/profiling/proto/model_runtime_info.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\tensorflow\tensorflow\lite\tf_build\_deps\protobuf-build\Debug\protoc.exe;D:\tensorflow\tensorflow\lite\profiling\proto\model_runtime_info.proto;D:\tensorflow\tensorflow\lite\tf_build\tensorflow\lite\profiling\proto\profiling_info.pb.cc;D:\tensorflow\tensorflow\lite\tf_build\tensorflow\lite\profiling\proto\profiling_info.pb.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\tensorflow\tensorflow\lite\tf_build\tensorflow\lite\profiling\proto\model_runtime_info.pb.cc;D:\tensorflow\tensorflow\lite\tf_build\tensorflow\lite\profiling\proto\model_runtime_info.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating ../../tensorflow/lite/profiling/proto/model_runtime_info.pb.cc, ../../tensorflow/lite/profiling/proto/model_runtime_info.pb.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\..\_deps\protobuf-build\Release\protoc.exe --cpp_out=D:/tensorflow/tensorflow/lite/tf_build --proto_path=D:/tensorflow D:/tensorflow/tensorflow/lite/profiling/proto/model_runtime_info.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\tensorflow\tensorflow\lite\tf_build\_deps\protobuf-build\Release\protoc.exe;D:\tensorflow\tensorflow\lite\profiling\proto\model_runtime_info.proto;D:\tensorflow\tensorflow\lite\tf_build\tensorflow\lite\profiling\proto\profiling_info.pb.cc;D:\tensorflow\tensorflow\lite\tf_build\tensorflow\lite\profiling\proto\profiling_info.pb.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\tensorflow\tensorflow\lite\tf_build\tensorflow\lite\profiling\proto\model_runtime_info.pb.cc;D:\tensorflow\tensorflow\lite\tf_build\tensorflow\lite\profiling\proto\model_runtime_info.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating ../../tensorflow/lite/profiling/proto/model_runtime_info.pb.cc, ../../tensorflow/lite/profiling/proto/model_runtime_info.pb.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+..\..\_deps\protobuf-build\MinSizeRel\protoc.exe --cpp_out=D:/tensorflow/tensorflow/lite/tf_build --proto_path=D:/tensorflow D:/tensorflow/tensorflow/lite/profiling/proto/model_runtime_info.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\tensorflow\tensorflow\lite\tf_build\_deps\protobuf-build\MinSizeRel\protoc.exe;D:\tensorflow\tensorflow\lite\profiling\proto\model_runtime_info.proto;D:\tensorflow\tensorflow\lite\tf_build\tensorflow\lite\profiling\proto\profiling_info.pb.cc;D:\tensorflow\tensorflow\lite\tf_build\tensorflow\lite\profiling\proto\profiling_info.pb.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\tensorflow\tensorflow\lite\tf_build\tensorflow\lite\profiling\proto\model_runtime_info.pb.cc;D:\tensorflow\tensorflow\lite\tf_build\tensorflow\lite\profiling\proto\model_runtime_info.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating ../../tensorflow/lite/profiling/proto/model_runtime_info.pb.cc, ../../tensorflow/lite/profiling/proto/model_runtime_info.pb.h</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+..\..\_deps\protobuf-build\RelWithDebInfo\protoc.exe --cpp_out=D:/tensorflow/tensorflow/lite/tf_build --proto_path=D:/tensorflow D:/tensorflow/tensorflow/lite/profiling/proto/model_runtime_info.proto
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\tensorflow\tensorflow\lite\tf_build\_deps\protobuf-build\RelWithDebInfo\protoc.exe;D:\tensorflow\tensorflow\lite\profiling\proto\model_runtime_info.proto;D:\tensorflow\tensorflow\lite\tf_build\tensorflow\lite\profiling\proto\profiling_info.pb.cc;D:\tensorflow\tensorflow\lite\tf_build\tensorflow\lite\profiling\proto\profiling_info.pb.h;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\tensorflow\tensorflow\lite\tf_build\tensorflow\lite\profiling\proto\model_runtime_info.pb.cc;D:\tensorflow\tensorflow\lite\tf_build\tensorflow\lite\profiling\proto\model_runtime_info.pb.h</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\profiling\proto\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/tensorflow/tensorflow/lite/profiling/proto/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -SD:/tensorflow/tensorflow/lite -BD:/tensorflow/tensorflow/lite/tf_build --check-stamp-file D:/tensorflow/tensorflow/lite/tf_build/profiling/proto/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\ExternalProject\PatchInfo.txt.in;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\ExternalProject\RepositoryInfo.txt.in;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\ExternalProject\UpdateInfo.txt.in;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\ExternalProject\gitclone.cmake.in;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\ExternalProject\gitupdate.cmake.in;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\ExternalProject\shared_internal_commands.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\ExternalProject\stepscript.cmake.in;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\FetchContent.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\FindGit.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\FindPackageHandleStandardArgs.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\FindPackageMessage.cmake;D:\tensorflow\tensorflow\lite\tf_build\CMakeFiles\fc-tmp\protobuf\download.cmake;D:\tensorflow\tensorflow\lite\tf_build\CMakeFiles\fc-tmp\protobuf\patch.cmake;D:\tensorflow\tensorflow\lite\tf_build\CMakeFiles\fc-tmp\protobuf\protobuf-gitclone.cmake;D:\tensorflow\tensorflow\lite\tf_build\CMakeFiles\fc-tmp\protobuf\protobuf-gitupdate.cmake;D:\tensorflow\tensorflow\lite\tf_build\CMakeFiles\fc-tmp\protobuf\update.cmake;D:\tensorflow\tensorflow\lite\tools\cmake\modules\FindProtobuf.cmake;D:\tensorflow\tensorflow\lite\tools\cmake\modules\OverridableFetchContent.cmake;D:\tensorflow\tensorflow\lite\tools\cmake\modules\protobuf.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\tensorflow\tensorflow\lite\tf_build\profiling\proto\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/tensorflow/tensorflow/lite/profiling/proto/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -SD:/tensorflow/tensorflow/lite -BD:/tensorflow/tensorflow/lite/tf_build --check-stamp-file D:/tensorflow/tensorflow/lite/tf_build/profiling/proto/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\ExternalProject\PatchInfo.txt.in;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\ExternalProject\RepositoryInfo.txt.in;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\ExternalProject\UpdateInfo.txt.in;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\ExternalProject\gitclone.cmake.in;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\ExternalProject\gitupdate.cmake.in;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\ExternalProject\shared_internal_commands.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\ExternalProject\stepscript.cmake.in;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\FetchContent.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\FindGit.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\FindPackageHandleStandardArgs.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\FindPackageMessage.cmake;D:\tensorflow\tensorflow\lite\tf_build\CMakeFiles\fc-tmp\protobuf\download.cmake;D:\tensorflow\tensorflow\lite\tf_build\CMakeFiles\fc-tmp\protobuf\patch.cmake;D:\tensorflow\tensorflow\lite\tf_build\CMakeFiles\fc-tmp\protobuf\protobuf-gitclone.cmake;D:\tensorflow\tensorflow\lite\tf_build\CMakeFiles\fc-tmp\protobuf\protobuf-gitupdate.cmake;D:\tensorflow\tensorflow\lite\tf_build\CMakeFiles\fc-tmp\protobuf\update.cmake;D:\tensorflow\tensorflow\lite\tools\cmake\modules\FindProtobuf.cmake;D:\tensorflow\tensorflow\lite\tools\cmake\modules\OverridableFetchContent.cmake;D:\tensorflow\tensorflow\lite\tools\cmake\modules\protobuf.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\tensorflow\tensorflow\lite\tf_build\profiling\proto\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/tensorflow/tensorflow/lite/profiling/proto/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -SD:/tensorflow/tensorflow/lite -BD:/tensorflow/tensorflow/lite/tf_build --check-stamp-file D:/tensorflow/tensorflow/lite/tf_build/profiling/proto/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\ExternalProject\PatchInfo.txt.in;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\ExternalProject\RepositoryInfo.txt.in;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\ExternalProject\UpdateInfo.txt.in;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\ExternalProject\gitclone.cmake.in;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\ExternalProject\gitupdate.cmake.in;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\ExternalProject\shared_internal_commands.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\ExternalProject\stepscript.cmake.in;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\FetchContent.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\FindGit.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\FindPackageHandleStandardArgs.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\FindPackageMessage.cmake;D:\tensorflow\tensorflow\lite\tf_build\CMakeFiles\fc-tmp\protobuf\download.cmake;D:\tensorflow\tensorflow\lite\tf_build\CMakeFiles\fc-tmp\protobuf\patch.cmake;D:\tensorflow\tensorflow\lite\tf_build\CMakeFiles\fc-tmp\protobuf\protobuf-gitclone.cmake;D:\tensorflow\tensorflow\lite\tf_build\CMakeFiles\fc-tmp\protobuf\protobuf-gitupdate.cmake;D:\tensorflow\tensorflow\lite\tf_build\CMakeFiles\fc-tmp\protobuf\update.cmake;D:\tensorflow\tensorflow\lite\tools\cmake\modules\FindProtobuf.cmake;D:\tensorflow\tensorflow\lite\tools\cmake\modules\OverridableFetchContent.cmake;D:\tensorflow\tensorflow\lite\tools\cmake\modules\protobuf.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\tensorflow\tensorflow\lite\tf_build\profiling\proto\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/tensorflow/tensorflow/lite/profiling/proto/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -SD:/tensorflow/tensorflow/lite -BD:/tensorflow/tensorflow/lite/tf_build --check-stamp-file D:/tensorflow/tensorflow/lite/tf_build/profiling/proto/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\ExternalProject\PatchInfo.txt.in;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\ExternalProject\RepositoryInfo.txt.in;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\ExternalProject\UpdateInfo.txt.in;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\ExternalProject\gitclone.cmake.in;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\ExternalProject\gitupdate.cmake.in;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\ExternalProject\shared_internal_commands.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\ExternalProject\stepscript.cmake.in;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\FetchContent.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\FindGit.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\FindPackageHandleStandardArgs.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\FindPackageMessage.cmake;D:\tensorflow\tensorflow\lite\tf_build\CMakeFiles\fc-tmp\protobuf\download.cmake;D:\tensorflow\tensorflow\lite\tf_build\CMakeFiles\fc-tmp\protobuf\patch.cmake;D:\tensorflow\tensorflow\lite\tf_build\CMakeFiles\fc-tmp\protobuf\protobuf-gitclone.cmake;D:\tensorflow\tensorflow\lite\tf_build\CMakeFiles\fc-tmp\protobuf\protobuf-gitupdate.cmake;D:\tensorflow\tensorflow\lite\tf_build\CMakeFiles\fc-tmp\protobuf\update.cmake;D:\tensorflow\tensorflow\lite\tools\cmake\modules\FindProtobuf.cmake;D:\tensorflow\tensorflow\lite\tools\cmake\modules\OverridableFetchContent.cmake;D:\tensorflow\tensorflow\lite\tools\cmake\modules\protobuf.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\tensorflow\tensorflow\lite\tf_build\profiling\proto\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\tensorflow\tensorflow\lite\profiling\proto\model_runtime_info.proto">
+    </None>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\tensorflow\lite\profiling\proto\model_runtime_info.pb.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\tensorflow\lite\profiling\proto\model_runtime_info.pb.h" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\ZERO_CHECK.vcxproj">
+      <Project>{DA82E51A-3B0E-352E-B019-949E32B6801B}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\protobuf-build\libprotobuf.vcxproj">
+      <Project>{52C45C89-7C6F-3DCC-BC2F-9BD69736C695}</Project>
+      <Name>libprotobuf</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\protobuf-build\protoc.vcxproj">
+      <Project>{ACBF21F5-09C3-34C8-9C8C-8F2B21CFECB4}</Project>
+      <Name>protoc</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

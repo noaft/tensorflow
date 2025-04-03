@@ -1,0 +1,152 @@
+^D:\TENSORFLOW\TENSORFLOW\LITE\TF_BUILD\_DEPS\FFT2D-SUBBUILD\CMAKEFILES\84880C6D1634B3C9AA0AC74BAE457F6A\FFT2D-POPULATE-MKDIR.RULE
+setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -Dcfgdir=/Debug -P D:/tensorflow/tensorflow/lite/tf_build/_deps/fft2d-subbuild/fft2d-populate-prefix/tmp/fft2d-populate-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/_deps/fft2d-subbuild/fft2d-populate-prefix/src/fft2d-populate-stamp/Debug/fft2d-populate-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\TENSORFLOW\TENSORFLOW\LITE\TF_BUILD\_DEPS\FFT2D-SUBBUILD\CMAKEFILES\84880C6D1634B3C9AA0AC74BAE457F6A\FFT2D-POPULATE-DOWNLOAD.RULE
+setlocal
+cd D:\tensorflow\tensorflow\lite\tf_build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P D:/tensorflow/tensorflow/lite/tf_build/_deps/fft2d-subbuild/fft2d-populate-prefix/src/fft2d-populate-stamp/download-fft2d-populate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P D:/tensorflow/tensorflow/lite/tf_build/_deps/fft2d-subbuild/fft2d-populate-prefix/src/fft2d-populate-stamp/verify-fft2d-populate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P D:/tensorflow/tensorflow/lite/tf_build/_deps/fft2d-subbuild/fft2d-populate-prefix/src/fft2d-populate-stamp/extract-fft2d-populate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/_deps/fft2d-subbuild/fft2d-populate-prefix/src/fft2d-populate-stamp/Debug/fft2d-populate-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\TENSORFLOW\TENSORFLOW\LITE\TF_BUILD\_DEPS\FFT2D-SUBBUILD\CMAKEFILES\84880C6D1634B3C9AA0AC74BAE457F6A\FFT2D-POPULATE-UPDATE.RULE
+setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/_deps/fft2d-subbuild/fft2d-populate-prefix/src/fft2d-populate-stamp/Debug/fft2d-populate-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\TENSORFLOW\TENSORFLOW\LITE\TF_BUILD\_DEPS\FFT2D-SUBBUILD\CMAKEFILES\84880C6D1634B3C9AA0AC74BAE457F6A\FFT2D-POPULATE-PATCH.RULE
+setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/_deps/fft2d-subbuild/fft2d-populate-prefix/src/fft2d-populate-stamp/Debug/fft2d-populate-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\TENSORFLOW\TENSORFLOW\LITE\TF_BUILD\_DEPS\FFT2D-SUBBUILD\CMAKEFILES\84880C6D1634B3C9AA0AC74BAE457F6A\FFT2D-POPULATE-CONFIGURE.RULE
+setlocal
+cd D:\tensorflow\tensorflow\lite\tf_build\_deps\fft2d-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/_deps/fft2d-subbuild/fft2d-populate-prefix/src/fft2d-populate-stamp/Debug/fft2d-populate-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\TENSORFLOW\TENSORFLOW\LITE\TF_BUILD\_DEPS\FFT2D-SUBBUILD\CMAKEFILES\84880C6D1634B3C9AA0AC74BAE457F6A\FFT2D-POPULATE-BUILD.RULE
+setlocal
+cd D:\tensorflow\tensorflow\lite\tf_build\_deps\fft2d-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/_deps/fft2d-subbuild/fft2d-populate-prefix/src/fft2d-populate-stamp/Debug/fft2d-populate-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\TENSORFLOW\TENSORFLOW\LITE\TF_BUILD\_DEPS\FFT2D-SUBBUILD\CMAKEFILES\84880C6D1634B3C9AA0AC74BAE457F6A\FFT2D-POPULATE-INSTALL.RULE
+setlocal
+cd D:\tensorflow\tensorflow\lite\tf_build\_deps\fft2d-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/_deps/fft2d-subbuild/fft2d-populate-prefix/src/fft2d-populate-stamp/Debug/fft2d-populate-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\TENSORFLOW\TENSORFLOW\LITE\TF_BUILD\_DEPS\FFT2D-SUBBUILD\CMAKEFILES\84880C6D1634B3C9AA0AC74BAE457F6A\FFT2D-POPULATE-TEST.RULE
+setlocal
+cd D:\tensorflow\tensorflow\lite\tf_build\_deps\fft2d-build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/_deps/fft2d-subbuild/fft2d-populate-prefix/src/fft2d-populate-stamp/Debug/fft2d-populate-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\TENSORFLOW\TENSORFLOW\LITE\TF_BUILD\_DEPS\FFT2D-SUBBUILD\CMAKEFILES\9D60B705AB2BB5171CD1E53E0F4DDDA3\FFT2D-POPULATE-COMPLETE.RULE
+setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E make_directory D:/tensorflow/tensorflow/lite/tf_build/_deps/fft2d-subbuild/CMakeFiles/Debug
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/_deps/fft2d-subbuild/CMakeFiles/Debug/fft2d-populate-complete
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/_deps/fft2d-subbuild/fft2d-populate-prefix/src/fft2d-populate-stamp/Debug/fft2d-populate-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\TENSORFLOW\TENSORFLOW\LITE\TF_BUILD\_DEPS\FFT2D-SUBBUILD\CMAKEFILES\BD8CD75215878723C6F42B3E7351F160\FFT2D-POPULATE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\TENSORFLOW\TENSORFLOW\LITE\TF_BUILD\_DEPS\FFT2D-SUBBUILD\CMAKELISTS.TXT
+setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -SD:/tensorflow/tensorflow/lite/tf_build/_deps/fft2d-subbuild -BD:/tensorflow/tensorflow/lite/tf_build/_deps/fft2d-subbuild --check-stamp-file D:/tensorflow/tensorflow/lite/tf_build/_deps/fft2d-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

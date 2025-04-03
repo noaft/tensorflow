@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"D:/tensorflow/tensorflow/lite/tf_build/_deps/fft2d-subbuild/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

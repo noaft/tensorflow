@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\CMakeFiles\2b2a9ce0f78b2013068af60ce94dd0cd\pthreadpool-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\CMakeFiles\2b2a9ce0f78b2013068af60ce94dd0cd\pthreadpool-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\CMakeFiles\2b2a9ce0f78b2013068af60ce94dd0cd\pthreadpool-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\CMakeFiles\2b2a9ce0f78b2013068af60ce94dd0cd\pthreadpool-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\CMakeFiles\2b2a9ce0f78b2013068af60ce94dd0cd\pthreadpool-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\CMakeFiles\2b2a9ce0f78b2013068af60ce94dd0cd\pthreadpool-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\CMakeFiles\2b2a9ce0f78b2013068af60ce94dd0cd\pthreadpool-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\CMakeFiles\2b2a9ce0f78b2013068af60ce94dd0cd\pthreadpool-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\CMakeFiles\b9b28f02ec9e894ee6910a1ec20453b5\pthreadpool-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\CMakeFiles\98e552d239338d60c1037b142316f445\pthreadpool.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\CMakeFiles\pthreadpool" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{8D8E368E-D594-3F55-9354-33E2FE87DED4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/protobuf-subbuild/CMakeFiles/protobuf-populate"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/protobuf-subbuild/CMakeFiles/99961fd97b93c2bb690926076c2f0fdb/protobuf-populate.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/protobuf-subbuild/CMakeFiles/64759e84b0733d09b016e711ea708f7d/protobuf-populate-complete.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/protobuf-subbuild/CMakeFiles/6be878fd0184b335dd2443354583919c/protobuf-populate-build.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/protobuf-subbuild/CMakeFiles/6be878fd0184b335dd2443354583919c/protobuf-populate-configure.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/protobuf-subbuild/CMakeFiles/6be878fd0184b335dd2443354583919c/protobuf-populate-download.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/protobuf-subbuild/CMakeFiles/6be878fd0184b335dd2443354583919c/protobuf-populate-install.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/protobuf-subbuild/CMakeFiles/6be878fd0184b335dd2443354583919c/protobuf-populate-mkdir.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/protobuf-subbuild/CMakeFiles/6be878fd0184b335dd2443354583919c/protobuf-populate-patch.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/protobuf-subbuild/CMakeFiles/6be878fd0184b335dd2443354583919c/protobuf-populate-test.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/protobuf-subbuild/CMakeFiles/6be878fd0184b335dd2443354583919c/protobuf-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"protobuf-populate"
+		],
+		"name" : "protobuf-populate"
+	}
+}

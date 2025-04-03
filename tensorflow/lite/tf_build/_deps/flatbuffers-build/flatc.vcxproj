@@ -1,0 +1,432 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0209B754-DECA-3332-9B9A-239B0C67DCCE}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>flatc</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\tensorflow\tensorflow\lite\tf_build\_deps\flatbuffers-build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">flatc.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">flatc</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\tensorflow\tensorflow\lite\tf_build\_deps\flatbuffers-build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">flatc.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">flatc</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\tensorflow\tensorflow\lite\tf_build\_deps\flatbuffers-build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">flatc.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">flatc</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\tensorflow\tensorflow\lite\tf_build\_deps\flatbuffers-build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">flatc.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">flatc</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\include;D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\grpc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4512;4316;4456</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;EIGEN_MPL2_ONLY;NOMINMAX=1;FLATBUFFERS_LOCALE_INDEPENDENT=1;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;EIGEN_MPL2_ONLY;NOMINMAX=1;FLATBUFFERS_LOCALE_INDEPENDENT=1;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\include;D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\grpc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\include;D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\grpc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/tensorflow/tensorflow/lite/tf_build/_deps/flatbuffers-build/Debug/flatc.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/tensorflow/tensorflow/lite/tf_build/_deps/flatbuffers-build/Debug/flatc.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\include;D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\grpc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DisableSpecificWarnings>4512;4316;4456</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;EIGEN_MPL2_ONLY;NOMINMAX=1;FLATBUFFERS_LOCALE_INDEPENDENT=1;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;EIGEN_MPL2_ONLY;NOMINMAX=1;FLATBUFFERS_LOCALE_INDEPENDENT=1;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\include;D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\grpc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\include;D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\grpc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/tensorflow/tensorflow/lite/tf_build/_deps/flatbuffers-build/Release/flatc.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/tensorflow/tensorflow/lite/tf_build/_deps/flatbuffers-build/Release/flatc.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\include;D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\grpc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DisableSpecificWarnings>4512;4316;4456</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;EIGEN_MPL2_ONLY;NOMINMAX=1;FLATBUFFERS_LOCALE_INDEPENDENT=1;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;EIGEN_MPL2_ONLY;NOMINMAX=1;FLATBUFFERS_LOCALE_INDEPENDENT=1;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\include;D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\grpc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\include;D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\grpc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/tensorflow/tensorflow/lite/tf_build/_deps/flatbuffers-build/MinSizeRel/flatc.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/tensorflow/tensorflow/lite/tf_build/_deps/flatbuffers-build/MinSizeRel/flatc.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\include;D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\grpc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4512;4316;4456</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;EIGEN_MPL2_ONLY;NOMINMAX=1;FLATBUFFERS_LOCALE_INDEPENDENT=1;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;EIGEN_MPL2_ONLY;NOMINMAX=1;FLATBUFFERS_LOCALE_INDEPENDENT=1;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\include;D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\grpc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\include;D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\grpc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/tensorflow/tensorflow/lite/tf_build/_deps/flatbuffers-build/RelWithDebInfo/flatc.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/tensorflow/tensorflow/lite/tf_build/_deps/flatbuffers-build/RelWithDebInfo/flatc.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/tensorflow/tensorflow/lite/tf_build/flatbuffers/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -SD:/tensorflow/tensorflow/lite -BD:/tensorflow/tensorflow/lite/tf_build --check-stamp-file D:/tensorflow/tensorflow/lite/tf_build/_deps/flatbuffers-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\CheckCXXSymbolExists.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\CheckSymbolExists.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\GNUInstallDirs.cmake;D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\CMake\BuildFlatBuffers.cmake;D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\CMake\Version.cmake;D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\CMake\flatbuffers-config-version.cmake.in;D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\CMake\flatbuffers.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\tensorflow\tensorflow\lite\tf_build\_deps\flatbuffers-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/tensorflow/tensorflow/lite/tf_build/flatbuffers/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -SD:/tensorflow/tensorflow/lite -BD:/tensorflow/tensorflow/lite/tf_build --check-stamp-file D:/tensorflow/tensorflow/lite/tf_build/_deps/flatbuffers-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\CheckCXXSymbolExists.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\CheckSymbolExists.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\GNUInstallDirs.cmake;D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\CMake\BuildFlatBuffers.cmake;D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\CMake\Version.cmake;D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\CMake\flatbuffers-config-version.cmake.in;D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\CMake\flatbuffers.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\tensorflow\tensorflow\lite\tf_build\_deps\flatbuffers-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/tensorflow/tensorflow/lite/tf_build/flatbuffers/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -SD:/tensorflow/tensorflow/lite -BD:/tensorflow/tensorflow/lite/tf_build --check-stamp-file D:/tensorflow/tensorflow/lite/tf_build/_deps/flatbuffers-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\CheckCXXSymbolExists.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\CheckSymbolExists.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\GNUInstallDirs.cmake;D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\CMake\BuildFlatBuffers.cmake;D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\CMake\Version.cmake;D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\CMake\flatbuffers-config-version.cmake.in;D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\CMake\flatbuffers.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\tensorflow\tensorflow\lite\tf_build\_deps\flatbuffers-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/tensorflow/tensorflow/lite/tf_build/flatbuffers/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -SD:/tensorflow/tensorflow/lite -BD:/tensorflow/tensorflow/lite/tf_build --check-stamp-file D:/tensorflow/tensorflow/lite/tf_build/_deps/flatbuffers-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\CheckCXXSymbolExists.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\CheckSymbolExists.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\GNUInstallDirs.cmake;D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\CMake\BuildFlatBuffers.cmake;D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\CMake\Version.cmake;D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\CMake\flatbuffers-config-version.cmake.in;D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\CMake\flatbuffers.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\tensorflow\tensorflow\lite\tf_build\_deps\flatbuffers-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\include\flatbuffers\allocator.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\include\flatbuffers\array.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\include\flatbuffers\base.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\include\flatbuffers\buffer.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\include\flatbuffers\buffer_ref.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\include\flatbuffers\default_allocator.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\include\flatbuffers\detached_buffer.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\include\flatbuffers\code_generator.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\include\flatbuffers\file_manager.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\include\flatbuffers\flatbuffer_builder.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\include\flatbuffers\flatbuffers.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\include\flatbuffers\flexbuffers.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\include\flatbuffers\flex_flat_util.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\include\flatbuffers\hash.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\include\flatbuffers\idl.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\include\flatbuffers\minireflect.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\include\flatbuffers\reflection.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\include\flatbuffers\reflection_generated.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\include\flatbuffers\registry.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\include\flatbuffers\stl_emulation.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\include\flatbuffers\string.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\include\flatbuffers\struct.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\include\flatbuffers\table.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\include\flatbuffers\util.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\include\flatbuffers\vector.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\include\flatbuffers\vector_downward.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\include\flatbuffers\verifier.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\src\idl_parser.cpp" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\src\idl_gen_text.cpp" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\src\reflection.cpp" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\src\util.cpp" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\src\idl_gen_binary.cpp" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\src\idl_gen_cpp.cpp" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\src\idl_gen_csharp.cpp" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\src\idl_gen_dart.cpp" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\src\idl_gen_kotlin.cpp" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\src\idl_gen_kotlin_kmp.cpp" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\src\idl_gen_go.cpp" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\src\idl_gen_java.cpp" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\src\idl_gen_ts.cpp" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\src\idl_gen_php.cpp" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\src\idl_gen_python.cpp" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\src\idl_gen_lobster.cpp" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\src\idl_gen_rust.cpp" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\src\idl_gen_fbs.cpp" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\src\idl_gen_grpc.cpp" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\src\idl_gen_json_schema.cpp" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\src\idl_gen_swift.cpp" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\src\file_name_saving_file_manager.cpp" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\src\file_binary_writer.cpp" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\src\file_writer.cpp" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\src\idl_namer.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\src\namer.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\src\flatc.cpp" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\src\flatc_main.cpp" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\src\bfbs_gen.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\src\bfbs_gen_lua.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\src\bfbs_gen_nim.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\src\bfbs_namer.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\include\flatbuffers\code_generators.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\src\binary_annotator.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\src\binary_annotator.cpp" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\src\annotated_binary_text_gen.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\src\annotated_binary_text_gen.cpp" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\src\bfbs_gen_lua.cpp" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\src\bfbs_gen_nim.cpp" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\src\code_generators.cpp" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\grpc\src\compiler\schema_interface.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\grpc\src\compiler\cpp_generator.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\grpc\src\compiler\cpp_generator.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\grpc\src\compiler\go_generator.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\grpc\src\compiler\go_generator.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\grpc\src\compiler\java_generator.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\grpc\src\compiler\java_generator.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\grpc\src\compiler\python_generator.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\grpc\src\compiler\python_generator.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\grpc\src\compiler\swift_generator.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\grpc\src\compiler\swift_generator.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\grpc\src\compiler\ts_generator.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\grpc\src\compiler\ts_generator.cc" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\ZERO_CHECK.vcxproj">
+      <Project>{DA82E51A-3B0E-352E-B019-949E32B6801B}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

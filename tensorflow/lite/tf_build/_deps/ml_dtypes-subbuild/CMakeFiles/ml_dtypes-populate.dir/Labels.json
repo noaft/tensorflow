@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/ml_dtypes-subbuild/CMakeFiles/ml_dtypes-populate"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/ml_dtypes-subbuild/CMakeFiles/ca39c5b01eb54d1983df6596f1818b67/ml_dtypes-populate.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/ml_dtypes-subbuild/CMakeFiles/ae013474f204252b0045bb6a481f462e/ml_dtypes-populate-complete.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/ml_dtypes-subbuild/CMakeFiles/9e28e1f005d94a3525a672efa1106ed1/ml_dtypes-populate-build.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/ml_dtypes-subbuild/CMakeFiles/9e28e1f005d94a3525a672efa1106ed1/ml_dtypes-populate-configure.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/ml_dtypes-subbuild/CMakeFiles/9e28e1f005d94a3525a672efa1106ed1/ml_dtypes-populate-download.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/ml_dtypes-subbuild/CMakeFiles/9e28e1f005d94a3525a672efa1106ed1/ml_dtypes-populate-install.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/ml_dtypes-subbuild/CMakeFiles/9e28e1f005d94a3525a672efa1106ed1/ml_dtypes-populate-mkdir.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/ml_dtypes-subbuild/CMakeFiles/9e28e1f005d94a3525a672efa1106ed1/ml_dtypes-populate-patch.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/ml_dtypes-subbuild/CMakeFiles/9e28e1f005d94a3525a672efa1106ed1/ml_dtypes-populate-test.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/ml_dtypes-subbuild/CMakeFiles/9e28e1f005d94a3525a672efa1106ed1/ml_dtypes-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"ml_dtypes-populate"
+		],
+		"name" : "ml_dtypes-populate"
+	}
+}

@@ -1,0 +1,648 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0AD6CE6C-845B-3450-A67F-DE09220776B8}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>XNNPACK</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">XNNPACK.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">XNNPACK</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">XNNPACK.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">XNNPACK</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">XNNPACK.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">XNNPACK</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">XNNPACK.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">XNNPACK</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\tensorflow\third_party\xla\third_party\tsl;D:\tensorflow\third_party\xla;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\.;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\include;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-source\include;D:\tensorflow\tensorflow\lite\tf_build\cpuinfo\include;D:\tensorflow\tensorflow\lite\tf_build\FXdiv-source\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4146;4190</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_WIN32_WINNT=0x0601;EIGEN_MPL2_ONLY;NOMINMAX=1;XNN_ENABLE_ARM_FP16_VECTOR=0;XNN_ENABLE_ARM_FP16_SCALAR=0;XNN_ENABLE_ARM_BF16=0;XNN_ENABLE_ARM_DOTPROD=0;XNN_ENABLE_ARM_I8MM=0;XNN_ENABLE_ARM_SME=0;XNN_ENABLE_ARM_SME2=0;XNN_ENABLE_RISCV_VECTOR=1;XNN_ENABLE_AVXVNNI=1;XNN_ENABLE_AVXVNNIINT8=0;XNN_ENABLE_AVX256SKX=1;XNN_ENABLE_AVX256VNNI=1;XNN_ENABLE_AVX256VNNIGFNI=1;XNN_ENABLE_AVX512F=1;XNN_ENABLE_AVX512SKX=1;XNN_ENABLE_AVX512VBMI=1;XNN_ENABLE_AVX512VNNI=1;XNN_ENABLE_AVX512VNNIGFNI=1;XNN_ENABLE_AVX512AMX=1;XNN_ENABLE_AVX512FP16=0;XNN_ENABLE_AVX512BF16=0;XNN_ENABLE_VSX=1;XNN_ENABLE_ASSEMBLY=0;XNN_ENABLE_MEMOPT=1;XNN_ENABLE_SPARSE=1;XNN_ENABLE_HVX=1;XNN_ENABLE_KLEIDIAI=0;XNN_ENABLE_CPUINFO=1;NOMINMAX;restrict=;PTHREADPOOL_NO_DEPRECATED_API=1;XNN_LOG_LEVEL=5;CPUINFO_SUPPORTED_PLATFORM=1;FXDIV_USE_INLINE_ASSEMBLY=0;CMAKE_INTDIR="Debug";XNNPACK_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;_WIN32_WINNT=0x0601;EIGEN_MPL2_ONLY;NOMINMAX=1;XNN_ENABLE_ARM_FP16_VECTOR=0;XNN_ENABLE_ARM_FP16_SCALAR=0;XNN_ENABLE_ARM_BF16=0;XNN_ENABLE_ARM_DOTPROD=0;XNN_ENABLE_ARM_I8MM=0;XNN_ENABLE_ARM_SME=0;XNN_ENABLE_ARM_SME2=0;XNN_ENABLE_RISCV_VECTOR=1;XNN_ENABLE_AVXVNNI=1;XNN_ENABLE_AVXVNNIINT8=0;XNN_ENABLE_AVX256SKX=1;XNN_ENABLE_AVX256VNNI=1;XNN_ENABLE_AVX256VNNIGFNI=1;XNN_ENABLE_AVX512F=1;XNN_ENABLE_AVX512SKX=1;XNN_ENABLE_AVX512VBMI=1;XNN_ENABLE_AVX512VNNI=1;XNN_ENABLE_AVX512VNNIGFNI=1;XNN_ENABLE_AVX512AMX=1;XNN_ENABLE_AVX512FP16=0;XNN_ENABLE_AVX512BF16=0;XNN_ENABLE_VSX=1;XNN_ENABLE_ASSEMBLY=0;XNN_ENABLE_MEMOPT=1;XNN_ENABLE_SPARSE=1;XNN_ENABLE_HVX=1;XNN_ENABLE_KLEIDIAI=0;XNN_ENABLE_CPUINFO=1;NOMINMAX;restrict=;PTHREADPOOL_NO_DEPRECATED_API=1;XNN_LOG_LEVEL=5;CPUINFO_SUPPORTED_PLATFORM=1;FXDIV_USE_INLINE_ASSEMBLY=0;CMAKE_INTDIR=\"Debug\";XNNPACK_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\tensorflow\third_party\xla\third_party\tsl;D:\tensorflow\third_party\xla;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\.;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\include;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-source\include;D:\tensorflow\tensorflow\lite\tf_build\cpuinfo\include;D:\tensorflow\tensorflow\lite\tf_build\FXdiv-source\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\tensorflow\third_party\xla\third_party\tsl;D:\tensorflow\third_party\xla;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\.;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\include;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-source\include;D:\tensorflow\tensorflow\lite\tf_build\cpuinfo\include;D:\tensorflow\tensorflow\lite\tf_build\FXdiv-source\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Debug\microkernels-prod.lib;..\cpuinfo-build\Debug\cpuinfo.lib;..\..\pthreadpool\Debug\pthreadpool.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/tensorflow/tensorflow/lite/tf_build/_deps/xnnpack-build/Debug/XNNPACK.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/tensorflow/tensorflow/lite/tf_build/_deps/xnnpack-build/Debug/XNNPACK.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\tensorflow\third_party\xla\third_party\tsl;D:\tensorflow\third_party\xla;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\.;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\include;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-source\include;D:\tensorflow\tensorflow\lite\tf_build\cpuinfo\include;D:\tensorflow\tensorflow\lite\tf_build\FXdiv-source\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DisableSpecificWarnings>4146;4190</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0601;EIGEN_MPL2_ONLY;NOMINMAX=1;XNN_ENABLE_ARM_FP16_VECTOR=0;XNN_ENABLE_ARM_FP16_SCALAR=0;XNN_ENABLE_ARM_BF16=0;XNN_ENABLE_ARM_DOTPROD=0;XNN_ENABLE_ARM_I8MM=0;XNN_ENABLE_ARM_SME=0;XNN_ENABLE_ARM_SME2=0;XNN_ENABLE_RISCV_VECTOR=1;XNN_ENABLE_AVXVNNI=1;XNN_ENABLE_AVXVNNIINT8=0;XNN_ENABLE_AVX256SKX=1;XNN_ENABLE_AVX256VNNI=1;XNN_ENABLE_AVX256VNNIGFNI=1;XNN_ENABLE_AVX512F=1;XNN_ENABLE_AVX512SKX=1;XNN_ENABLE_AVX512VBMI=1;XNN_ENABLE_AVX512VNNI=1;XNN_ENABLE_AVX512VNNIGFNI=1;XNN_ENABLE_AVX512AMX=1;XNN_ENABLE_AVX512FP16=0;XNN_ENABLE_AVX512BF16=0;XNN_ENABLE_VSX=1;XNN_ENABLE_ASSEMBLY=0;XNN_ENABLE_MEMOPT=1;XNN_ENABLE_SPARSE=1;XNN_ENABLE_HVX=1;XNN_ENABLE_KLEIDIAI=0;XNN_ENABLE_CPUINFO=1;NOMINMAX;restrict=;PTHREADPOOL_NO_DEPRECATED_API=1;XNN_LOG_LEVEL=0;CPUINFO_SUPPORTED_PLATFORM=1;FXDIV_USE_INLINE_ASSEMBLY=0;CMAKE_INTDIR="Release";XNNPACK_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0601;EIGEN_MPL2_ONLY;NOMINMAX=1;XNN_ENABLE_ARM_FP16_VECTOR=0;XNN_ENABLE_ARM_FP16_SCALAR=0;XNN_ENABLE_ARM_BF16=0;XNN_ENABLE_ARM_DOTPROD=0;XNN_ENABLE_ARM_I8MM=0;XNN_ENABLE_ARM_SME=0;XNN_ENABLE_ARM_SME2=0;XNN_ENABLE_RISCV_VECTOR=1;XNN_ENABLE_AVXVNNI=1;XNN_ENABLE_AVXVNNIINT8=0;XNN_ENABLE_AVX256SKX=1;XNN_ENABLE_AVX256VNNI=1;XNN_ENABLE_AVX256VNNIGFNI=1;XNN_ENABLE_AVX512F=1;XNN_ENABLE_AVX512SKX=1;XNN_ENABLE_AVX512VBMI=1;XNN_ENABLE_AVX512VNNI=1;XNN_ENABLE_AVX512VNNIGFNI=1;XNN_ENABLE_AVX512AMX=1;XNN_ENABLE_AVX512FP16=0;XNN_ENABLE_AVX512BF16=0;XNN_ENABLE_VSX=1;XNN_ENABLE_ASSEMBLY=0;XNN_ENABLE_MEMOPT=1;XNN_ENABLE_SPARSE=1;XNN_ENABLE_HVX=1;XNN_ENABLE_KLEIDIAI=0;XNN_ENABLE_CPUINFO=1;NOMINMAX;restrict=;PTHREADPOOL_NO_DEPRECATED_API=1;XNN_LOG_LEVEL=0;CPUINFO_SUPPORTED_PLATFORM=1;FXDIV_USE_INLINE_ASSEMBLY=0;CMAKE_INTDIR=\"Release\";XNNPACK_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\tensorflow\third_party\xla\third_party\tsl;D:\tensorflow\third_party\xla;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\.;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\include;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-source\include;D:\tensorflow\tensorflow\lite\tf_build\cpuinfo\include;D:\tensorflow\tensorflow\lite\tf_build\FXdiv-source\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\tensorflow\third_party\xla\third_party\tsl;D:\tensorflow\third_party\xla;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\.;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\include;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-source\include;D:\tensorflow\tensorflow\lite\tf_build\cpuinfo\include;D:\tensorflow\tensorflow\lite\tf_build\FXdiv-source\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Release\microkernels-prod.lib;..\cpuinfo-build\Release\cpuinfo.lib;..\..\pthreadpool\Release\pthreadpool.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/tensorflow/tensorflow/lite/tf_build/_deps/xnnpack-build/Release/XNNPACK.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/tensorflow/tensorflow/lite/tf_build/_deps/xnnpack-build/Release/XNNPACK.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\tensorflow\third_party\xla\third_party\tsl;D:\tensorflow\third_party\xla;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\.;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\include;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-source\include;D:\tensorflow\tensorflow\lite\tf_build\cpuinfo\include;D:\tensorflow\tensorflow\lite\tf_build\FXdiv-source\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DisableSpecificWarnings>4146;4190</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0601;EIGEN_MPL2_ONLY;NOMINMAX=1;XNN_ENABLE_ARM_FP16_VECTOR=0;XNN_ENABLE_ARM_FP16_SCALAR=0;XNN_ENABLE_ARM_BF16=0;XNN_ENABLE_ARM_DOTPROD=0;XNN_ENABLE_ARM_I8MM=0;XNN_ENABLE_ARM_SME=0;XNN_ENABLE_ARM_SME2=0;XNN_ENABLE_RISCV_VECTOR=1;XNN_ENABLE_AVXVNNI=1;XNN_ENABLE_AVXVNNIINT8=0;XNN_ENABLE_AVX256SKX=1;XNN_ENABLE_AVX256VNNI=1;XNN_ENABLE_AVX256VNNIGFNI=1;XNN_ENABLE_AVX512F=1;XNN_ENABLE_AVX512SKX=1;XNN_ENABLE_AVX512VBMI=1;XNN_ENABLE_AVX512VNNI=1;XNN_ENABLE_AVX512VNNIGFNI=1;XNN_ENABLE_AVX512AMX=1;XNN_ENABLE_AVX512FP16=0;XNN_ENABLE_AVX512BF16=0;XNN_ENABLE_VSX=1;XNN_ENABLE_ASSEMBLY=0;XNN_ENABLE_MEMOPT=1;XNN_ENABLE_SPARSE=1;XNN_ENABLE_HVX=1;XNN_ENABLE_KLEIDIAI=0;XNN_ENABLE_CPUINFO=1;NOMINMAX;restrict=;PTHREADPOOL_NO_DEPRECATED_API=1;XNN_LOG_LEVEL=0;CPUINFO_SUPPORTED_PLATFORM=1;FXDIV_USE_INLINE_ASSEMBLY=0;CMAKE_INTDIR="MinSizeRel";XNNPACK_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0601;EIGEN_MPL2_ONLY;NOMINMAX=1;XNN_ENABLE_ARM_FP16_VECTOR=0;XNN_ENABLE_ARM_FP16_SCALAR=0;XNN_ENABLE_ARM_BF16=0;XNN_ENABLE_ARM_DOTPROD=0;XNN_ENABLE_ARM_I8MM=0;XNN_ENABLE_ARM_SME=0;XNN_ENABLE_ARM_SME2=0;XNN_ENABLE_RISCV_VECTOR=1;XNN_ENABLE_AVXVNNI=1;XNN_ENABLE_AVXVNNIINT8=0;XNN_ENABLE_AVX256SKX=1;XNN_ENABLE_AVX256VNNI=1;XNN_ENABLE_AVX256VNNIGFNI=1;XNN_ENABLE_AVX512F=1;XNN_ENABLE_AVX512SKX=1;XNN_ENABLE_AVX512VBMI=1;XNN_ENABLE_AVX512VNNI=1;XNN_ENABLE_AVX512VNNIGFNI=1;XNN_ENABLE_AVX512AMX=1;XNN_ENABLE_AVX512FP16=0;XNN_ENABLE_AVX512BF16=0;XNN_ENABLE_VSX=1;XNN_ENABLE_ASSEMBLY=0;XNN_ENABLE_MEMOPT=1;XNN_ENABLE_SPARSE=1;XNN_ENABLE_HVX=1;XNN_ENABLE_KLEIDIAI=0;XNN_ENABLE_CPUINFO=1;NOMINMAX;restrict=;PTHREADPOOL_NO_DEPRECATED_API=1;XNN_LOG_LEVEL=0;CPUINFO_SUPPORTED_PLATFORM=1;FXDIV_USE_INLINE_ASSEMBLY=0;CMAKE_INTDIR=\"MinSizeRel\";XNNPACK_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\tensorflow\third_party\xla\third_party\tsl;D:\tensorflow\third_party\xla;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\.;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\include;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-source\include;D:\tensorflow\tensorflow\lite\tf_build\cpuinfo\include;D:\tensorflow\tensorflow\lite\tf_build\FXdiv-source\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\tensorflow\third_party\xla\third_party\tsl;D:\tensorflow\third_party\xla;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\.;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\include;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-source\include;D:\tensorflow\tensorflow\lite\tf_build\cpuinfo\include;D:\tensorflow\tensorflow\lite\tf_build\FXdiv-source\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>MinSizeRel\microkernels-prod.lib;..\cpuinfo-build\MinSizeRel\cpuinfo.lib;..\..\pthreadpool\MinSizeRel\pthreadpool.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/tensorflow/tensorflow/lite/tf_build/_deps/xnnpack-build/MinSizeRel/XNNPACK.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/tensorflow/tensorflow/lite/tf_build/_deps/xnnpack-build/MinSizeRel/XNNPACK.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\tensorflow\third_party\xla\third_party\tsl;D:\tensorflow\third_party\xla;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\.;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\include;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-source\include;D:\tensorflow\tensorflow\lite\tf_build\cpuinfo\include;D:\tensorflow\tensorflow\lite\tf_build\FXdiv-source\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4146;4190</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0601;EIGEN_MPL2_ONLY;NOMINMAX=1;XNN_ENABLE_ARM_FP16_VECTOR=0;XNN_ENABLE_ARM_FP16_SCALAR=0;XNN_ENABLE_ARM_BF16=0;XNN_ENABLE_ARM_DOTPROD=0;XNN_ENABLE_ARM_I8MM=0;XNN_ENABLE_ARM_SME=0;XNN_ENABLE_ARM_SME2=0;XNN_ENABLE_RISCV_VECTOR=1;XNN_ENABLE_AVXVNNI=1;XNN_ENABLE_AVXVNNIINT8=0;XNN_ENABLE_AVX256SKX=1;XNN_ENABLE_AVX256VNNI=1;XNN_ENABLE_AVX256VNNIGFNI=1;XNN_ENABLE_AVX512F=1;XNN_ENABLE_AVX512SKX=1;XNN_ENABLE_AVX512VBMI=1;XNN_ENABLE_AVX512VNNI=1;XNN_ENABLE_AVX512VNNIGFNI=1;XNN_ENABLE_AVX512AMX=1;XNN_ENABLE_AVX512FP16=0;XNN_ENABLE_AVX512BF16=0;XNN_ENABLE_VSX=1;XNN_ENABLE_ASSEMBLY=0;XNN_ENABLE_MEMOPT=1;XNN_ENABLE_SPARSE=1;XNN_ENABLE_HVX=1;XNN_ENABLE_KLEIDIAI=0;XNN_ENABLE_CPUINFO=1;NOMINMAX;restrict=;PTHREADPOOL_NO_DEPRECATED_API=1;XNN_LOG_LEVEL=0;CPUINFO_SUPPORTED_PLATFORM=1;FXDIV_USE_INLINE_ASSEMBLY=0;CMAKE_INTDIR="RelWithDebInfo";XNNPACK_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32_WINNT=0x0601;EIGEN_MPL2_ONLY;NOMINMAX=1;XNN_ENABLE_ARM_FP16_VECTOR=0;XNN_ENABLE_ARM_FP16_SCALAR=0;XNN_ENABLE_ARM_BF16=0;XNN_ENABLE_ARM_DOTPROD=0;XNN_ENABLE_ARM_I8MM=0;XNN_ENABLE_ARM_SME=0;XNN_ENABLE_ARM_SME2=0;XNN_ENABLE_RISCV_VECTOR=1;XNN_ENABLE_AVXVNNI=1;XNN_ENABLE_AVXVNNIINT8=0;XNN_ENABLE_AVX256SKX=1;XNN_ENABLE_AVX256VNNI=1;XNN_ENABLE_AVX256VNNIGFNI=1;XNN_ENABLE_AVX512F=1;XNN_ENABLE_AVX512SKX=1;XNN_ENABLE_AVX512VBMI=1;XNN_ENABLE_AVX512VNNI=1;XNN_ENABLE_AVX512VNNIGFNI=1;XNN_ENABLE_AVX512AMX=1;XNN_ENABLE_AVX512FP16=0;XNN_ENABLE_AVX512BF16=0;XNN_ENABLE_VSX=1;XNN_ENABLE_ASSEMBLY=0;XNN_ENABLE_MEMOPT=1;XNN_ENABLE_SPARSE=1;XNN_ENABLE_HVX=1;XNN_ENABLE_KLEIDIAI=0;XNN_ENABLE_CPUINFO=1;NOMINMAX;restrict=;PTHREADPOOL_NO_DEPRECATED_API=1;XNN_LOG_LEVEL=0;CPUINFO_SUPPORTED_PLATFORM=1;FXDIV_USE_INLINE_ASSEMBLY=0;CMAKE_INTDIR=\"RelWithDebInfo\";XNNPACK_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\tensorflow\third_party\xla\third_party\tsl;D:\tensorflow\third_party\xla;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\.;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\include;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-source\include;D:\tensorflow\tensorflow\lite\tf_build\cpuinfo\include;D:\tensorflow\tensorflow\lite\tf_build\FXdiv-source\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\tensorflow\third_party\xla\third_party\tsl;D:\tensorflow\third_party\xla;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\.;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\include;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-source\include;D:\tensorflow\tensorflow\lite\tf_build\cpuinfo\include;D:\tensorflow\tensorflow\lite\tf_build\FXdiv-source\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>RelWithDebInfo\microkernels-prod.lib;..\cpuinfo-build\RelWithDebInfo\cpuinfo.lib;..\..\pthreadpool\RelWithDebInfo\pthreadpool.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/tensorflow/tensorflow/lite/tf_build/_deps/xnnpack-build/RelWithDebInfo/XNNPACK.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/tensorflow/tensorflow/lite/tf_build/_deps/xnnpack-build/RelWithDebInfo/XNNPACK.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\CMakeFiles\7270af6f97f3aa1228a331a2ab375854\build_identifier.c.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating build_identifier.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\tensorflow\tensorflow\lite\tf_build\xnnpack
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.752.0_x64__qbz5n2kfra8p0\python3.13.exe" scripts/generate-build-identifier.py --output D:/tensorflow/tensorflow/lite/tf_build/_deps/xnnpack-build/build_identifier.c --input_file_list D:/tensorflow/tensorflow/lite/tf_build/_deps/xnnpack-build/prod_microkernel_srcs.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\prod_microkernel_srcs.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\build_identifier.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating build_identifier.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\tensorflow\tensorflow\lite\tf_build\xnnpack
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.752.0_x64__qbz5n2kfra8p0\python3.13.exe" scripts/generate-build-identifier.py --output D:/tensorflow/tensorflow/lite/tf_build/_deps/xnnpack-build/build_identifier.c --input_file_list D:/tensorflow/tensorflow/lite/tf_build/_deps/xnnpack-build/prod_microkernel_srcs.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\prod_microkernel_srcs.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\build_identifier.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating build_identifier.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd D:\tensorflow\tensorflow\lite\tf_build\xnnpack
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.752.0_x64__qbz5n2kfra8p0\python3.13.exe" scripts/generate-build-identifier.py --output D:/tensorflow/tensorflow/lite/tf_build/_deps/xnnpack-build/build_identifier.c --input_file_list D:/tensorflow/tensorflow/lite/tf_build/_deps/xnnpack-build/prod_microkernel_srcs.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\prod_microkernel_srcs.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\build_identifier.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating build_identifier.c</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd D:\tensorflow\tensorflow\lite\tf_build\xnnpack
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.13_3.13.752.0_x64__qbz5n2kfra8p0\python3.13.exe" scripts/generate-build-identifier.py --output D:/tensorflow/tensorflow/lite/tf_build/_deps/xnnpack-build/build_identifier.c --input_file_list D:/tensorflow/tensorflow/lite/tf_build/_deps/xnnpack-build/prod_microkernel_srcs.txt
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\prod_microkernel_srcs.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\build_identifier.c</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/tensorflow/tensorflow/lite/tf_build/xnnpack/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -SD:/tensorflow/tensorflow/lite -BD:/tensorflow/tensorflow/lite/tf_build --check-stamp-file D:/tensorflow/tensorflow/lite/tf_build/_deps/xnnpack-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\CMakeASMInformation.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\Compiler\MSVC-ASM.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\FindPackageHandleStandardArgs.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\FindPackageMessage.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\FindPython.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\FindPython\Support.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\GNUInstallDirs.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\Internal\CMakeASMLinkerInformation.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\Platform\Linker\GNU.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\Platform\Linker\Windows-ASM.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\Platform\Linker\Windows-GNU-ASM.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\Platform\Linker\Windows-GNU.cmake;D:\tensorflow\tensorflow\lite\tf_build\CMakeFiles\4.0.0\CMakeASMCompiler.cmake;D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\cmake\gen\microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\aarch32_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\aarch64_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\amd64_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\armsimd32_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\avx256skx_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\avx256vnni_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\avx256vnnigfni_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\avx2_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\avx512amx_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\avx512f_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\avx512fp16_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\avx512skx_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\avx512vbmi_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\avx512vnni_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\avx512vnnigfni_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\avx_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\avxvnni_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\avxvnniint8_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\f16c_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\fma3_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\fp16arith_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\hexagon_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\hvx_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\neon_aarch64_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\neon_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\neonbf16_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\neondot_aarch64_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\neondot_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\neondotfp16arith_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\neonfma_aarch64_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\neonfma_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\neonfp16_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\neonfp16arith_aarch64_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\neonfp16arith_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\neoni8mm_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\neonsme2_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\neonsme_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\neonv8_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\rvv_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\rvvfp16arith_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\scalar_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\sse2_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\sse41_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\sse_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\ssse3_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\wasm32_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\wasm_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\wasmrelaxedsimd32_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\wasmrelaxedsimd_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\wasmsimd32_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\wasmsimd_microkernels.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/tensorflow/tensorflow/lite/tf_build/xnnpack/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -SD:/tensorflow/tensorflow/lite -BD:/tensorflow/tensorflow/lite/tf_build --check-stamp-file D:/tensorflow/tensorflow/lite/tf_build/_deps/xnnpack-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\CMakeASMInformation.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\Compiler\MSVC-ASM.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\FindPackageHandleStandardArgs.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\FindPackageMessage.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\FindPython.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\FindPython\Support.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\GNUInstallDirs.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\Internal\CMakeASMLinkerInformation.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\Platform\Linker\GNU.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\Platform\Linker\Windows-ASM.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\Platform\Linker\Windows-GNU-ASM.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\Platform\Linker\Windows-GNU.cmake;D:\tensorflow\tensorflow\lite\tf_build\CMakeFiles\4.0.0\CMakeASMCompiler.cmake;D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\cmake\gen\microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\aarch32_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\aarch64_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\amd64_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\armsimd32_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\avx256skx_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\avx256vnni_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\avx256vnnigfni_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\avx2_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\avx512amx_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\avx512f_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\avx512fp16_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\avx512skx_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\avx512vbmi_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\avx512vnni_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\avx512vnnigfni_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\avx_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\avxvnni_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\avxvnniint8_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\f16c_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\fma3_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\fp16arith_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\hexagon_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\hvx_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\neon_aarch64_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\neon_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\neonbf16_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\neondot_aarch64_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\neondot_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\neondotfp16arith_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\neonfma_aarch64_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\neonfma_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\neonfp16_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\neonfp16arith_aarch64_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\neonfp16arith_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\neoni8mm_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\neonsme2_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\neonsme_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\neonv8_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\rvv_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\rvvfp16arith_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\scalar_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\sse2_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\sse41_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\sse_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\ssse3_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\wasm32_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\wasm_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\wasmrelaxedsimd32_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\wasmrelaxedsimd_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\wasmsimd32_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\wasmsimd_microkernels.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/tensorflow/tensorflow/lite/tf_build/xnnpack/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -SD:/tensorflow/tensorflow/lite -BD:/tensorflow/tensorflow/lite/tf_build --check-stamp-file D:/tensorflow/tensorflow/lite/tf_build/_deps/xnnpack-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\CMakeASMInformation.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\Compiler\MSVC-ASM.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\FindPackageHandleStandardArgs.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\FindPackageMessage.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\FindPython.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\FindPython\Support.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\GNUInstallDirs.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\Internal\CMakeASMLinkerInformation.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\Platform\Linker\GNU.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\Platform\Linker\Windows-ASM.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\Platform\Linker\Windows-GNU-ASM.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\Platform\Linker\Windows-GNU.cmake;D:\tensorflow\tensorflow\lite\tf_build\CMakeFiles\4.0.0\CMakeASMCompiler.cmake;D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\cmake\gen\microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\aarch32_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\aarch64_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\amd64_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\armsimd32_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\avx256skx_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\avx256vnni_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\avx256vnnigfni_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\avx2_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\avx512amx_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\avx512f_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\avx512fp16_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\avx512skx_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\avx512vbmi_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\avx512vnni_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\avx512vnnigfni_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\avx_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\avxvnni_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\avxvnniint8_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\f16c_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\fma3_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\fp16arith_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\hexagon_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\hvx_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\neon_aarch64_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\neon_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\neonbf16_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\neondot_aarch64_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\neondot_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\neondotfp16arith_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\neonfma_aarch64_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\neonfma_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\neonfp16_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\neonfp16arith_aarch64_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\neonfp16arith_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\neoni8mm_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\neonsme2_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\neonsme_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\neonv8_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\rvv_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\rvvfp16arith_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\scalar_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\sse2_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\sse41_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\sse_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\ssse3_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\wasm32_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\wasm_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\wasmrelaxedsimd32_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\wasmrelaxedsimd_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\wasmsimd32_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\wasmsimd_microkernels.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/tensorflow/tensorflow/lite/tf_build/xnnpack/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -SD:/tensorflow/tensorflow/lite -BD:/tensorflow/tensorflow/lite/tf_build --check-stamp-file D:/tensorflow/tensorflow/lite/tf_build/_deps/xnnpack-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\CMakeASMInformation.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\Compiler\MSVC-ASM.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\FindPackageHandleStandardArgs.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\FindPackageMessage.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\FindPython.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\FindPython\Support.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\GNUInstallDirs.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\Internal\CMakeASMLinkerInformation.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\Platform\Linker\GNU.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\Platform\Linker\Windows-ASM.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\Platform\Linker\Windows-GNU-ASM.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\Platform\Linker\Windows-GNU.cmake;D:\tensorflow\tensorflow\lite\tf_build\CMakeFiles\4.0.0\CMakeASMCompiler.cmake;D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\cmake\gen\microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\aarch32_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\aarch64_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\amd64_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\armsimd32_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\avx256skx_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\avx256vnni_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\avx256vnnigfni_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\avx2_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\avx512amx_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\avx512f_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\avx512fp16_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\avx512skx_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\avx512vbmi_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\avx512vnni_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\avx512vnnigfni_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\avx_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\avxvnni_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\avxvnniint8_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\f16c_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\fma3_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\fp16arith_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\hexagon_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\hvx_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\neon_aarch64_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\neon_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\neonbf16_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\neondot_aarch64_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\neondot_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\neondotfp16arith_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\neonfma_aarch64_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\neonfma_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\neonfp16_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\neonfp16arith_aarch64_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\neonfp16arith_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\neoni8mm_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\neonsme2_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\neonsme_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\neonv8_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\rvv_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\rvvfp16arith_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\scalar_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\sse2_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\sse41_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\sse_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\ssse3_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\wasm32_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\wasm_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\wasmrelaxedsimd32_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\wasmrelaxedsimd_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\wasmsimd32_microkernels.cmake;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\cmake\gen\wasmsimd_microkernels.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\configs\argmaxpool-config.c" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\configs\avgpool-config.c" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\configs\binary-elementwise-config.c" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\configs\cmul-config.c" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\configs\conv-hwc2chw-config.c" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\configs\dwconv-config.c" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\configs\dwconv2d-chw-config.c" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\configs\gemm-config.c" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\configs\ibilinear-chw-config.c" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\configs\ibilinear-config.c" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\configs\lut32norm-config.c" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\configs\maxpool-config.c" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\configs\pack-lh-config.c" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\configs\raddstoreexpminusmax-config.c" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\configs\reduce-config.c" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\configs\spmm-config.c" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\configs\transpose-config.c" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\configs\unary-elementwise-config.c" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\configs\unpool-config.c" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\configs\vmulcaddc-config.c" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\configs\xx-fill-config.c" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\configs\xx-pad-config.c" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\configs\x8-lut-config.c" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\init.c" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack\src\params.c" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\build_identifier.c" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\allocator.dir\$(Configuration)\allocator.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\cache.dir\$(Configuration)\cache.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\hardware-config.dir\$(Configuration)\hardware-config.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\indirection.dir\$(Configuration)\indirection.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\memory.dir\$(Configuration)\memory.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\microkernel-utils.dir\$(Configuration)\microkernel-utils.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\microparams-init.dir\$(Configuration)\microparams-init.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\mutex.dir\$(Configuration)\mutex.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\normalization.dir\$(Configuration)\normalization.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\operators.dir\$(Configuration)\operator-delete.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\operators.dir\$(Configuration)\argmax-pooling-nhwc.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\operators.dir\$(Configuration)\average-pooling-nhwc.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\operators.dir\$(Configuration)\batch-matrix-multiply-nc.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\operators.dir\$(Configuration)\binary-elementwise-nd.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\operators.dir\$(Configuration)\constant-pad-nd.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\operators.dir\$(Configuration)\convolution-nchw.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\operators.dir\$(Configuration)\convolution-nhwc.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\operators.dir\$(Configuration)\deconvolution-nhwc.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\operators.dir\$(Configuration)\dynamic-fully-connected-nc.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\operators.dir\$(Configuration)\fully-connected-nc.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\operators.dir\$(Configuration)\max-pooling-nhwc.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\operators.dir\$(Configuration)\pack-lh.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\operators.dir\$(Configuration)\reduce-nd.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\operators.dir\$(Configuration)\resize-bilinear-nchw.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\operators.dir\$(Configuration)\resize-bilinear-nhwc.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\operators.dir\$(Configuration)\rope-nthc.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\operators.dir\$(Configuration)\scaled-dot-product-attention-nhtc.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\operators.dir\$(Configuration)\slice-nd.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\operators.dir\$(Configuration)\softmax-nc.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\operators.dir\$(Configuration)\transpose-nd.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\operators.dir\$(Configuration)\unary-elementwise-nc.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\operators.dir\$(Configuration)\unpooling-nhwc.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\operator-run.dir\$(Configuration)\operator-run.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\operator-utils.dir\$(Configuration)\operator-utils.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\packing.dir\$(Configuration)\packing.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\subgraph.dir\$(Configuration)\memory-planner.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\subgraph.dir\$(Configuration)\runtime.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\subgraph.dir\$(Configuration)\subgraph.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\subgraph.dir\$(Configuration)\argmax-pooling-2d.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\subgraph.dir\$(Configuration)\average-pooling-2d.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\subgraph.dir\$(Configuration)\batch-matrix-multiply.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\subgraph.dir\$(Configuration)\binary.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\subgraph.dir\$(Configuration)\concatenate.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\subgraph.dir\$(Configuration)\convolution-2d.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\subgraph.dir\$(Configuration)\copy.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\subgraph.dir\$(Configuration)\deconvolution-2d.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\subgraph.dir\$(Configuration)\deprecated.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\subgraph.dir\$(Configuration)\depth-to-space-2d.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\subgraph.dir\$(Configuration)\depthwise-convolution-2d.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\subgraph.dir\$(Configuration)\even-split.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\subgraph.dir\$(Configuration)\fully-connected-sparse.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\subgraph.dir\$(Configuration)\fully-connected.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\subgraph.dir\$(Configuration)\max-pooling-2d.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\subgraph.dir\$(Configuration)\pack-lh.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\subgraph.dir\$(Configuration)\reshape-helpers.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\subgraph.dir\$(Configuration)\rope.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\subgraph.dir\$(Configuration)\scaled-dot-product-attention.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\subgraph.dir\$(Configuration)\softmax.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\subgraph.dir\$(Configuration)\space-to-depth-2d.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\subgraph.dir\$(Configuration)\static-constant-pad.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\subgraph.dir\$(Configuration)\static-reduce.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\subgraph.dir\$(Configuration)\static-resize-bilinear-2d.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\subgraph.dir\$(Configuration)\static-slice.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\subgraph.dir\$(Configuration)\static-transpose.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\subgraph.dir\$(Configuration)\unpooling-2d.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\subgraph.dir\$(Configuration)\unary.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\subgraph.dir\$(Configuration)\validation.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\subgraph.dir\$(Configuration)\tensor.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\datatype.dir\$(Configuration)\datatype.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\reference-ukernels.dir\$(Configuration)\unary-elementwise.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\reference-ukernels.dir\$(Configuration)\binary-elementwise.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\logging.dir\$(Configuration)\allocation-type.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\logging.dir\$(Configuration)\datatype-strings.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\logging.dir\$(Configuration)\microkernel-type.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\logging.dir\$(Configuration)\node-type.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\logging.dir\$(Configuration)\operator-type.obj" />
+    <Object Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\logging.dir\$(Configuration)\log.obj" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\ZERO_CHECK.vcxproj">
+      <Project>{DA82E51A-3B0E-352E-B019-949E32B6801B}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\allocator.vcxproj">
+      <Project>{BF2764E3-A88C-3A3B-9131-DCE4AA7280E4}</Project>
+      <Name>allocator</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\cache.vcxproj">
+      <Project>{63E29467-8001-3B7B-899D-2C59A49079C2}</Project>
+      <Name>cache</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\cpuinfo-build\cpuinfo.vcxproj">
+      <Project>{ED7EA1C0-8951-324F-978D-DBC91F0AD62F}</Project>
+      <Name>cpuinfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\datatype.vcxproj">
+      <Project>{9CD483DF-F956-3587-85E1-1EE7C8BDDAE2}</Project>
+      <Name>datatype</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\hardware-config.vcxproj">
+      <Project>{31860D78-1E14-38D6-AA5B-5030F2710E63}</Project>
+      <Name>hardware-config</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\indirection.vcxproj">
+      <Project>{F8CABF85-31E0-3629-95E7-A97CE6BBAF4B}</Project>
+      <Name>indirection</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\logging.vcxproj">
+      <Project>{572E8174-BACB-367F-B9E8-C1D917BD43D3}</Project>
+      <Name>logging</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\memory.vcxproj">
+      <Project>{D883DF03-F2FB-332D-B54A-F056317EF73B}</Project>
+      <Name>memory</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\microkernel-utils.vcxproj">
+      <Project>{B37F3034-21C1-3CE1-9EA7-CD8F57847DB0}</Project>
+      <Name>microkernel-utils</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\microkernels-prod.vcxproj">
+      <Project>{5DA5CF14-EC4C-3520-8302-0C113D08DD72}</Project>
+      <Name>microkernels-prod</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\microparams-init.vcxproj">
+      <Project>{15C8DA81-3357-3345-B59F-8E5578E07013}</Project>
+      <Name>microparams-init</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\mutex.vcxproj">
+      <Project>{4FEE9697-CE93-3057-A4D2-3A6AC84A386C}</Project>
+      <Name>mutex</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\normalization.vcxproj">
+      <Project>{39270A3A-4099-3FAC-AE30-1D0B948FA672}</Project>
+      <Name>normalization</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\operator-run.vcxproj">
+      <Project>{E7D52209-CD70-3C85-BA54-210672E472F8}</Project>
+      <Name>operator-run</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\operator-utils.vcxproj">
+      <Project>{B3E7DA95-8BE9-39B1-BAC6-1A8EDF784EA6}</Project>
+      <Name>operator-utils</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\operators.vcxproj">
+      <Project>{6CAADAC1-BEDB-3E58-9B8A-AB4B8BDD8BD8}</Project>
+      <Name>operators</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\packing.vcxproj">
+      <Project>{7229AF29-84A7-3AF9-8BE0-ECDBB62DE51A}</Project>
+      <Name>packing</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\pthreadpool\pthreadpool.vcxproj">
+      <Project>{130BE534-60C5-397E-BAC5-CF19909E22B9}</Project>
+      <Name>pthreadpool</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\reference-ukernels.vcxproj">
+      <Project>{8F13C766-B3F1-3476-9FEE-10A321BF3487}</Project>
+      <Name>reference-ukernels</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\sanitizers.vcxproj">
+      <Project>{FDE7910D-C408-3B6B-95B1-CB097B4A9BD1}</Project>
+      <Name>sanitizers</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\subgraph.vcxproj">
+      <Project>{DCE2917A-0D6D-31FC-A640-2771A488AFC3}</Project>
+      <Name>subgraph</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

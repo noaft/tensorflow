@@ -1,0 +1,10 @@
+^D:\TENSORFLOW\TENSORFLOW\LITE\TF_BUILD\_DEPS\EIGEN-SUBBUILD\CMAKEFILES\42397FA32339D36D4D5AE8BBCC4904ED\GENERATE.STAMP.RULE
+setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -SD:/tensorflow/tensorflow/lite/tf_build/_deps/eigen-subbuild -BD:/tensorflow/tensorflow/lite/tf_build/_deps/eigen-subbuild --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/tensorflow/tensorflow/lite/tf_build/_deps/eigen-subbuild/eigen-populate.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

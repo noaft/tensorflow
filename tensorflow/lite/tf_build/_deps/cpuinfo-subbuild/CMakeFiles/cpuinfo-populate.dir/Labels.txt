@@ -1,0 +1,14 @@
+# Target labels
+ cpuinfo-populate
+# Source files and their labels
+D:/tensorflow/tensorflow/lite/tf_build/_deps/cpuinfo-subbuild/CMakeFiles/cpuinfo-populate
+D:/tensorflow/tensorflow/lite/tf_build/_deps/cpuinfo-subbuild/CMakeFiles/9ff0c6b5edc0ae97a3a96a705c9c5e9f/cpuinfo-populate.rule
+D:/tensorflow/tensorflow/lite/tf_build/_deps/cpuinfo-subbuild/CMakeFiles/6a13c20f20abb16136209cbdcb5b2c82/cpuinfo-populate-complete.rule
+D:/tensorflow/tensorflow/lite/tf_build/_deps/cpuinfo-subbuild/CMakeFiles/d367510a0140e209fdfa17fb253bf404/cpuinfo-populate-build.rule
+D:/tensorflow/tensorflow/lite/tf_build/_deps/cpuinfo-subbuild/CMakeFiles/d367510a0140e209fdfa17fb253bf404/cpuinfo-populate-configure.rule
+D:/tensorflow/tensorflow/lite/tf_build/_deps/cpuinfo-subbuild/CMakeFiles/d367510a0140e209fdfa17fb253bf404/cpuinfo-populate-download.rule
+D:/tensorflow/tensorflow/lite/tf_build/_deps/cpuinfo-subbuild/CMakeFiles/d367510a0140e209fdfa17fb253bf404/cpuinfo-populate-install.rule
+D:/tensorflow/tensorflow/lite/tf_build/_deps/cpuinfo-subbuild/CMakeFiles/d367510a0140e209fdfa17fb253bf404/cpuinfo-populate-mkdir.rule
+D:/tensorflow/tensorflow/lite/tf_build/_deps/cpuinfo-subbuild/CMakeFiles/d367510a0140e209fdfa17fb253bf404/cpuinfo-populate-patch.rule
+D:/tensorflow/tensorflow/lite/tf_build/_deps/cpuinfo-subbuild/CMakeFiles/d367510a0140e209fdfa17fb253bf404/cpuinfo-populate-test.rule
+D:/tensorflow/tensorflow/lite/tf_build/_deps/cpuinfo-subbuild/CMakeFiles/d367510a0140e209fdfa17fb253bf404/cpuinfo-populate-update.rule

@@ -1,0 +1,10 @@
+^D:\TENSORFLOW\TENSORFLOW\LITE\TF_BUILD\PTHREADPOOL-DOWNLOAD\CMAKEFILES\98E552D239338D60C1037B142316F445\GENERATE.STAMP.RULE
+setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -SD:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download -BD:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/pthreadpool-download.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

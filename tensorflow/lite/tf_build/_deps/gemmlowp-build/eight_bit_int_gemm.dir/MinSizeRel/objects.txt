@@ -1,0 +1,1 @@
+D:/tensorflow/tensorflow/lite/tf_build/_deps/gemmlowp-build/eight_bit_int_gemm.dir/MinSizeRel/eight_bit_int_gemm.obj

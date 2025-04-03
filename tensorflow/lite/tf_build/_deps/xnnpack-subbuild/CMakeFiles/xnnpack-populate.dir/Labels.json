@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/xnnpack-subbuild/CMakeFiles/xnnpack-populate"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/xnnpack-subbuild/CMakeFiles/bbe5af4f14eebfce31a63c3a41c54a6c/xnnpack-populate.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/xnnpack-subbuild/CMakeFiles/74f91524d68e24f5abc99d039d5dacd7/xnnpack-populate-complete.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/xnnpack-subbuild/CMakeFiles/9112cef15a6570f5e8a509dcbbed42e5/xnnpack-populate-build.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/xnnpack-subbuild/CMakeFiles/9112cef15a6570f5e8a509dcbbed42e5/xnnpack-populate-configure.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/xnnpack-subbuild/CMakeFiles/9112cef15a6570f5e8a509dcbbed42e5/xnnpack-populate-download.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/xnnpack-subbuild/CMakeFiles/9112cef15a6570f5e8a509dcbbed42e5/xnnpack-populate-install.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/xnnpack-subbuild/CMakeFiles/9112cef15a6570f5e8a509dcbbed42e5/xnnpack-populate-mkdir.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/xnnpack-subbuild/CMakeFiles/9112cef15a6570f5e8a509dcbbed42e5/xnnpack-populate-patch.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/xnnpack-subbuild/CMakeFiles/9112cef15a6570f5e8a509dcbbed42e5/xnnpack-populate-test.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/xnnpack-subbuild/CMakeFiles/9112cef15a6570f5e8a509dcbbed42e5/xnnpack-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"xnnpack-populate"
+		],
+		"name" : "xnnpack-populate"
+	}
+}

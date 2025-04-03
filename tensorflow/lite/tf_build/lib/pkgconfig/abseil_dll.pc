@@ -1,0 +1,11 @@
+prefix=C:/Program Files (x86)/tensorflow-lite
+exec_prefix=${prefix}
+libdir=C:/Program Files (x86)/tensorflow-lite/lib
+includedir=C:/Program Files (x86)/tensorflow-lite/include
+
+Name: abseil_dll
+Description: Abseil DLL library
+URL: https://abseil.io/
+Version: 20230802
+Libs: -L${libdir} -labseil_dll 
+Cflags: -I${includedir}

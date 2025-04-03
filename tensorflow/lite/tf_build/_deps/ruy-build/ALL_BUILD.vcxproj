@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9A1C65F2-018A-32C3-B84F-17EAA4FEF8D7}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\ruy\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/tensorflow/tensorflow/lite/tf_build/ruy/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -SD:/tensorflow/tensorflow/lite -BD:/tensorflow/tensorflow/lite/tf_build --check-stamp-file D:/tensorflow/tensorflow/lite/tf_build/_deps/ruy-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\CMakeParseArguments.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\GNUInstallDirs.cmake;D:\tensorflow\tensorflow\lite\tf_build\ruy\cmake\ruy_add_all_subdirs.cmake;D:\tensorflow\tensorflow\lite\tf_build\ruy\cmake\ruy_cc_binary.cmake;D:\tensorflow\tensorflow\lite\tf_build\ruy\cmake\ruy_cc_library.cmake;D:\tensorflow\tensorflow\lite\tf_build\ruy\cmake\ruy_cc_test.cmake;D:\tensorflow\tensorflow\lite\tf_build\ruy\cmake\ruy_include_directories.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\tensorflow\tensorflow\lite\tf_build\_deps\ruy-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/tensorflow/tensorflow/lite/tf_build/ruy/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -SD:/tensorflow/tensorflow/lite -BD:/tensorflow/tensorflow/lite/tf_build --check-stamp-file D:/tensorflow/tensorflow/lite/tf_build/_deps/ruy-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\CMakeParseArguments.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\GNUInstallDirs.cmake;D:\tensorflow\tensorflow\lite\tf_build\ruy\cmake\ruy_add_all_subdirs.cmake;D:\tensorflow\tensorflow\lite\tf_build\ruy\cmake\ruy_cc_binary.cmake;D:\tensorflow\tensorflow\lite\tf_build\ruy\cmake\ruy_cc_library.cmake;D:\tensorflow\tensorflow\lite\tf_build\ruy\cmake\ruy_cc_test.cmake;D:\tensorflow\tensorflow\lite\tf_build\ruy\cmake\ruy_include_directories.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\tensorflow\tensorflow\lite\tf_build\_deps\ruy-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/tensorflow/tensorflow/lite/tf_build/ruy/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -SD:/tensorflow/tensorflow/lite -BD:/tensorflow/tensorflow/lite/tf_build --check-stamp-file D:/tensorflow/tensorflow/lite/tf_build/_deps/ruy-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\CMakeParseArguments.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\GNUInstallDirs.cmake;D:\tensorflow\tensorflow\lite\tf_build\ruy\cmake\ruy_add_all_subdirs.cmake;D:\tensorflow\tensorflow\lite\tf_build\ruy\cmake\ruy_cc_binary.cmake;D:\tensorflow\tensorflow\lite\tf_build\ruy\cmake\ruy_cc_library.cmake;D:\tensorflow\tensorflow\lite\tf_build\ruy\cmake\ruy_cc_test.cmake;D:\tensorflow\tensorflow\lite\tf_build\ruy\cmake\ruy_include_directories.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\tensorflow\tensorflow\lite\tf_build\_deps\ruy-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/tensorflow/tensorflow/lite/tf_build/ruy/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -SD:/tensorflow/tensorflow/lite -BD:/tensorflow/tensorflow/lite/tf_build --check-stamp-file D:/tensorflow/tensorflow/lite/tf_build/_deps/ruy-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\CMakeParseArguments.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\GNUInstallDirs.cmake;D:\tensorflow\tensorflow\lite\tf_build\ruy\cmake\ruy_add_all_subdirs.cmake;D:\tensorflow\tensorflow\lite\tf_build\ruy\cmake\ruy_cc_binary.cmake;D:\tensorflow\tensorflow\lite\tf_build\ruy\cmake\ruy_cc_library.cmake;D:\tensorflow\tensorflow\lite\tf_build\ruy\cmake\ruy_cc_test.cmake;D:\tensorflow\tensorflow\lite\tf_build\ruy\cmake\ruy_include_directories.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\tensorflow\tensorflow\lite\tf_build\_deps\ruy-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\ZERO_CHECK.vcxproj">
+      <Project>{DA82E51A-3B0E-352E-B019-949E32B6801B}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ruy-build\ruy\ruy_allocator.vcxproj">
+      <Project>{0749AF2D-E5F2-3D02-8CA6-6786B34DDE9F}</Project>
+      <Name>ruy_allocator</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ruy-build\ruy\ruy_apply_multiplier.vcxproj">
+      <Project>{130464F6-0652-3AAB-8718-08C0CB6049A6}</Project>
+      <Name>ruy_apply_multiplier</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ruy-build\ruy\ruy_block_map.vcxproj">
+      <Project>{13A13E82-20F0-3B17-BFE8-FED13B03B647}</Project>
+      <Name>ruy_block_map</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ruy-build\ruy\ruy_blocking_counter.vcxproj">
+      <Project>{0658D840-63DE-3AF1-B63F-0C6AC5F2778F}</Project>
+      <Name>ruy_blocking_counter</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ruy-build\ruy\ruy_context.vcxproj">
+      <Project>{F7B4CD93-47DD-3E78-B2DB-FDB20CB956DF}</Project>
+      <Name>ruy_context</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ruy-build\ruy\ruy_context_get_ctx.vcxproj">
+      <Project>{D7703786-405E-3949-BD5C-9F0F084406FC}</Project>
+      <Name>ruy_context_get_ctx</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ruy-build\ruy\ruy_cpuinfo.vcxproj">
+      <Project>{AA7DC6E4-6058-3E60-88E4-050DAFE3B15C}</Project>
+      <Name>ruy_cpuinfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ruy-build\ruy\ruy_ctx.vcxproj">
+      <Project>{653779A3-D737-3A20-8718-8AEFE7A9CC60}</Project>
+      <Name>ruy_ctx</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ruy-build\ruy\ruy_denormal.vcxproj">
+      <Project>{63DCF0E1-0CC9-3D6E-96A4-38677674E407}</Project>
+      <Name>ruy_denormal</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ruy-build\ruy\ruy_frontend.vcxproj">
+      <Project>{C277BB52-36B6-3AD4-9540-96801B03F03B}</Project>
+      <Name>ruy_frontend</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ruy-build\ruy\ruy_have_built_path_for_avx.vcxproj">
+      <Project>{71C70634-DA4D-39C1-8549-1AD737D13F6E}</Project>
+      <Name>ruy_have_built_path_for_avx</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ruy-build\ruy\ruy_have_built_path_for_avx2_fma.vcxproj">
+      <Project>{98806249-81CA-314E-AD40-6253E60A649D}</Project>
+      <Name>ruy_have_built_path_for_avx2_fma</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ruy-build\ruy\ruy_have_built_path_for_avx512.vcxproj">
+      <Project>{B5BEF66D-E4FC-3AE5-8BC5-FDB33C4CD88E}</Project>
+      <Name>ruy_have_built_path_for_avx512</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ruy-build\ruy\ruy_kernel_arm.vcxproj">
+      <Project>{C5DA8AEB-19CE-341B-8D95-86836CF5030D}</Project>
+      <Name>ruy_kernel_arm</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ruy-build\ruy\ruy_kernel_avx.vcxproj">
+      <Project>{5AE929B0-8023-3D5A-9721-03DFE34690D5}</Project>
+      <Name>ruy_kernel_avx</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ruy-build\ruy\ruy_kernel_avx2_fma.vcxproj">
+      <Project>{3974A0D7-F5CB-3C6F-ACD3-702AA53D7890}</Project>
+      <Name>ruy_kernel_avx2_fma</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ruy-build\ruy\ruy_kernel_avx512.vcxproj">
+      <Project>{212B1016-F4CD-3715-96C7-84FC9F017D39}</Project>
+      <Name>ruy_kernel_avx512</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ruy-build\ruy\ruy_pack_arm.vcxproj">
+      <Project>{7D72BE88-3F68-363A-A340-3A9920958ABC}</Project>
+      <Name>ruy_pack_arm</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ruy-build\ruy\ruy_pack_avx.vcxproj">
+      <Project>{38964BC0-65A7-3E5B-9C93-5EFD4338FF24}</Project>
+      <Name>ruy_pack_avx</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ruy-build\ruy\ruy_pack_avx2_fma.vcxproj">
+      <Project>{1C6A9094-2A4C-3F10-A3B6-4F62221D93CF}</Project>
+      <Name>ruy_pack_avx2_fma</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ruy-build\ruy\ruy_pack_avx512.vcxproj">
+      <Project>{A3554768-AFAF-3592-B432-4FBF5D1E5283}</Project>
+      <Name>ruy_pack_avx512</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ruy-build\ruy\ruy_prepacked_cache.vcxproj">
+      <Project>{14D48888-88A1-300A-9F2E-7FB92D6B9162}</Project>
+      <Name>ruy_prepacked_cache</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ruy-build\ruy\ruy_prepare_packed_matrices.vcxproj">
+      <Project>{2B9DB888-0A8A-36E7-B4F0-A74F519821F3}</Project>
+      <Name>ruy_prepare_packed_matrices</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ruy-build\ruy\profiler\ruy_profiler_instrumentation.vcxproj">
+      <Project>{483E26E0-6186-3DF2-9C7C-46E6E330B9D4}</Project>
+      <Name>ruy_profiler_instrumentation</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ruy-build\ruy\profiler\ruy_profiler_profiler.vcxproj">
+      <Project>{1C46D887-73AB-3E13-A54B-24C6EF78D53E}</Project>
+      <Name>ruy_profiler_profiler</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ruy-build\ruy\ruy_system_aligned_alloc.vcxproj">
+      <Project>{EDC95146-AD66-3252-B65F-31F16FA59566}</Project>
+      <Name>ruy_system_aligned_alloc</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ruy-build\ruy\ruy_thread_pool.vcxproj">
+      <Project>{257BE724-1B25-3772-8EBE-0B1FDA7174FE}</Project>
+      <Name>ruy_thread_pool</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ruy-build\ruy\ruy_trmul.vcxproj">
+      <Project>{56566FC9-26DB-3397-A530-B6BCBB2A21EC}</Project>
+      <Name>ruy_trmul</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ruy-build\ruy\ruy_tune.vcxproj">
+      <Project>{B3EAFC5F-7ABD-3FB3-85B7-3AE2C9BC45C0}</Project>
+      <Name>ruy_tune</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ruy-build\ruy\ruy_wait.vcxproj">
+      <Project>{6C68BBC5-E84E-3430-830E-26714D95DD4B}</Project>
+      <Name>ruy_wait</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

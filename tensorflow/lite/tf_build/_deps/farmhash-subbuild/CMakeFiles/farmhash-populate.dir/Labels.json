@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/farmhash-subbuild/CMakeFiles/farmhash-populate"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/farmhash-subbuild/CMakeFiles/7ffc2d7c985e5313f96650f7484c346d/farmhash-populate.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/farmhash-subbuild/CMakeFiles/d59fdf626d0eb7a981405a99a5c778ee/farmhash-populate-complete.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/farmhash-subbuild/CMakeFiles/92291d96466017e15650baa902cee308/farmhash-populate-build.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/farmhash-subbuild/CMakeFiles/92291d96466017e15650baa902cee308/farmhash-populate-configure.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/farmhash-subbuild/CMakeFiles/92291d96466017e15650baa902cee308/farmhash-populate-download.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/farmhash-subbuild/CMakeFiles/92291d96466017e15650baa902cee308/farmhash-populate-install.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/farmhash-subbuild/CMakeFiles/92291d96466017e15650baa902cee308/farmhash-populate-mkdir.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/farmhash-subbuild/CMakeFiles/92291d96466017e15650baa902cee308/farmhash-populate-patch.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/farmhash-subbuild/CMakeFiles/92291d96466017e15650baa902cee308/farmhash-populate-test.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/_deps/farmhash-subbuild/CMakeFiles/92291d96466017e15650baa902cee308/farmhash-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"farmhash-populate"
+		],
+		"name" : "farmhash-populate"
+	}
+}

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\FXdiv-download\CMakeFiles\62990e24b14f3b980d1a93d39d4c24fe\fxdiv-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\FXdiv-download\CMakeFiles\62990e24b14f3b980d1a93d39d4c24fe\fxdiv-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\FXdiv-download\CMakeFiles\62990e24b14f3b980d1a93d39d4c24fe\fxdiv-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\FXdiv-download\CMakeFiles\62990e24b14f3b980d1a93d39d4c24fe\fxdiv-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\FXdiv-download\CMakeFiles\62990e24b14f3b980d1a93d39d4c24fe\fxdiv-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\FXdiv-download\CMakeFiles\62990e24b14f3b980d1a93d39d4c24fe\fxdiv-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\FXdiv-download\CMakeFiles\62990e24b14f3b980d1a93d39d4c24fe\fxdiv-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\FXdiv-download\CMakeFiles\62990e24b14f3b980d1a93d39d4c24fe\fxdiv-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\FXdiv-download\CMakeFiles\a4e105fd2efdd366d96b361b1cf55439\fxdiv-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\FXdiv-download\CMakeFiles\0b09dfafccff4ebeb8c1ab19ed952d51\fxdiv.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\FXdiv-download\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\tensorflow\tensorflow\lite\tf_build\FXdiv-download\CMakeFiles\fxdiv" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{B3EF28CD-CEAE-327E-85F9-47CF4CD1EE6A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

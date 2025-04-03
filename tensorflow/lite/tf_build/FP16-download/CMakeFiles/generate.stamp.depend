@@ -1,0 +1,22 @@
+# CMake generation dependency list for this directory.
+D:/cmake-4.0.0-windows-x86_64/share/cmake-4.0/Modules/CMakeDetermineSystem.cmake
+D:/cmake-4.0.0-windows-x86_64/share/cmake-4.0/Modules/CMakeGenericSystem.cmake
+D:/cmake-4.0.0-windows-x86_64/share/cmake-4.0/Modules/CMakeInitializeConfigs.cmake
+D:/cmake-4.0.0-windows-x86_64/share/cmake-4.0/Modules/CMakeSystem.cmake.in
+D:/cmake-4.0.0-windows-x86_64/share/cmake-4.0/Modules/CMakeSystemSpecificInformation.cmake
+D:/cmake-4.0.0-windows-x86_64/share/cmake-4.0/Modules/CMakeSystemSpecificInitialize.cmake
+D:/cmake-4.0.0-windows-x86_64/share/cmake-4.0/Modules/ExternalProject.cmake
+D:/cmake-4.0.0-windows-x86_64/share/cmake-4.0/Modules/ExternalProject/PatchInfo.txt.in
+D:/cmake-4.0.0-windows-x86_64/share/cmake-4.0/Modules/ExternalProject/RepositoryInfo.txt.in
+D:/cmake-4.0.0-windows-x86_64/share/cmake-4.0/Modules/ExternalProject/UpdateInfo.txt.in
+D:/cmake-4.0.0-windows-x86_64/share/cmake-4.0/Modules/ExternalProject/cfgcmd.txt.in
+D:/cmake-4.0.0-windows-x86_64/share/cmake-4.0/Modules/ExternalProject/download.cmake.in
+D:/cmake-4.0.0-windows-x86_64/share/cmake-4.0/Modules/ExternalProject/extractfile.cmake.in
+D:/cmake-4.0.0-windows-x86_64/share/cmake-4.0/Modules/ExternalProject/mkdirs.cmake.in
+D:/cmake-4.0.0-windows-x86_64/share/cmake-4.0/Modules/ExternalProject/shared_internal_commands.cmake
+D:/cmake-4.0.0-windows-x86_64/share/cmake-4.0/Modules/Platform/Windows-Initialize.cmake
+D:/cmake-4.0.0-windows-x86_64/share/cmake-4.0/Modules/Platform/Windows.cmake
+D:/cmake-4.0.0-windows-x86_64/share/cmake-4.0/Modules/Platform/WindowsPaths.cmake
+D:/tensorflow/tensorflow/lite/tf_build/FP16-download/CMakeFiles/4.0.0/CMakeSystem.cmake
+D:/tensorflow/tensorflow/lite/tf_build/FP16-download/CMakeLists.txt
+D:/tensorflow/tensorflow/lite/tf_build/FP16-download/fp16-prefix/tmp/fp16-mkdirs.cmake

@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/CMakeFiles/pthreadpool"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/CMakeFiles/98e552d239338d60c1037b142316f445/pthreadpool.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/CMakeFiles/b9b28f02ec9e894ee6910a1ec20453b5/pthreadpool-complete.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/CMakeFiles/2b2a9ce0f78b2013068af60ce94dd0cd/pthreadpool-build.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/CMakeFiles/2b2a9ce0f78b2013068af60ce94dd0cd/pthreadpool-configure.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/CMakeFiles/2b2a9ce0f78b2013068af60ce94dd0cd/pthreadpool-download.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/CMakeFiles/2b2a9ce0f78b2013068af60ce94dd0cd/pthreadpool-install.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/CMakeFiles/2b2a9ce0f78b2013068af60ce94dd0cd/pthreadpool-mkdir.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/CMakeFiles/2b2a9ce0f78b2013068af60ce94dd0cd/pthreadpool-patch.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/CMakeFiles/2b2a9ce0f78b2013068af60ce94dd0cd/pthreadpool-test.rule"
+		},
+		{
+			"file" : "D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/CMakeFiles/2b2a9ce0f78b2013068af60ce94dd0cd/pthreadpool-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"pthreadpool"
+		],
+		"name" : "pthreadpool"
+	}
+}

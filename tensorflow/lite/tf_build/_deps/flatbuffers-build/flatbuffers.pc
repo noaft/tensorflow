@@ -1,0 +1,9 @@
+libdir=C:/Program Files (x86)/tensorflow-lite/lib
+includedir=C:/Program Files (x86)/tensorflow-lite/include
+
+Name: FlatBuffers
+Description: Memory Efficient Serialization Library
+Version: 24.3.25
+
+Libs: -L${libdir} -lflatbuffers
+Cflags: -I${includedir}

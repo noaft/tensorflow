@@ -1,0 +1,10 @@
+^D:\TENSORFLOW\TENSORFLOW\LITE\TF_BUILD\_DEPS\ABSEIL-CPP-SUBBUILD\CMAKEFILES\04D052A3F1039000ED0753BF6F151433\GENERATE.STAMP.RULE
+setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -SD:/tensorflow/tensorflow/lite/tf_build/_deps/abseil-cpp-subbuild -BD:/tensorflow/tensorflow/lite/tf_build/_deps/abseil-cpp-subbuild --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/tensorflow/tensorflow/lite/tf_build/_deps/abseil-cpp-subbuild/abseil-cpp-populate.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

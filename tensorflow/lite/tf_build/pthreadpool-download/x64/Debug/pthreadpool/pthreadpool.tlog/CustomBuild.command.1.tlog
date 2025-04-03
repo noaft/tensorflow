@@ -1,0 +1,152 @@
+^D:\TENSORFLOW\TENSORFLOW\LITE\TF_BUILD\PTHREADPOOL-DOWNLOAD\CMAKEFILES\2B2A9CE0F78B2013068AF60CE94DD0CD\PTHREADPOOL-MKDIR.RULE
+setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -Dcfgdir=/Debug -P D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/pthreadpool-prefix/tmp/pthreadpool-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/Debug/pthreadpool-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\TENSORFLOW\TENSORFLOW\LITE\TF_BUILD\PTHREADPOOL-DOWNLOAD\CMAKEFILES\2B2A9CE0F78B2013068AF60CE94DD0CD\PTHREADPOOL-DOWNLOAD.RULE
+setlocal
+cd D:\tensorflow\tensorflow\lite\tf_build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/download-pthreadpool.cmake
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/verify-pthreadpool.cmake
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/extract-pthreadpool.cmake
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/Debug/pthreadpool-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\TENSORFLOW\TENSORFLOW\LITE\TF_BUILD\PTHREADPOOL-DOWNLOAD\CMAKEFILES\2B2A9CE0F78B2013068AF60CE94DD0CD\PTHREADPOOL-UPDATE.RULE
+setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/Debug/pthreadpool-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\TENSORFLOW\TENSORFLOW\LITE\TF_BUILD\PTHREADPOOL-DOWNLOAD\CMAKEFILES\2B2A9CE0F78B2013068AF60CE94DD0CD\PTHREADPOOL-PATCH.RULE
+setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/Debug/pthreadpool-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\TENSORFLOW\TENSORFLOW\LITE\TF_BUILD\PTHREADPOOL-DOWNLOAD\CMAKEFILES\2B2A9CE0F78B2013068AF60CE94DD0CD\PTHREADPOOL-CONFIGURE.RULE
+setlocal
+cd D:\tensorflow\tensorflow\lite\tf_build\pthreadpool
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/Debug/pthreadpool-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\TENSORFLOW\TENSORFLOW\LITE\TF_BUILD\PTHREADPOOL-DOWNLOAD\CMAKEFILES\2B2A9CE0F78B2013068AF60CE94DD0CD\PTHREADPOOL-BUILD.RULE
+setlocal
+cd D:\tensorflow\tensorflow\lite\tf_build\pthreadpool
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/Debug/pthreadpool-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\TENSORFLOW\TENSORFLOW\LITE\TF_BUILD\PTHREADPOOL-DOWNLOAD\CMAKEFILES\2B2A9CE0F78B2013068AF60CE94DD0CD\PTHREADPOOL-INSTALL.RULE
+setlocal
+cd D:\tensorflow\tensorflow\lite\tf_build\pthreadpool
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/Debug/pthreadpool-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\TENSORFLOW\TENSORFLOW\LITE\TF_BUILD\PTHREADPOOL-DOWNLOAD\CMAKEFILES\2B2A9CE0F78B2013068AF60CE94DD0CD\PTHREADPOOL-TEST.RULE
+setlocal
+cd D:\tensorflow\tensorflow\lite\tf_build\pthreadpool
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/Debug/pthreadpool-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\TENSORFLOW\TENSORFLOW\LITE\TF_BUILD\PTHREADPOOL-DOWNLOAD\CMAKEFILES\B9B28F02EC9E894EE6910A1EC20453B5\PTHREADPOOL-COMPLETE.RULE
+setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E make_directory D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/CMakeFiles/Debug
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/CMakeFiles/Debug/pthreadpool-complete
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/Debug/pthreadpool-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\TENSORFLOW\TENSORFLOW\LITE\TF_BUILD\PTHREADPOOL-DOWNLOAD\CMAKEFILES\98E552D239338D60C1037B142316F445\PTHREADPOOL.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\TENSORFLOW\TENSORFLOW\LITE\TF_BUILD\PTHREADPOOL-DOWNLOAD\CMAKELISTS.TXT
+setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -SD:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download -BD:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download --check-stamp-file D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

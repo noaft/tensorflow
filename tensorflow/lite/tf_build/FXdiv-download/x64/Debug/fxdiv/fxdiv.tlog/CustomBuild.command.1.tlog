@@ -1,0 +1,150 @@
+^D:\TENSORFLOW\TENSORFLOW\LITE\TF_BUILD\FXDIV-DOWNLOAD\CMAKEFILES\62990E24B14F3B980D1A93D39D4C24FE\FXDIV-MKDIR.RULE
+setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -Dcfgdir=/Debug -P D:/tensorflow/tensorflow/lite/tf_build/FXdiv-download/fxdiv-prefix/tmp/fxdiv-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/FXdiv-download/fxdiv-prefix/src/fxdiv-stamp/Debug/fxdiv-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\TENSORFLOW\TENSORFLOW\LITE\TF_BUILD\FXDIV-DOWNLOAD\CMAKEFILES\62990E24B14F3B980D1A93D39D4C24FE\FXDIV-DOWNLOAD.RULE
+setlocal
+cd D:\tensorflow\tensorflow\lite\tf_build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P D:/tensorflow/tensorflow/lite/tf_build/FXdiv-download/fxdiv-prefix/tmp/fxdiv-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/FXdiv-download/fxdiv-prefix/src/fxdiv-stamp/Debug/fxdiv-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\TENSORFLOW\TENSORFLOW\LITE\TF_BUILD\FXDIV-DOWNLOAD\CMAKEFILES\62990E24B14F3B980D1A93D39D4C24FE\FXDIV-UPDATE.RULE
+setlocal
+cd D:\tensorflow\tensorflow\lite\tf_build\FXdiv-source
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -Dcan_fetch=YES -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P D:/tensorflow/tensorflow/lite/tf_build/FXdiv-download/fxdiv-prefix/tmp/fxdiv-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\TENSORFLOW\TENSORFLOW\LITE\TF_BUILD\FXDIV-DOWNLOAD\CMAKEFILES\62990E24B14F3B980D1A93D39D4C24FE\FXDIV-PATCH.RULE
+setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/FXdiv-download/fxdiv-prefix/src/fxdiv-stamp/Debug/fxdiv-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\TENSORFLOW\TENSORFLOW\LITE\TF_BUILD\FXDIV-DOWNLOAD\CMAKEFILES\62990E24B14F3B980D1A93D39D4C24FE\FXDIV-CONFIGURE.RULE
+setlocal
+cd D:\tensorflow\tensorflow\lite\tf_build\FXdiv
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/FXdiv-download/fxdiv-prefix/src/fxdiv-stamp/Debug/fxdiv-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\TENSORFLOW\TENSORFLOW\LITE\TF_BUILD\FXDIV-DOWNLOAD\CMAKEFILES\62990E24B14F3B980D1A93D39D4C24FE\FXDIV-BUILD.RULE
+setlocal
+cd D:\tensorflow\tensorflow\lite\tf_build\FXdiv
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/FXdiv-download/fxdiv-prefix/src/fxdiv-stamp/Debug/fxdiv-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\TENSORFLOW\TENSORFLOW\LITE\TF_BUILD\FXDIV-DOWNLOAD\CMAKEFILES\62990E24B14F3B980D1A93D39D4C24FE\FXDIV-INSTALL.RULE
+setlocal
+cd D:\tensorflow\tensorflow\lite\tf_build\FXdiv
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/FXdiv-download/fxdiv-prefix/src/fxdiv-stamp/Debug/fxdiv-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\TENSORFLOW\TENSORFLOW\LITE\TF_BUILD\FXDIV-DOWNLOAD\CMAKEFILES\62990E24B14F3B980D1A93D39D4C24FE\FXDIV-TEST.RULE
+setlocal
+cd D:\tensorflow\tensorflow\lite\tf_build\FXdiv
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/FXdiv-download/fxdiv-prefix/src/fxdiv-stamp/Debug/fxdiv-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\TENSORFLOW\TENSORFLOW\LITE\TF_BUILD\FXDIV-DOWNLOAD\CMAKEFILES\A4E105FD2EFDD366D96B361B1CF55439\FXDIV-COMPLETE.RULE
+setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E make_directory D:/tensorflow/tensorflow/lite/tf_build/FXdiv-download/CMakeFiles/Debug
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/FXdiv-download/CMakeFiles/Debug/fxdiv-complete
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/FXdiv-download/fxdiv-prefix/src/fxdiv-stamp/Debug/fxdiv-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\TENSORFLOW\TENSORFLOW\LITE\TF_BUILD\FXDIV-DOWNLOAD\CMAKEFILES\0B09DFAFCCFF4EBEB8C1AB19ED952D51\FXDIV.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\TENSORFLOW\TENSORFLOW\LITE\TF_BUILD\FXDIV-DOWNLOAD\CMAKELISTS.TXT
+setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -SD:/tensorflow/tensorflow/lite/tf_build/FXdiv-download -BD:/tensorflow/tensorflow/lite/tf_build/FXdiv-download --check-stamp-file D:/tensorflow/tensorflow/lite/tf_build/FXdiv-download/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

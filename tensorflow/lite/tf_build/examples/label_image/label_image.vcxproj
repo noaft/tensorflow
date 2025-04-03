@@ -1,0 +1,579 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CEA117C3-E18A-3D22-AB42-308092E100DA}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>label_image</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\tensorflow\tensorflow\lite\tf_build\examples\label_image\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">label_image.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">label_image</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\tensorflow\tensorflow\lite\tf_build\examples\label_image\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">label_image.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">label_image</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\tensorflow\tensorflow\lite\tf_build\examples\label_image\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">label_image.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">label_image</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\tensorflow\tensorflow\lite\tf_build\examples\label_image\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">label_image.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">label_image</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\tensorflow\third_party\xla\third_party\tsl;D:\tensorflow\third_party\xla;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-source\include;D:\tensorflow\tensorflow\lite\tf_build\FP16-source\include;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\include;D:\tensorflow\tensorflow\lite\tf_build\cpuinfo;D:\tensorflow\tensorflow\lite\examples\label_image\label_image;D:\tensorflow\tensorflow\lite\examples\label_image\PUBLIC;D:\tensorflow\tensorflow\lite\tf_build;D:\tensorflow;D:\tensorflow\tensorflow\lite\tf_build\eigen;D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp;D:\tensorflow\tensorflow\lite\tf_build\farmhash\src;D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\include;D:\tensorflow\tensorflow\lite\tf_build\gemmlowp;D:\tensorflow\tensorflow\lite\tf_build\ml_dtypes;D:\tensorflow\tensorflow\lite\tf_build\ml_dtypes\ml_dtypes;D:\tensorflow\tensorflow\lite\tf_build\ruy;D:\tensorflow\tensorflow\lite\tf_build\cpuinfo\include;D:\tensorflow\tensorflow\lite\tf_build\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;EIGEN_NEON_GEBP_NR=4;TFLITE_KERNEL_USE_XNNPACK;TFLITE_BUILD_WITH_XNNPACK_DELEGATE;XNNPACK_DELEGATE_ENABLE_QS8;XNNPACK_DELEGATE_ENABLE_QU8;XNNPACK_DELEGATE_USE_LATEST_OPS;XNNPACK_DELEGATE_ENABLE_SUBGRAPH_RESHAPING;EIGEN_MPL2_ONLY;NOMINMAX=1;ABSL_CONSUME_DLL;FARMHASH_NO_BUILTIN_EXPECT;CPUINFO_SUPPORTED_PLATFORM=1;PTHREADPOOL_NO_DEPRECATED_API=1;XNN_LOG_LEVEL=5;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>true</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;EIGEN_NEON_GEBP_NR=4;TFLITE_KERNEL_USE_XNNPACK;TFLITE_BUILD_WITH_XNNPACK_DELEGATE;XNNPACK_DELEGATE_ENABLE_QS8;XNNPACK_DELEGATE_ENABLE_QU8;XNNPACK_DELEGATE_USE_LATEST_OPS;XNNPACK_DELEGATE_ENABLE_SUBGRAPH_RESHAPING;EIGEN_MPL2_ONLY;NOMINMAX=1;ABSL_CONSUME_DLL;FARMHASH_NO_BUILTIN_EXPECT;CPUINFO_SUPPORTED_PLATFORM=1;PTHREADPOOL_NO_DEPRECATED_API=1;XNN_LOG_LEVEL=5;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\tensorflow\third_party\xla\third_party\tsl;D:\tensorflow\third_party\xla;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-source\include;D:\tensorflow\tensorflow\lite\tf_build\FP16-source\include;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\include;D:\tensorflow\tensorflow\lite\tf_build\cpuinfo;D:\tensorflow\tensorflow\lite\examples\label_image\label_image;D:\tensorflow\tensorflow\lite\examples\label_image\PUBLIC;D:\tensorflow\tensorflow\lite\tf_build;D:\tensorflow;D:\tensorflow\tensorflow\lite\tf_build\eigen;D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp;D:\tensorflow\tensorflow\lite\tf_build\farmhash\src;D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\include;D:\tensorflow\tensorflow\lite\tf_build\gemmlowp;D:\tensorflow\tensorflow\lite\tf_build\ml_dtypes;D:\tensorflow\tensorflow\lite\tf_build\ml_dtypes\ml_dtypes;D:\tensorflow\tensorflow\lite\tf_build\ruy;D:\tensorflow\tensorflow\lite\tf_build\cpuinfo\include;D:\tensorflow\tensorflow\lite\tf_build\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\tensorflow\third_party\xla\third_party\tsl;D:\tensorflow\third_party\xla;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-source\include;D:\tensorflow\tensorflow\lite\tf_build\FP16-source\include;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\include;D:\tensorflow\tensorflow\lite\tf_build\cpuinfo;D:\tensorflow\tensorflow\lite\examples\label_image\label_image;D:\tensorflow\tensorflow\lite\examples\label_image\PUBLIC;D:\tensorflow\tensorflow\lite\tf_build;D:\tensorflow;D:\tensorflow\tensorflow\lite\tf_build\eigen;D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp;D:\tensorflow\tensorflow\lite\tf_build\farmhash\src;D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\include;D:\tensorflow\tensorflow\lite\tf_build\gemmlowp;D:\tensorflow\tensorflow\lite\tf_build\ml_dtypes;D:\tensorflow\tensorflow\lite\tf_build\ml_dtypes\ml_dtypes;D:\tensorflow\tensorflow\lite\tf_build\ruy;D:\tensorflow\tensorflow\lite\tf_build\cpuinfo\include;D:\tensorflow\tensorflow\lite\tf_build\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\Debug\tensorflow-lite.lib;..\..\profiling\proto\Debug\profiling_info_proto.lib;..\..\_deps\protobuf-build\Debug\libprotobufd.lib;..\..\_deps\abseil-cpp-build\absl\flags\Debug\absl_flags.lib;..\..\_deps\abseil-cpp-build\absl\flags\Debug\absl_flags_internal.lib;..\..\_deps\abseil-cpp-build\absl\flags\Debug\absl_flags_marshalling.lib;..\..\_deps\abseil-cpp-build\absl\flags\Debug\absl_flags_reflection.lib;..\..\_deps\abseil-cpp-build\absl\flags\Debug\absl_flags_config.lib;..\..\_deps\abseil-cpp-build\absl\flags\Debug\absl_flags_program_name.lib;..\..\_deps\abseil-cpp-build\absl\flags\Debug\absl_flags_private_handle_accessor.lib;..\..\_deps\abseil-cpp-build\absl\flags\Debug\absl_flags_commandlineflag.lib;..\..\_deps\abseil-cpp-build\absl\flags\Debug\absl_flags_commandlineflag_internal.lib;..\..\_deps\abseil-cpp-build\absl\Debug\abseil_dll.lib;-ignore:4221;..\..\_deps\farmhash-build\Debug\farmhash.lib;..\..\_deps\fft2d-build\Debug\fft2d_fftsg2d.lib;..\..\_deps\fft2d-build\Debug\fft2d_fftsg.lib;..\..\Debug\xnnpack-delegate.lib;..\..\_deps\flatbuffers-build\Debug\flatbuffers.lib;..\..\_deps\gemmlowp-build\Debug\eight_bit_int_gemm.lib;..\..\_deps\ruy-build\ruy\Debug\ruy_context_get_ctx.lib;..\..\_deps\ruy-build\ruy\Debug\ruy_context.lib;..\..\_deps\ruy-build\ruy\Debug\ruy_frontend.lib;..\..\_deps\ruy-build\ruy\Debug\ruy_kernel_arm.lib;..\..\_deps\ruy-build\ruy\Debug\ruy_kernel_avx.lib;..\..\_deps\ruy-build\ruy\Debug\ruy_kernel_avx2_fma.lib;..\..\_deps\ruy-build\ruy\Debug\ruy_kernel_avx512.lib;..\..\_deps\ruy-build\ruy\Debug\ruy_apply_multiplier.lib;..\..\_deps\ruy-build\ruy\Debug\ruy_pack_arm.lib;..\..\_deps\ruy-build\ruy\Debug\ruy_pack_avx.lib;..\..\_deps\ruy-build\ruy\Debug\ruy_pack_avx2_fma.lib;..\..\_deps\ruy-build\ruy\Debug\ruy_pack_avx512.lib;..\..\_deps\ruy-build\ruy\Debug\ruy_prepare_packed_matrices.lib;..\..\_deps\ruy-build\ruy\Debug\ruy_trmul.lib;..\..\_deps\ruy-build\ruy\Debug\ruy_ctx.lib;..\..\_deps\ruy-build\ruy\Debug\ruy_allocator.lib;..\..\_deps\ruy-build\ruy\Debug\ruy_prepacked_cache.lib;..\..\_deps\ruy-build\ruy\Debug\ruy_system_aligned_alloc.lib;..\..\_deps\ruy-build\ruy\Debug\ruy_have_built_path_for_avx.lib;..\..\_deps\ruy-build\ruy\Debug\ruy_have_built_path_for_avx2_fma.lib;..\..\_deps\ruy-build\ruy\Debug\ruy_have_built_path_for_avx512.lib;..\..\_deps\ruy-build\ruy\Debug\ruy_thread_pool.lib;..\..\_deps\ruy-build\ruy\Debug\ruy_blocking_counter.lib;..\..\_deps\ruy-build\ruy\Debug\ruy_wait.lib;..\..\_deps\ruy-build\ruy\Debug\ruy_denormal.lib;..\..\_deps\ruy-build\ruy\Debug\ruy_block_map.lib;..\..\_deps\ruy-build\ruy\Debug\ruy_tune.lib;..\..\_deps\ruy-build\ruy\Debug\ruy_cpuinfo.lib;..\..\_deps\ruy-build\ruy\profiler\Debug\ruy_profiler_instrumentation.lib;..\..\_deps\xnnpack-build\Debug\XNNPACK.lib;..\..\pthreadpool\Debug\pthreadpool.lib;..\..\_deps\cpuinfo-build\Debug\cpuinfo.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/tensorflow/tensorflow/lite/tf_build/examples/label_image/Debug/label_image.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/tensorflow/tensorflow/lite/tf_build/examples/label_image/Debug/label_image.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\tensorflow\third_party\xla\third_party\tsl;D:\tensorflow\third_party\xla;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-source\include;D:\tensorflow\tensorflow\lite\tf_build\FP16-source\include;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\include;D:\tensorflow\tensorflow\lite\tf_build\cpuinfo;D:\tensorflow\tensorflow\lite\examples\label_image\label_image;D:\tensorflow\tensorflow\lite\examples\label_image\PUBLIC;D:\tensorflow\tensorflow\lite\tf_build;D:\tensorflow;D:\tensorflow\tensorflow\lite\tf_build\eigen;D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp;D:\tensorflow\tensorflow\lite\tf_build\farmhash\src;D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\include;D:\tensorflow\tensorflow\lite\tf_build\gemmlowp;D:\tensorflow\tensorflow\lite\tf_build\ml_dtypes;D:\tensorflow\tensorflow\lite\tf_build\ml_dtypes\ml_dtypes;D:\tensorflow\tensorflow\lite\tf_build\ruy;D:\tensorflow\tensorflow\lite\tf_build\cpuinfo\include;D:\tensorflow\tensorflow\lite\tf_build\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;EIGEN_NEON_GEBP_NR=4;TFLITE_KERNEL_USE_XNNPACK;TFLITE_BUILD_WITH_XNNPACK_DELEGATE;XNNPACK_DELEGATE_ENABLE_QS8;XNNPACK_DELEGATE_ENABLE_QU8;XNNPACK_DELEGATE_USE_LATEST_OPS;XNNPACK_DELEGATE_ENABLE_SUBGRAPH_RESHAPING;EIGEN_MPL2_ONLY;NOMINMAX=1;ABSL_CONSUME_DLL;FARMHASH_NO_BUILTIN_EXPECT;CPUINFO_SUPPORTED_PLATFORM=1;PTHREADPOOL_NO_DEPRECATED_API=1;XNN_LOG_LEVEL=0;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>true</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;EIGEN_NEON_GEBP_NR=4;TFLITE_KERNEL_USE_XNNPACK;TFLITE_BUILD_WITH_XNNPACK_DELEGATE;XNNPACK_DELEGATE_ENABLE_QS8;XNNPACK_DELEGATE_ENABLE_QU8;XNNPACK_DELEGATE_USE_LATEST_OPS;XNNPACK_DELEGATE_ENABLE_SUBGRAPH_RESHAPING;EIGEN_MPL2_ONLY;NOMINMAX=1;ABSL_CONSUME_DLL;FARMHASH_NO_BUILTIN_EXPECT;CPUINFO_SUPPORTED_PLATFORM=1;PTHREADPOOL_NO_DEPRECATED_API=1;XNN_LOG_LEVEL=0;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\tensorflow\third_party\xla\third_party\tsl;D:\tensorflow\third_party\xla;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-source\include;D:\tensorflow\tensorflow\lite\tf_build\FP16-source\include;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\include;D:\tensorflow\tensorflow\lite\tf_build\cpuinfo;D:\tensorflow\tensorflow\lite\examples\label_image\label_image;D:\tensorflow\tensorflow\lite\examples\label_image\PUBLIC;D:\tensorflow\tensorflow\lite\tf_build;D:\tensorflow;D:\tensorflow\tensorflow\lite\tf_build\eigen;D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp;D:\tensorflow\tensorflow\lite\tf_build\farmhash\src;D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\include;D:\tensorflow\tensorflow\lite\tf_build\gemmlowp;D:\tensorflow\tensorflow\lite\tf_build\ml_dtypes;D:\tensorflow\tensorflow\lite\tf_build\ml_dtypes\ml_dtypes;D:\tensorflow\tensorflow\lite\tf_build\ruy;D:\tensorflow\tensorflow\lite\tf_build\cpuinfo\include;D:\tensorflow\tensorflow\lite\tf_build\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\tensorflow\third_party\xla\third_party\tsl;D:\tensorflow\third_party\xla;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-source\include;D:\tensorflow\tensorflow\lite\tf_build\FP16-source\include;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\include;D:\tensorflow\tensorflow\lite\tf_build\cpuinfo;D:\tensorflow\tensorflow\lite\examples\label_image\label_image;D:\tensorflow\tensorflow\lite\examples\label_image\PUBLIC;D:\tensorflow\tensorflow\lite\tf_build;D:\tensorflow;D:\tensorflow\tensorflow\lite\tf_build\eigen;D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp;D:\tensorflow\tensorflow\lite\tf_build\farmhash\src;D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\include;D:\tensorflow\tensorflow\lite\tf_build\gemmlowp;D:\tensorflow\tensorflow\lite\tf_build\ml_dtypes;D:\tensorflow\tensorflow\lite\tf_build\ml_dtypes\ml_dtypes;D:\tensorflow\tensorflow\lite\tf_build\ruy;D:\tensorflow\tensorflow\lite\tf_build\cpuinfo\include;D:\tensorflow\tensorflow\lite\tf_build\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\Release\tensorflow-lite.lib;..\..\profiling\proto\Release\profiling_info_proto.lib;..\..\_deps\protobuf-build\Release\libprotobuf.lib;..\..\_deps\abseil-cpp-build\absl\flags\Release\absl_flags.lib;..\..\_deps\abseil-cpp-build\absl\flags\Release\absl_flags_internal.lib;..\..\_deps\abseil-cpp-build\absl\flags\Release\absl_flags_marshalling.lib;..\..\_deps\abseil-cpp-build\absl\flags\Release\absl_flags_reflection.lib;..\..\_deps\abseil-cpp-build\absl\flags\Release\absl_flags_config.lib;..\..\_deps\abseil-cpp-build\absl\flags\Release\absl_flags_program_name.lib;..\..\_deps\abseil-cpp-build\absl\flags\Release\absl_flags_private_handle_accessor.lib;..\..\_deps\abseil-cpp-build\absl\flags\Release\absl_flags_commandlineflag.lib;..\..\_deps\abseil-cpp-build\absl\flags\Release\absl_flags_commandlineflag_internal.lib;..\..\_deps\abseil-cpp-build\absl\Release\abseil_dll.lib;-ignore:4221;..\..\_deps\farmhash-build\Release\farmhash.lib;..\..\_deps\fft2d-build\Release\fft2d_fftsg2d.lib;..\..\_deps\fft2d-build\Release\fft2d_fftsg.lib;..\..\Release\xnnpack-delegate.lib;..\..\_deps\flatbuffers-build\Release\flatbuffers.lib;..\..\_deps\gemmlowp-build\Release\eight_bit_int_gemm.lib;..\..\_deps\ruy-build\ruy\Release\ruy_context_get_ctx.lib;..\..\_deps\ruy-build\ruy\Release\ruy_context.lib;..\..\_deps\ruy-build\ruy\Release\ruy_frontend.lib;..\..\_deps\ruy-build\ruy\Release\ruy_kernel_arm.lib;..\..\_deps\ruy-build\ruy\Release\ruy_kernel_avx.lib;..\..\_deps\ruy-build\ruy\Release\ruy_kernel_avx2_fma.lib;..\..\_deps\ruy-build\ruy\Release\ruy_kernel_avx512.lib;..\..\_deps\ruy-build\ruy\Release\ruy_apply_multiplier.lib;..\..\_deps\ruy-build\ruy\Release\ruy_pack_arm.lib;..\..\_deps\ruy-build\ruy\Release\ruy_pack_avx.lib;..\..\_deps\ruy-build\ruy\Release\ruy_pack_avx2_fma.lib;..\..\_deps\ruy-build\ruy\Release\ruy_pack_avx512.lib;..\..\_deps\ruy-build\ruy\Release\ruy_prepare_packed_matrices.lib;..\..\_deps\ruy-build\ruy\Release\ruy_trmul.lib;..\..\_deps\ruy-build\ruy\Release\ruy_ctx.lib;..\..\_deps\ruy-build\ruy\Release\ruy_allocator.lib;..\..\_deps\ruy-build\ruy\Release\ruy_prepacked_cache.lib;..\..\_deps\ruy-build\ruy\Release\ruy_system_aligned_alloc.lib;..\..\_deps\ruy-build\ruy\Release\ruy_have_built_path_for_avx.lib;..\..\_deps\ruy-build\ruy\Release\ruy_have_built_path_for_avx2_fma.lib;..\..\_deps\ruy-build\ruy\Release\ruy_have_built_path_for_avx512.lib;..\..\_deps\ruy-build\ruy\Release\ruy_thread_pool.lib;..\..\_deps\ruy-build\ruy\Release\ruy_blocking_counter.lib;..\..\_deps\ruy-build\ruy\Release\ruy_wait.lib;..\..\_deps\ruy-build\ruy\Release\ruy_denormal.lib;..\..\_deps\ruy-build\ruy\Release\ruy_block_map.lib;..\..\_deps\ruy-build\ruy\Release\ruy_tune.lib;..\..\_deps\ruy-build\ruy\Release\ruy_cpuinfo.lib;..\..\_deps\ruy-build\ruy\profiler\Release\ruy_profiler_instrumentation.lib;..\..\_deps\xnnpack-build\Release\XNNPACK.lib;..\..\pthreadpool\Release\pthreadpool.lib;..\..\_deps\cpuinfo-build\Release\cpuinfo.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/tensorflow/tensorflow/lite/tf_build/examples/label_image/Release/label_image.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/tensorflow/tensorflow/lite/tf_build/examples/label_image/Release/label_image.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\tensorflow\third_party\xla\third_party\tsl;D:\tensorflow\third_party\xla;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-source\include;D:\tensorflow\tensorflow\lite\tf_build\FP16-source\include;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\include;D:\tensorflow\tensorflow\lite\tf_build\cpuinfo;D:\tensorflow\tensorflow\lite\examples\label_image\label_image;D:\tensorflow\tensorflow\lite\examples\label_image\PUBLIC;D:\tensorflow\tensorflow\lite\tf_build;D:\tensorflow;D:\tensorflow\tensorflow\lite\tf_build\eigen;D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp;D:\tensorflow\tensorflow\lite\tf_build\farmhash\src;D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\include;D:\tensorflow\tensorflow\lite\tf_build\gemmlowp;D:\tensorflow\tensorflow\lite\tf_build\ml_dtypes;D:\tensorflow\tensorflow\lite\tf_build\ml_dtypes\ml_dtypes;D:\tensorflow\tensorflow\lite\tf_build\ruy;D:\tensorflow\tensorflow\lite\tf_build\cpuinfo\include;D:\tensorflow\tensorflow\lite\tf_build\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;EIGEN_NEON_GEBP_NR=4;TFLITE_KERNEL_USE_XNNPACK;TFLITE_BUILD_WITH_XNNPACK_DELEGATE;XNNPACK_DELEGATE_ENABLE_QS8;XNNPACK_DELEGATE_ENABLE_QU8;XNNPACK_DELEGATE_USE_LATEST_OPS;XNNPACK_DELEGATE_ENABLE_SUBGRAPH_RESHAPING;EIGEN_MPL2_ONLY;NOMINMAX=1;ABSL_CONSUME_DLL;FARMHASH_NO_BUILTIN_EXPECT;CPUINFO_SUPPORTED_PLATFORM=1;PTHREADPOOL_NO_DEPRECATED_API=1;XNN_LOG_LEVEL=0;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>true</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;EIGEN_NEON_GEBP_NR=4;TFLITE_KERNEL_USE_XNNPACK;TFLITE_BUILD_WITH_XNNPACK_DELEGATE;XNNPACK_DELEGATE_ENABLE_QS8;XNNPACK_DELEGATE_ENABLE_QU8;XNNPACK_DELEGATE_USE_LATEST_OPS;XNNPACK_DELEGATE_ENABLE_SUBGRAPH_RESHAPING;EIGEN_MPL2_ONLY;NOMINMAX=1;ABSL_CONSUME_DLL;FARMHASH_NO_BUILTIN_EXPECT;CPUINFO_SUPPORTED_PLATFORM=1;PTHREADPOOL_NO_DEPRECATED_API=1;XNN_LOG_LEVEL=0;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\tensorflow\third_party\xla\third_party\tsl;D:\tensorflow\third_party\xla;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-source\include;D:\tensorflow\tensorflow\lite\tf_build\FP16-source\include;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\include;D:\tensorflow\tensorflow\lite\tf_build\cpuinfo;D:\tensorflow\tensorflow\lite\examples\label_image\label_image;D:\tensorflow\tensorflow\lite\examples\label_image\PUBLIC;D:\tensorflow\tensorflow\lite\tf_build;D:\tensorflow;D:\tensorflow\tensorflow\lite\tf_build\eigen;D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp;D:\tensorflow\tensorflow\lite\tf_build\farmhash\src;D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\include;D:\tensorflow\tensorflow\lite\tf_build\gemmlowp;D:\tensorflow\tensorflow\lite\tf_build\ml_dtypes;D:\tensorflow\tensorflow\lite\tf_build\ml_dtypes\ml_dtypes;D:\tensorflow\tensorflow\lite\tf_build\ruy;D:\tensorflow\tensorflow\lite\tf_build\cpuinfo\include;D:\tensorflow\tensorflow\lite\tf_build\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\tensorflow\third_party\xla\third_party\tsl;D:\tensorflow\third_party\xla;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-source\include;D:\tensorflow\tensorflow\lite\tf_build\FP16-source\include;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\include;D:\tensorflow\tensorflow\lite\tf_build\cpuinfo;D:\tensorflow\tensorflow\lite\examples\label_image\label_image;D:\tensorflow\tensorflow\lite\examples\label_image\PUBLIC;D:\tensorflow\tensorflow\lite\tf_build;D:\tensorflow;D:\tensorflow\tensorflow\lite\tf_build\eigen;D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp;D:\tensorflow\tensorflow\lite\tf_build\farmhash\src;D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\include;D:\tensorflow\tensorflow\lite\tf_build\gemmlowp;D:\tensorflow\tensorflow\lite\tf_build\ml_dtypes;D:\tensorflow\tensorflow\lite\tf_build\ml_dtypes\ml_dtypes;D:\tensorflow\tensorflow\lite\tf_build\ruy;D:\tensorflow\tensorflow\lite\tf_build\cpuinfo\include;D:\tensorflow\tensorflow\lite\tf_build\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\MinSizeRel\tensorflow-lite.lib;..\..\profiling\proto\MinSizeRel\profiling_info_proto.lib;..\..\_deps\protobuf-build\MinSizeRel\libprotobuf.lib;..\..\_deps\abseil-cpp-build\absl\flags\MinSizeRel\absl_flags.lib;..\..\_deps\abseil-cpp-build\absl\flags\MinSizeRel\absl_flags_internal.lib;..\..\_deps\abseil-cpp-build\absl\flags\MinSizeRel\absl_flags_marshalling.lib;..\..\_deps\abseil-cpp-build\absl\flags\MinSizeRel\absl_flags_reflection.lib;..\..\_deps\abseil-cpp-build\absl\flags\MinSizeRel\absl_flags_config.lib;..\..\_deps\abseil-cpp-build\absl\flags\MinSizeRel\absl_flags_program_name.lib;..\..\_deps\abseil-cpp-build\absl\flags\MinSizeRel\absl_flags_private_handle_accessor.lib;..\..\_deps\abseil-cpp-build\absl\flags\MinSizeRel\absl_flags_commandlineflag.lib;..\..\_deps\abseil-cpp-build\absl\flags\MinSizeRel\absl_flags_commandlineflag_internal.lib;..\..\_deps\abseil-cpp-build\absl\MinSizeRel\abseil_dll.lib;-ignore:4221;..\..\_deps\farmhash-build\MinSizeRel\farmhash.lib;..\..\_deps\fft2d-build\MinSizeRel\fft2d_fftsg2d.lib;..\..\_deps\fft2d-build\MinSizeRel\fft2d_fftsg.lib;..\..\MinSizeRel\xnnpack-delegate.lib;..\..\_deps\flatbuffers-build\MinSizeRel\flatbuffers.lib;..\..\_deps\gemmlowp-build\MinSizeRel\eight_bit_int_gemm.lib;..\..\_deps\ruy-build\ruy\MinSizeRel\ruy_context_get_ctx.lib;..\..\_deps\ruy-build\ruy\MinSizeRel\ruy_context.lib;..\..\_deps\ruy-build\ruy\MinSizeRel\ruy_frontend.lib;..\..\_deps\ruy-build\ruy\MinSizeRel\ruy_kernel_arm.lib;..\..\_deps\ruy-build\ruy\MinSizeRel\ruy_kernel_avx.lib;..\..\_deps\ruy-build\ruy\MinSizeRel\ruy_kernel_avx2_fma.lib;..\..\_deps\ruy-build\ruy\MinSizeRel\ruy_kernel_avx512.lib;..\..\_deps\ruy-build\ruy\MinSizeRel\ruy_apply_multiplier.lib;..\..\_deps\ruy-build\ruy\MinSizeRel\ruy_pack_arm.lib;..\..\_deps\ruy-build\ruy\MinSizeRel\ruy_pack_avx.lib;..\..\_deps\ruy-build\ruy\MinSizeRel\ruy_pack_avx2_fma.lib;..\..\_deps\ruy-build\ruy\MinSizeRel\ruy_pack_avx512.lib;..\..\_deps\ruy-build\ruy\MinSizeRel\ruy_prepare_packed_matrices.lib;..\..\_deps\ruy-build\ruy\MinSizeRel\ruy_trmul.lib;..\..\_deps\ruy-build\ruy\MinSizeRel\ruy_ctx.lib;..\..\_deps\ruy-build\ruy\MinSizeRel\ruy_allocator.lib;..\..\_deps\ruy-build\ruy\MinSizeRel\ruy_prepacked_cache.lib;..\..\_deps\ruy-build\ruy\MinSizeRel\ruy_system_aligned_alloc.lib;..\..\_deps\ruy-build\ruy\MinSizeRel\ruy_have_built_path_for_avx.lib;..\..\_deps\ruy-build\ruy\MinSizeRel\ruy_have_built_path_for_avx2_fma.lib;..\..\_deps\ruy-build\ruy\MinSizeRel\ruy_have_built_path_for_avx512.lib;..\..\_deps\ruy-build\ruy\MinSizeRel\ruy_thread_pool.lib;..\..\_deps\ruy-build\ruy\MinSizeRel\ruy_blocking_counter.lib;..\..\_deps\ruy-build\ruy\MinSizeRel\ruy_wait.lib;..\..\_deps\ruy-build\ruy\MinSizeRel\ruy_denormal.lib;..\..\_deps\ruy-build\ruy\MinSizeRel\ruy_block_map.lib;..\..\_deps\ruy-build\ruy\MinSizeRel\ruy_tune.lib;..\..\_deps\ruy-build\ruy\MinSizeRel\ruy_cpuinfo.lib;..\..\_deps\ruy-build\ruy\profiler\MinSizeRel\ruy_profiler_instrumentation.lib;..\..\_deps\xnnpack-build\MinSizeRel\XNNPACK.lib;..\..\pthreadpool\MinSizeRel\pthreadpool.lib;..\..\_deps\cpuinfo-build\MinSizeRel\cpuinfo.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/tensorflow/tensorflow/lite/tf_build/examples/label_image/MinSizeRel/label_image.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/tensorflow/tensorflow/lite/tf_build/examples/label_image/MinSizeRel/label_image.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\tensorflow\third_party\xla\third_party\tsl;D:\tensorflow\third_party\xla;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-source\include;D:\tensorflow\tensorflow\lite\tf_build\FP16-source\include;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\include;D:\tensorflow\tensorflow\lite\tf_build\cpuinfo;D:\tensorflow\tensorflow\lite\examples\label_image\label_image;D:\tensorflow\tensorflow\lite\examples\label_image\PUBLIC;D:\tensorflow\tensorflow\lite\tf_build;D:\tensorflow;D:\tensorflow\tensorflow\lite\tf_build\eigen;D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp;D:\tensorflow\tensorflow\lite\tf_build\farmhash\src;D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\include;D:\tensorflow\tensorflow\lite\tf_build\gemmlowp;D:\tensorflow\tensorflow\lite\tf_build\ml_dtypes;D:\tensorflow\tensorflow\lite\tf_build\ml_dtypes\ml_dtypes;D:\tensorflow\tensorflow\lite\tf_build\ruy;D:\tensorflow\tensorflow\lite\tf_build\cpuinfo\include;D:\tensorflow\tensorflow\lite\tf_build\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;EIGEN_NEON_GEBP_NR=4;TFLITE_KERNEL_USE_XNNPACK;TFLITE_BUILD_WITH_XNNPACK_DELEGATE;XNNPACK_DELEGATE_ENABLE_QS8;XNNPACK_DELEGATE_ENABLE_QU8;XNNPACK_DELEGATE_USE_LATEST_OPS;XNNPACK_DELEGATE_ENABLE_SUBGRAPH_RESHAPING;EIGEN_MPL2_ONLY;NOMINMAX=1;ABSL_CONSUME_DLL;FARMHASH_NO_BUILTIN_EXPECT;CPUINFO_SUPPORTED_PLATFORM=1;PTHREADPOOL_NO_DEPRECATED_API=1;XNN_LOG_LEVEL=0;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>true</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;EIGEN_NEON_GEBP_NR=4;TFLITE_KERNEL_USE_XNNPACK;TFLITE_BUILD_WITH_XNNPACK_DELEGATE;XNNPACK_DELEGATE_ENABLE_QS8;XNNPACK_DELEGATE_ENABLE_QU8;XNNPACK_DELEGATE_USE_LATEST_OPS;XNNPACK_DELEGATE_ENABLE_SUBGRAPH_RESHAPING;EIGEN_MPL2_ONLY;NOMINMAX=1;ABSL_CONSUME_DLL;FARMHASH_NO_BUILTIN_EXPECT;CPUINFO_SUPPORTED_PLATFORM=1;PTHREADPOOL_NO_DEPRECATED_API=1;XNN_LOG_LEVEL=0;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\tensorflow\third_party\xla\third_party\tsl;D:\tensorflow\third_party\xla;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-source\include;D:\tensorflow\tensorflow\lite\tf_build\FP16-source\include;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\include;D:\tensorflow\tensorflow\lite\tf_build\cpuinfo;D:\tensorflow\tensorflow\lite\examples\label_image\label_image;D:\tensorflow\tensorflow\lite\examples\label_image\PUBLIC;D:\tensorflow\tensorflow\lite\tf_build;D:\tensorflow;D:\tensorflow\tensorflow\lite\tf_build\eigen;D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp;D:\tensorflow\tensorflow\lite\tf_build\farmhash\src;D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\include;D:\tensorflow\tensorflow\lite\tf_build\gemmlowp;D:\tensorflow\tensorflow\lite\tf_build\ml_dtypes;D:\tensorflow\tensorflow\lite\tf_build\ml_dtypes\ml_dtypes;D:\tensorflow\tensorflow\lite\tf_build\ruy;D:\tensorflow\tensorflow\lite\tf_build\cpuinfo\include;D:\tensorflow\tensorflow\lite\tf_build\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\tensorflow\third_party\xla\third_party\tsl;D:\tensorflow\third_party\xla;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-source\include;D:\tensorflow\tensorflow\lite\tf_build\FP16-source\include;D:\tensorflow\tensorflow\lite\tf_build\xnnpack\include;D:\tensorflow\tensorflow\lite\tf_build\cpuinfo;D:\tensorflow\tensorflow\lite\examples\label_image\label_image;D:\tensorflow\tensorflow\lite\examples\label_image\PUBLIC;D:\tensorflow\tensorflow\lite\tf_build;D:\tensorflow;D:\tensorflow\tensorflow\lite\tf_build\eigen;D:\tensorflow\tensorflow\lite\tf_build\abseil-cpp;D:\tensorflow\tensorflow\lite\tf_build\farmhash\src;D:\tensorflow\tensorflow\lite\tf_build\flatbuffers\include;D:\tensorflow\tensorflow\lite\tf_build\gemmlowp;D:\tensorflow\tensorflow\lite\tf_build\ml_dtypes;D:\tensorflow\tensorflow\lite\tf_build\ml_dtypes\ml_dtypes;D:\tensorflow\tensorflow\lite\tf_build\ruy;D:\tensorflow\tensorflow\lite\tf_build\cpuinfo\include;D:\tensorflow\tensorflow\lite\tf_build\protobuf\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\RelWithDebInfo\tensorflow-lite.lib;..\..\profiling\proto\RelWithDebInfo\profiling_info_proto.lib;..\..\_deps\protobuf-build\RelWithDebInfo\libprotobuf.lib;..\..\_deps\abseil-cpp-build\absl\flags\RelWithDebInfo\absl_flags.lib;..\..\_deps\abseil-cpp-build\absl\flags\RelWithDebInfo\absl_flags_internal.lib;..\..\_deps\abseil-cpp-build\absl\flags\RelWithDebInfo\absl_flags_marshalling.lib;..\..\_deps\abseil-cpp-build\absl\flags\RelWithDebInfo\absl_flags_reflection.lib;..\..\_deps\abseil-cpp-build\absl\flags\RelWithDebInfo\absl_flags_config.lib;..\..\_deps\abseil-cpp-build\absl\flags\RelWithDebInfo\absl_flags_program_name.lib;..\..\_deps\abseil-cpp-build\absl\flags\RelWithDebInfo\absl_flags_private_handle_accessor.lib;..\..\_deps\abseil-cpp-build\absl\flags\RelWithDebInfo\absl_flags_commandlineflag.lib;..\..\_deps\abseil-cpp-build\absl\flags\RelWithDebInfo\absl_flags_commandlineflag_internal.lib;..\..\_deps\abseil-cpp-build\absl\RelWithDebInfo\abseil_dll.lib;-ignore:4221;..\..\_deps\farmhash-build\RelWithDebInfo\farmhash.lib;..\..\_deps\fft2d-build\RelWithDebInfo\fft2d_fftsg2d.lib;..\..\_deps\fft2d-build\RelWithDebInfo\fft2d_fftsg.lib;..\..\RelWithDebInfo\xnnpack-delegate.lib;..\..\_deps\flatbuffers-build\RelWithDebInfo\flatbuffers.lib;..\..\_deps\gemmlowp-build\RelWithDebInfo\eight_bit_int_gemm.lib;..\..\_deps\ruy-build\ruy\RelWithDebInfo\ruy_context_get_ctx.lib;..\..\_deps\ruy-build\ruy\RelWithDebInfo\ruy_context.lib;..\..\_deps\ruy-build\ruy\RelWithDebInfo\ruy_frontend.lib;..\..\_deps\ruy-build\ruy\RelWithDebInfo\ruy_kernel_arm.lib;..\..\_deps\ruy-build\ruy\RelWithDebInfo\ruy_kernel_avx.lib;..\..\_deps\ruy-build\ruy\RelWithDebInfo\ruy_kernel_avx2_fma.lib;..\..\_deps\ruy-build\ruy\RelWithDebInfo\ruy_kernel_avx512.lib;..\..\_deps\ruy-build\ruy\RelWithDebInfo\ruy_apply_multiplier.lib;..\..\_deps\ruy-build\ruy\RelWithDebInfo\ruy_pack_arm.lib;..\..\_deps\ruy-build\ruy\RelWithDebInfo\ruy_pack_avx.lib;..\..\_deps\ruy-build\ruy\RelWithDebInfo\ruy_pack_avx2_fma.lib;..\..\_deps\ruy-build\ruy\RelWithDebInfo\ruy_pack_avx512.lib;..\..\_deps\ruy-build\ruy\RelWithDebInfo\ruy_prepare_packed_matrices.lib;..\..\_deps\ruy-build\ruy\RelWithDebInfo\ruy_trmul.lib;..\..\_deps\ruy-build\ruy\RelWithDebInfo\ruy_ctx.lib;..\..\_deps\ruy-build\ruy\RelWithDebInfo\ruy_allocator.lib;..\..\_deps\ruy-build\ruy\RelWithDebInfo\ruy_prepacked_cache.lib;..\..\_deps\ruy-build\ruy\RelWithDebInfo\ruy_system_aligned_alloc.lib;..\..\_deps\ruy-build\ruy\RelWithDebInfo\ruy_have_built_path_for_avx.lib;..\..\_deps\ruy-build\ruy\RelWithDebInfo\ruy_have_built_path_for_avx2_fma.lib;..\..\_deps\ruy-build\ruy\RelWithDebInfo\ruy_have_built_path_for_avx512.lib;..\..\_deps\ruy-build\ruy\RelWithDebInfo\ruy_thread_pool.lib;..\..\_deps\ruy-build\ruy\RelWithDebInfo\ruy_blocking_counter.lib;..\..\_deps\ruy-build\ruy\RelWithDebInfo\ruy_wait.lib;..\..\_deps\ruy-build\ruy\RelWithDebInfo\ruy_denormal.lib;..\..\_deps\ruy-build\ruy\RelWithDebInfo\ruy_block_map.lib;..\..\_deps\ruy-build\ruy\RelWithDebInfo\ruy_tune.lib;..\..\_deps\ruy-build\ruy\RelWithDebInfo\ruy_cpuinfo.lib;..\..\_deps\ruy-build\ruy\profiler\RelWithDebInfo\ruy_profiler_instrumentation.lib;..\..\_deps\xnnpack-build\RelWithDebInfo\XNNPACK.lib;..\..\pthreadpool\RelWithDebInfo\pthreadpool.lib;..\..\_deps\cpuinfo-build\RelWithDebInfo\cpuinfo.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/tensorflow/tensorflow/lite/tf_build/examples/label_image/RelWithDebInfo/label_image.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/tensorflow/tensorflow/lite/tf_build/examples/label_image/RelWithDebInfo/label_image.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\examples\label_image\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/tensorflow/tensorflow/lite/examples/label_image/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -SD:/tensorflow/tensorflow/lite -BD:/tensorflow/tensorflow/lite/tf_build --check-stamp-file D:/tensorflow/tensorflow/lite/tf_build/examples/label_image/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\tensorflow\tensorflow\lite\tf_build\examples\label_image\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/tensorflow/tensorflow/lite/examples/label_image/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -SD:/tensorflow/tensorflow/lite -BD:/tensorflow/tensorflow/lite/tf_build --check-stamp-file D:/tensorflow/tensorflow/lite/tf_build/examples/label_image/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\tensorflow\tensorflow\lite\tf_build\examples\label_image\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/tensorflow/tensorflow/lite/examples/label_image/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -SD:/tensorflow/tensorflow/lite -BD:/tensorflow/tensorflow/lite/tf_build --check-stamp-file D:/tensorflow/tensorflow/lite/tf_build/examples/label_image/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\tensorflow\tensorflow\lite\tf_build\examples\label_image\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/tensorflow/tensorflow/lite/examples/label_image/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -SD:/tensorflow/tensorflow/lite -BD:/tensorflow/tensorflow/lite/tf_build --check-stamp-file D:/tensorflow/tensorflow/lite/tf_build/examples/label_image/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\tensorflow\tensorflow\lite\tf_build\examples\label_image\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\examples\label_image\bitmap_helpers.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\examples\label_image\bitmap_helpers.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\examples\label_image\bitmap_helpers_impl.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\examples\label_image\get_top_n.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\examples\label_image\get_top_n_impl.h" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\examples\label_image\label_image.cc" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\examples\label_image\label_image.h" />
+    <ClInclude Include="D:\tensorflow\tensorflow\lite\examples\label_image\log.h" />
+    <ClCompile Include="D:\tensorflow\third_party\xla\xla\tsl\util\stats_calculator.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\profiling\memory_info.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\profiling\profile_summarizer.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\profiling\profile_summary_formatter.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\profiling\time.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tools\command_line_flags.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tools\delegates\default_execution_provider.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tools\delegates\delegate_provider.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tools\evaluation\utils.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tools\tool_params.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tools\delegates\xnnpack_delegate_provider.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\core\acceleration\configuration\c\xnnpack_plugin.cc" />
+    <ClCompile Include="D:\tensorflow\tensorflow\lite\tools\delegates\external_delegate_provider.cc" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\ZERO_CHECK.vcxproj">
+      <Project>{DA82E51A-3B0E-352E-B019-949E32B6801B}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\XNNPACK.vcxproj">
+      <Project>{0AD6CE6C-845B-3450-A67F-DE09220776B8}</Project>
+      <Name>XNNPACK</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\abseil-cpp-build\absl\abseil_dll.vcxproj">
+      <Project>{8FA8B480-C1D7-3014-8521-5C66AC4F5268}</Project>
+      <Name>abseil_dll</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\abseil-cpp-build\absl\flags\absl_flags.vcxproj">
+      <Project>{E9FF11B9-1076-32BB-B42F-F352B774F0E8}</Project>
+      <Name>absl_flags</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\abseil-cpp-build\absl\flags\absl_flags_commandlineflag.vcxproj">
+      <Project>{DC6F34DD-C109-3C49-B8B5-63BDBEF214F6}</Project>
+      <Name>absl_flags_commandlineflag</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\abseil-cpp-build\absl\flags\absl_flags_commandlineflag_internal.vcxproj">
+      <Project>{3A9F35A8-CF34-3D37-96FF-8FB0F590CCCF}</Project>
+      <Name>absl_flags_commandlineflag_internal</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\abseil-cpp-build\absl\flags\absl_flags_config.vcxproj">
+      <Project>{E58E1CCE-950F-3F25-8A74-FF994F6FE3EF}</Project>
+      <Name>absl_flags_config</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\abseil-cpp-build\absl\flags\absl_flags_internal.vcxproj">
+      <Project>{4B34F693-F2D5-30CF-B917-FAEED5021FDC}</Project>
+      <Name>absl_flags_internal</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\abseil-cpp-build\absl\flags\absl_flags_marshalling.vcxproj">
+      <Project>{9200A35B-4AA5-3D73-96A4-70B427402DB7}</Project>
+      <Name>absl_flags_marshalling</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\abseil-cpp-build\absl\flags\absl_flags_private_handle_accessor.vcxproj">
+      <Project>{869D7BA5-D481-32D6-9E10-208651515E03}</Project>
+      <Name>absl_flags_private_handle_accessor</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\abseil-cpp-build\absl\flags\absl_flags_program_name.vcxproj">
+      <Project>{117144A9-D2C7-3008-BF6E-664F1659D0CD}</Project>
+      <Name>absl_flags_program_name</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\abseil-cpp-build\absl\flags\absl_flags_reflection.vcxproj">
+      <Project>{6C1DB02D-B5E1-346C-87E7-8664E581ABAE}</Project>
+      <Name>absl_flags_reflection</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\cpuinfo-build\cpuinfo.vcxproj">
+      <Project>{ED7EA1C0-8951-324F-978D-DBC91F0AD62F}</Project>
+      <Name>cpuinfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\gemmlowp-build\eight_bit_int_gemm.vcxproj">
+      <Project>{22CCE6F7-AD32-31CB-B377-DAB9C807EDF8}</Project>
+      <Name>eight_bit_int_gemm</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\farmhash-build\farmhash.vcxproj">
+      <Project>{6629477D-3221-3D12-A3DD-DFF8A7CA8DD1}</Project>
+      <Name>farmhash</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\fft2d-build\fft2d_fftsg.vcxproj">
+      <Project>{D46972D5-E3EF-355E-82E1-18AE375A4F18}</Project>
+      <Name>fft2d_fftsg</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\fft2d-build\fft2d_fftsg2d.vcxproj">
+      <Project>{67000E24-5F55-35D7-BED6-98A61ED2F732}</Project>
+      <Name>fft2d_fftsg2d</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\flatbuffers-build\flatbuffers.vcxproj">
+      <Project>{9DD14676-7A25-308C-8ADE-8B3030691D79}</Project>
+      <Name>flatbuffers</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\protobuf-build\libprotobuf.vcxproj">
+      <Project>{52C45C89-7C6F-3DCC-BC2F-9BD69736C695}</Project>
+      <Name>libprotobuf</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\xnnpack-build\logging.vcxproj">
+      <Project>{572E8174-BACB-367F-B9E8-C1D917BD43D3}</Project>
+      <Name>logging</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\profiling\proto\profiling_info_proto.vcxproj">
+      <Project>{2D0EB018-D73A-3130-BB03-789390F1A6C1}</Project>
+      <Name>profiling_info_proto</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\pthreadpool\pthreadpool.vcxproj">
+      <Project>{130BE534-60C5-397E-BAC5-CF19909E22B9}</Project>
+      <Name>pthreadpool</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ruy-build\ruy\ruy_allocator.vcxproj">
+      <Project>{0749AF2D-E5F2-3D02-8CA6-6786B34DDE9F}</Project>
+      <Name>ruy_allocator</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ruy-build\ruy\ruy_apply_multiplier.vcxproj">
+      <Project>{130464F6-0652-3AAB-8718-08C0CB6049A6}</Project>
+      <Name>ruy_apply_multiplier</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ruy-build\ruy\ruy_block_map.vcxproj">
+      <Project>{13A13E82-20F0-3B17-BFE8-FED13B03B647}</Project>
+      <Name>ruy_block_map</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ruy-build\ruy\ruy_blocking_counter.vcxproj">
+      <Project>{0658D840-63DE-3AF1-B63F-0C6AC5F2778F}</Project>
+      <Name>ruy_blocking_counter</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ruy-build\ruy\ruy_context.vcxproj">
+      <Project>{F7B4CD93-47DD-3E78-B2DB-FDB20CB956DF}</Project>
+      <Name>ruy_context</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ruy-build\ruy\ruy_context_get_ctx.vcxproj">
+      <Project>{D7703786-405E-3949-BD5C-9F0F084406FC}</Project>
+      <Name>ruy_context_get_ctx</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ruy-build\ruy\ruy_cpuinfo.vcxproj">
+      <Project>{AA7DC6E4-6058-3E60-88E4-050DAFE3B15C}</Project>
+      <Name>ruy_cpuinfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ruy-build\ruy\ruy_ctx.vcxproj">
+      <Project>{653779A3-D737-3A20-8718-8AEFE7A9CC60}</Project>
+      <Name>ruy_ctx</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ruy-build\ruy\ruy_denormal.vcxproj">
+      <Project>{63DCF0E1-0CC9-3D6E-96A4-38677674E407}</Project>
+      <Name>ruy_denormal</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ruy-build\ruy\ruy_frontend.vcxproj">
+      <Project>{C277BB52-36B6-3AD4-9540-96801B03F03B}</Project>
+      <Name>ruy_frontend</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ruy-build\ruy\ruy_have_built_path_for_avx.vcxproj">
+      <Project>{71C70634-DA4D-39C1-8549-1AD737D13F6E}</Project>
+      <Name>ruy_have_built_path_for_avx</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ruy-build\ruy\ruy_have_built_path_for_avx2_fma.vcxproj">
+      <Project>{98806249-81CA-314E-AD40-6253E60A649D}</Project>
+      <Name>ruy_have_built_path_for_avx2_fma</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ruy-build\ruy\ruy_have_built_path_for_avx512.vcxproj">
+      <Project>{B5BEF66D-E4FC-3AE5-8BC5-FDB33C4CD88E}</Project>
+      <Name>ruy_have_built_path_for_avx512</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ruy-build\ruy\ruy_kernel_arm.vcxproj">
+      <Project>{C5DA8AEB-19CE-341B-8D95-86836CF5030D}</Project>
+      <Name>ruy_kernel_arm</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ruy-build\ruy\ruy_kernel_avx.vcxproj">
+      <Project>{5AE929B0-8023-3D5A-9721-03DFE34690D5}</Project>
+      <Name>ruy_kernel_avx</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ruy-build\ruy\ruy_kernel_avx2_fma.vcxproj">
+      <Project>{3974A0D7-F5CB-3C6F-ACD3-702AA53D7890}</Project>
+      <Name>ruy_kernel_avx2_fma</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ruy-build\ruy\ruy_kernel_avx512.vcxproj">
+      <Project>{212B1016-F4CD-3715-96C7-84FC9F017D39}</Project>
+      <Name>ruy_kernel_avx512</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ruy-build\ruy\ruy_pack_arm.vcxproj">
+      <Project>{7D72BE88-3F68-363A-A340-3A9920958ABC}</Project>
+      <Name>ruy_pack_arm</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ruy-build\ruy\ruy_pack_avx.vcxproj">
+      <Project>{38964BC0-65A7-3E5B-9C93-5EFD4338FF24}</Project>
+      <Name>ruy_pack_avx</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ruy-build\ruy\ruy_pack_avx2_fma.vcxproj">
+      <Project>{1C6A9094-2A4C-3F10-A3B6-4F62221D93CF}</Project>
+      <Name>ruy_pack_avx2_fma</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ruy-build\ruy\ruy_pack_avx512.vcxproj">
+      <Project>{A3554768-AFAF-3592-B432-4FBF5D1E5283}</Project>
+      <Name>ruy_pack_avx512</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ruy-build\ruy\ruy_prepacked_cache.vcxproj">
+      <Project>{14D48888-88A1-300A-9F2E-7FB92D6B9162}</Project>
+      <Name>ruy_prepacked_cache</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ruy-build\ruy\ruy_prepare_packed_matrices.vcxproj">
+      <Project>{2B9DB888-0A8A-36E7-B4F0-A74F519821F3}</Project>
+      <Name>ruy_prepare_packed_matrices</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ruy-build\ruy\profiler\ruy_profiler_instrumentation.vcxproj">
+      <Project>{483E26E0-6186-3DF2-9C7C-46E6E330B9D4}</Project>
+      <Name>ruy_profiler_instrumentation</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ruy-build\ruy\ruy_system_aligned_alloc.vcxproj">
+      <Project>{EDC95146-AD66-3252-B65F-31F16FA59566}</Project>
+      <Name>ruy_system_aligned_alloc</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ruy-build\ruy\ruy_thread_pool.vcxproj">
+      <Project>{257BE724-1B25-3772-8EBE-0B1FDA7174FE}</Project>
+      <Name>ruy_thread_pool</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ruy-build\ruy\ruy_trmul.vcxproj">
+      <Project>{56566FC9-26DB-3397-A530-B6BCBB2A21EC}</Project>
+      <Name>ruy_trmul</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ruy-build\ruy\ruy_tune.vcxproj">
+      <Project>{B3EAFC5F-7ABD-3FB3-85B7-3AE2C9BC45C0}</Project>
+      <Name>ruy_tune</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ruy-build\ruy\ruy_wait.vcxproj">
+      <Project>{6C68BBC5-E84E-3430-830E-26714D95DD4B}</Project>
+      <Name>ruy_wait</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\tensorflow-lite.vcxproj">
+      <Project>{F2BA61F2-81C8-3B63-B78B-58D405E67FE8}</Project>
+      <Name>tensorflow-lite</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\xnnpack-delegate.vcxproj">
+      <Project>{B49FD077-54FE-34A2-9203-773D45608CF3}</Project>
+      <Name>xnnpack-delegate</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,4 @@
+D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-source\src\portable-api.c;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool\pthreadpool.dir\Release\portable-api.obj
+D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-source\src\memory.c;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool\pthreadpool.dir\Release\memory.obj
+D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-source\src\windows.c;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool\pthreadpool.dir\Release\windows.obj
+D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-source\src\fastpath.c;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool\pthreadpool.dir\Release\fastpath.obj

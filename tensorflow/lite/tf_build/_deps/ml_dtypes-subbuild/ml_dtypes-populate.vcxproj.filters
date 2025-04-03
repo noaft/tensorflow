@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ml_dtypes-subbuild\CMakeFiles\9e28e1f005d94a3525a672efa1106ed1\ml_dtypes-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ml_dtypes-subbuild\CMakeFiles\9e28e1f005d94a3525a672efa1106ed1\ml_dtypes-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ml_dtypes-subbuild\CMakeFiles\9e28e1f005d94a3525a672efa1106ed1\ml_dtypes-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ml_dtypes-subbuild\CMakeFiles\9e28e1f005d94a3525a672efa1106ed1\ml_dtypes-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ml_dtypes-subbuild\CMakeFiles\9e28e1f005d94a3525a672efa1106ed1\ml_dtypes-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ml_dtypes-subbuild\CMakeFiles\9e28e1f005d94a3525a672efa1106ed1\ml_dtypes-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ml_dtypes-subbuild\CMakeFiles\9e28e1f005d94a3525a672efa1106ed1\ml_dtypes-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ml_dtypes-subbuild\CMakeFiles\9e28e1f005d94a3525a672efa1106ed1\ml_dtypes-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ml_dtypes-subbuild\CMakeFiles\ae013474f204252b0045bb6a481f462e\ml_dtypes-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ml_dtypes-subbuild\CMakeFiles\ca39c5b01eb54d1983df6596f1818b67\ml_dtypes-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ml_dtypes-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\tensorflow\tensorflow\lite\tf_build\_deps\ml_dtypes-subbuild\CMakeFiles\ml_dtypes-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{7157DA78-BF88-3B3C-9753-EDCEA63C91C0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

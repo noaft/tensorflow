@@ -1,0 +1,912 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{72E274E4-AE06-3CEB-AD48-F971E46FA2B3}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>pthreadpool</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\CMakeFiles\2b2a9ce0f78b2013068af60ce94dd0cd\pthreadpool-mkdir.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Creating directories for 'pthreadpool'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -Dcfgdir=/Debug -P D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/pthreadpool-prefix/tmp/pthreadpool-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/Debug/pthreadpool-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\Debug\pthreadpool-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Creating directories for 'pthreadpool'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -Dcfgdir=/Release -P D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/pthreadpool-prefix/tmp/pthreadpool-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/Release/pthreadpool-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\Release\pthreadpool-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Creating directories for 'pthreadpool'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -Dcfgdir=/MinSizeRel -P D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/pthreadpool-prefix/tmp/pthreadpool-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/MinSizeRel/pthreadpool-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\MinSizeRel\pthreadpool-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Creating directories for 'pthreadpool'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -Dcfgdir=/RelWithDebInfo -P D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/pthreadpool-prefix/tmp/pthreadpool-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/RelWithDebInfo/pthreadpool-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\RelWithDebInfo\pthreadpool-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\CMakeFiles\2b2a9ce0f78b2013068af60ce94dd0cd\pthreadpool-download.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing download step (download, verify and extract) for 'pthreadpool'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\tensorflow\tensorflow\lite\tf_build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/download-pthreadpool.cmake
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/verify-pthreadpool.cmake
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/extract-pthreadpool.cmake
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/Debug/pthreadpool-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\download-pthreadpool.cmake;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\pthreadpool-urlinfo.txt;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\Debug\pthreadpool-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\Debug\pthreadpool-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing download step (download, verify and extract) for 'pthreadpool'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\tensorflow\tensorflow\lite\tf_build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/download-pthreadpool.cmake
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/verify-pthreadpool.cmake
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/extract-pthreadpool.cmake
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/Release/pthreadpool-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\download-pthreadpool.cmake;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\pthreadpool-urlinfo.txt;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\Release\pthreadpool-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\Release\pthreadpool-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Performing download step (download, verify and extract) for 'pthreadpool'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd D:\tensorflow\tensorflow\lite\tf_build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/download-pthreadpool.cmake
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/verify-pthreadpool.cmake
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/extract-pthreadpool.cmake
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/MinSizeRel/pthreadpool-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\download-pthreadpool.cmake;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\pthreadpool-urlinfo.txt;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\MinSizeRel\pthreadpool-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\MinSizeRel\pthreadpool-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Performing download step (download, verify and extract) for 'pthreadpool'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd D:\tensorflow\tensorflow\lite\tf_build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/download-pthreadpool.cmake
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/verify-pthreadpool.cmake
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/extract-pthreadpool.cmake
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/RelWithDebInfo/pthreadpool-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\download-pthreadpool.cmake;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\pthreadpool-urlinfo.txt;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\RelWithDebInfo\pthreadpool-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\RelWithDebInfo\pthreadpool-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\CMakeFiles\2b2a9ce0f78b2013068af60ce94dd0cd\pthreadpool-update.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No update step for 'pthreadpool'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/Debug/pthreadpool-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\pthreadpool-update-info.txt;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\Debug\pthreadpool-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\Debug\pthreadpool-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">No update step for 'pthreadpool'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/Release/pthreadpool-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\pthreadpool-update-info.txt;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\Release\pthreadpool-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\Release\pthreadpool-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">No update step for 'pthreadpool'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/MinSizeRel/pthreadpool-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\pthreadpool-update-info.txt;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\MinSizeRel\pthreadpool-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\MinSizeRel\pthreadpool-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">No update step for 'pthreadpool'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/RelWithDebInfo/pthreadpool-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\pthreadpool-update-info.txt;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\RelWithDebInfo\pthreadpool-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\RelWithDebInfo\pthreadpool-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\CMakeFiles\2b2a9ce0f78b2013068af60ce94dd0cd\pthreadpool-patch.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No patch step for 'pthreadpool'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/Debug/pthreadpool-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\pthreadpool-patch-info.txt;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\Debug\pthreadpool-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\Debug\pthreadpool-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">No patch step for 'pthreadpool'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/Release/pthreadpool-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\pthreadpool-patch-info.txt;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\Release\pthreadpool-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\Release\pthreadpool-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">No patch step for 'pthreadpool'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/MinSizeRel/pthreadpool-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\pthreadpool-patch-info.txt;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\MinSizeRel\pthreadpool-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\MinSizeRel\pthreadpool-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">No patch step for 'pthreadpool'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/RelWithDebInfo/pthreadpool-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\pthreadpool-patch-info.txt;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\RelWithDebInfo\pthreadpool-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\RelWithDebInfo\pthreadpool-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\CMakeFiles\2b2a9ce0f78b2013068af60ce94dd0cd\pthreadpool-configure.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No configure step for 'pthreadpool'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\tensorflow\tensorflow\lite\tf_build\pthreadpool
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/Debug/pthreadpool-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\tmp\pthreadpool-cfgcmd.txt;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\Debug\pthreadpool-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\Debug\pthreadpool-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">No configure step for 'pthreadpool'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\tensorflow\tensorflow\lite\tf_build\pthreadpool
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/Release/pthreadpool-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\tmp\pthreadpool-cfgcmd.txt;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\Release\pthreadpool-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\Release\pthreadpool-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">No configure step for 'pthreadpool'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd D:\tensorflow\tensorflow\lite\tf_build\pthreadpool
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/MinSizeRel/pthreadpool-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\tmp\pthreadpool-cfgcmd.txt;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\MinSizeRel\pthreadpool-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\MinSizeRel\pthreadpool-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">No configure step for 'pthreadpool'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd D:\tensorflow\tensorflow\lite\tf_build\pthreadpool
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/RelWithDebInfo/pthreadpool-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\tmp\pthreadpool-cfgcmd.txt;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\RelWithDebInfo\pthreadpool-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\RelWithDebInfo\pthreadpool-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\CMakeFiles\2b2a9ce0f78b2013068af60ce94dd0cd\pthreadpool-build.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No build step for 'pthreadpool'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\tensorflow\tensorflow\lite\tf_build\pthreadpool
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/Debug/pthreadpool-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\Debug\pthreadpool-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\Debug\pthreadpool-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">No build step for 'pthreadpool'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\tensorflow\tensorflow\lite\tf_build\pthreadpool
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/Release/pthreadpool-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\Release\pthreadpool-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\Release\pthreadpool-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">No build step for 'pthreadpool'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd D:\tensorflow\tensorflow\lite\tf_build\pthreadpool
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/MinSizeRel/pthreadpool-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\MinSizeRel\pthreadpool-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\MinSizeRel\pthreadpool-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">No build step for 'pthreadpool'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd D:\tensorflow\tensorflow\lite\tf_build\pthreadpool
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/RelWithDebInfo/pthreadpool-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\RelWithDebInfo\pthreadpool-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\RelWithDebInfo\pthreadpool-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\CMakeFiles\2b2a9ce0f78b2013068af60ce94dd0cd\pthreadpool-install.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No install step for 'pthreadpool'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\tensorflow\tensorflow\lite\tf_build\pthreadpool
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/Debug/pthreadpool-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\Debug\pthreadpool-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\Debug\pthreadpool-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">No install step for 'pthreadpool'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\tensorflow\tensorflow\lite\tf_build\pthreadpool
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/Release/pthreadpool-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\Release\pthreadpool-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\Release\pthreadpool-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">No install step for 'pthreadpool'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd D:\tensorflow\tensorflow\lite\tf_build\pthreadpool
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/MinSizeRel/pthreadpool-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\MinSizeRel\pthreadpool-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\MinSizeRel\pthreadpool-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">No install step for 'pthreadpool'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd D:\tensorflow\tensorflow\lite\tf_build\pthreadpool
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/RelWithDebInfo/pthreadpool-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\RelWithDebInfo\pthreadpool-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\RelWithDebInfo\pthreadpool-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\CMakeFiles\2b2a9ce0f78b2013068af60ce94dd0cd\pthreadpool-test.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">No test step for 'pthreadpool'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\tensorflow\tensorflow\lite\tf_build\pthreadpool
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/Debug/pthreadpool-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\Debug\pthreadpool-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\Debug\pthreadpool-test</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">No test step for 'pthreadpool'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\tensorflow\tensorflow\lite\tf_build\pthreadpool
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/Release/pthreadpool-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\Release\pthreadpool-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\Release\pthreadpool-test</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">No test step for 'pthreadpool'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd D:\tensorflow\tensorflow\lite\tf_build\pthreadpool
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/MinSizeRel/pthreadpool-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\MinSizeRel\pthreadpool-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\MinSizeRel\pthreadpool-test</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">No test step for 'pthreadpool'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd D:\tensorflow\tensorflow\lite\tf_build\pthreadpool
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/RelWithDebInfo/pthreadpool-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\RelWithDebInfo\pthreadpool-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\RelWithDebInfo\pthreadpool-test</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\CMakeFiles\b9b28f02ec9e894ee6910a1ec20453b5\pthreadpool-complete.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Completed 'pthreadpool'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E make_directory D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/CMakeFiles/Debug
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/CMakeFiles/Debug/pthreadpool-complete
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/Debug/pthreadpool-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\Debug\pthreadpool-install;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\Debug\pthreadpool-mkdir;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\Debug\pthreadpool-download;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\Debug\pthreadpool-update;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\Debug\pthreadpool-patch;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\Debug\pthreadpool-configure;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\Debug\pthreadpool-build;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\Debug\pthreadpool-test;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\CMakeFiles\Debug\pthreadpool-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Completed 'pthreadpool'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E make_directory D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/CMakeFiles/Release
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/CMakeFiles/Release/pthreadpool-complete
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/Release/pthreadpool-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\Release\pthreadpool-install;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\Release\pthreadpool-mkdir;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\Release\pthreadpool-download;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\Release\pthreadpool-update;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\Release\pthreadpool-patch;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\Release\pthreadpool-configure;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\Release\pthreadpool-build;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\Release\pthreadpool-test;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\CMakeFiles\Release\pthreadpool-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Completed 'pthreadpool'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E make_directory D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/CMakeFiles/MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/CMakeFiles/MinSizeRel/pthreadpool-complete
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/MinSizeRel/pthreadpool-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\MinSizeRel\pthreadpool-install;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\MinSizeRel\pthreadpool-mkdir;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\MinSizeRel\pthreadpool-download;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\MinSizeRel\pthreadpool-update;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\MinSizeRel\pthreadpool-patch;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\MinSizeRel\pthreadpool-configure;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\MinSizeRel\pthreadpool-build;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\MinSizeRel\pthreadpool-test;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\CMakeFiles\MinSizeRel\pthreadpool-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Completed 'pthreadpool'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E make_directory D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/CMakeFiles/RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/CMakeFiles/RelWithDebInfo/pthreadpool-complete
+if %errorlevel% neq 0 goto :cmEnd
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -E touch D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/pthreadpool-prefix/src/pthreadpool-stamp/RelWithDebInfo/pthreadpool-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\RelWithDebInfo\pthreadpool-install;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\RelWithDebInfo\pthreadpool-mkdir;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\RelWithDebInfo\pthreadpool-download;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\RelWithDebInfo\pthreadpool-update;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\RelWithDebInfo\pthreadpool-patch;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\RelWithDebInfo\pthreadpool-configure;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\RelWithDebInfo\pthreadpool-build;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\src\pthreadpool-stamp\RelWithDebInfo\pthreadpool-test;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\CMakeFiles\RelWithDebInfo\pthreadpool-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\CMakeFiles\98e552d239338d60c1037b142316f445\pthreadpool.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\CMakeFiles\Debug\pthreadpool-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\CMakeFiles\pthreadpool</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\CMakeFiles\Release\pthreadpool-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\CMakeFiles\pthreadpool</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\CMakeFiles\MinSizeRel\pthreadpool-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\CMakeFiles\pthreadpool</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\CMakeFiles\RelWithDebInfo\pthreadpool-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\CMakeFiles\pthreadpool</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -SD:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download -BD:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download --check-stamp-file D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\CMakeDetermineSystem.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\CMakeGenericSystem.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\CMakeInitializeConfigs.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\CMakeSystem.cmake.in;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\CMakeSystemSpecificInformation.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\CMakeSystemSpecificInitialize.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\ExternalProject.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\ExternalProject\PatchInfo.txt.in;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\ExternalProject\RepositoryInfo.txt.in;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\ExternalProject\UpdateInfo.txt.in;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\ExternalProject\cfgcmd.txt.in;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\ExternalProject\download.cmake.in;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\ExternalProject\extractfile.cmake.in;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\ExternalProject\mkdirs.cmake.in;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\ExternalProject\shared_internal_commands.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\Platform\Windows-Initialize.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\Platform\Windows.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\Platform\WindowsPaths.cmake;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\CMakeFiles\4.0.0\CMakeSystem.cmake;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\tmp\pthreadpool-mkdirs.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -SD:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download -BD:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download --check-stamp-file D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\CMakeDetermineSystem.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\CMakeGenericSystem.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\CMakeInitializeConfigs.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\CMakeSystem.cmake.in;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\CMakeSystemSpecificInformation.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\CMakeSystemSpecificInitialize.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\ExternalProject.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\ExternalProject\PatchInfo.txt.in;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\ExternalProject\RepositoryInfo.txt.in;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\ExternalProject\UpdateInfo.txt.in;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\ExternalProject\cfgcmd.txt.in;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\ExternalProject\download.cmake.in;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\ExternalProject\extractfile.cmake.in;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\ExternalProject\mkdirs.cmake.in;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\ExternalProject\shared_internal_commands.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\Platform\Windows-Initialize.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\Platform\Windows.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\Platform\WindowsPaths.cmake;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\CMakeFiles\4.0.0\CMakeSystem.cmake;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\tmp\pthreadpool-mkdirs.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -SD:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download -BD:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download --check-stamp-file D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\CMakeDetermineSystem.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\CMakeGenericSystem.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\CMakeInitializeConfigs.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\CMakeSystem.cmake.in;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\CMakeSystemSpecificInformation.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\CMakeSystemSpecificInitialize.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\ExternalProject.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\ExternalProject\PatchInfo.txt.in;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\ExternalProject\RepositoryInfo.txt.in;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\ExternalProject\UpdateInfo.txt.in;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\ExternalProject\cfgcmd.txt.in;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\ExternalProject\download.cmake.in;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\ExternalProject\extractfile.cmake.in;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\ExternalProject\mkdirs.cmake.in;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\ExternalProject\shared_internal_commands.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\Platform\Windows-Initialize.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\Platform\Windows.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\Platform\WindowsPaths.cmake;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\CMakeFiles\4.0.0\CMakeSystem.cmake;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\tmp\pthreadpool-mkdirs.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -SD:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download -BD:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download --check-stamp-file D:/tensorflow/tensorflow/lite/tf_build/pthreadpool-download/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\CMakeDetermineSystem.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\CMakeGenericSystem.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\CMakeInitializeConfigs.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\CMakeSystem.cmake.in;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\CMakeSystemSpecificInformation.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\CMakeSystemSpecificInitialize.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\ExternalProject.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\ExternalProject\PatchInfo.txt.in;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\ExternalProject\RepositoryInfo.txt.in;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\ExternalProject\UpdateInfo.txt.in;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\ExternalProject\cfgcmd.txt.in;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\ExternalProject\download.cmake.in;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\ExternalProject\extractfile.cmake.in;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\ExternalProject\mkdirs.cmake.in;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\ExternalProject\shared_internal_commands.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\Platform\Windows-Initialize.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\Platform\Windows.cmake;D:\cmake-4.0.0-windows-x86_64\share\cmake-4.0\Modules\Platform\WindowsPaths.cmake;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\CMakeFiles\4.0.0\CMakeSystem.cmake;D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\pthreadpool-prefix\tmp\pthreadpool-mkdirs.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\CMakeFiles\pthreadpool">
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="D:\tensorflow\tensorflow\lite\tf_build\pthreadpool-download\ZERO_CHECK.vcxproj">
+      <Project>{4F48B863-BDC6-34DB-8AB5-F32317513FBC}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

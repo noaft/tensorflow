@@ -1,0 +1,10 @@
+^D:\TENSORFLOW\TENSORFLOW\LITE\TF_BUILD\FP16-DOWNLOAD\CMAKEFILES\18C0E07B47C57410CA15A5955601A5B2\GENERATE.STAMP.RULE
+setlocal
+D:\cmake-4.0.0-windows-x86_64\bin\cmake.exe -SD:/tensorflow/tensorflow/lite/tf_build/FP16-download -BD:/tensorflow/tensorflow/lite/tf_build/FP16-download --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/tensorflow/tensorflow/lite/tf_build/FP16-download/fp16-download.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

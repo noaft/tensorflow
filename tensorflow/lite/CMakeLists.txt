@@ -25,8 +25,13 @@
 # - Tests
 # - Many features in experimental
 # - Host Tools (i.e conversion / analysis tools etc.)
+# fixing old version:
+cmake_minimum_required(VERSION 3.18...4.0)
 
-cmake_minimum_required(VERSION 3.16)
+cmake_policy(SET CMP0135 NEW)
+cmake_policy(SET CMP0169 OLD)
+
+
 if(NOT CMAKE_BUILD_TYPE)
   message(STATUS "Setting build type to Release, for debug builds use"
     "'-DCMAKE_BUILD_TYPE=Debug'.")
